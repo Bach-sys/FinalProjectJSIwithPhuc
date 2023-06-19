@@ -1,9 +1,9 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import "./style.css";
+import javascriptLogo from "./javascript.svg";
+import viteLogo from "/vite.svg";
+import { setupCounter } from "./counter.js";
 
-document.querySelector('#app').innerHTML = `
+document.querySelector("#app").innerHTML = `
 <a href="#" class="link-img"><img src="logo.png" alt="" class="img"></a>
 <div class="nav-child">
     <a class="btn" href="#">Home</a>
@@ -13,7 +13,7 @@ document.querySelector('#app').innerHTML = `
 </div>
 <div class="register">
     <a class="btn-log" href="#">Log in</a>
-    <a class="btn-si" href="#">Sign up</a>
+    <a class="btn-si" href="#">fuck UP</a>
+    <a class="btn-si" href="#">Hello UP</a>
 </div>
-`
-
+`;
