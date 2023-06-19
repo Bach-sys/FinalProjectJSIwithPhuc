@@ -4,7 +4,7 @@ import viteLogo from "/vite.svg";
 import { setupCounter } from "./counter.js";
 
 document.querySelector("#app").innerHTML = `
-<a href="#" class="link-img"><img src="logo.png" alt="" class="img"></a>
+<a href="#" class="link-logo"><img src="logo.png" alt="" class="logo"></a>
 <div class="nav-child">
     <a class="btn" href="#">Home</a>
     <a class="btn" href="#">About us</a>
@@ -13,7 +13,7 @@ document.querySelector("#app").innerHTML = `
 </div>
 <div class="register">
     <a class="btn-log" href="#">Log in</a>
+    <a class="btn-si" href="#">Sign up</a>
 </div>
 `;
 
-console.log('hellloooooo')
