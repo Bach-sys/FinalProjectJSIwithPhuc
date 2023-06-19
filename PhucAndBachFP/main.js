@@ -13,8 +13,7 @@ document.querySelector("#app").innerHTML = `
 </div>
 <div class="register">
     <a class="btn-log" href="#">Log in</a>
-    <a class="btn-si" href="#">Sign up</a>
 </div>
 `;
 
-console.log("hello Apple");
+console.log('hellloooooo')
