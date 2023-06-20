@@ -13,7 +13,7 @@ document.querySelector("#navbar").innerHTML = `
 </div>
 <div class="register">
     <a class="btn-log" href="#">Log in</a>
-    <a class="btn-si" href="#">Sign up</a>
+    <a class="btn-si" href="#">Sign up</a> 
 </div>
 `;
 document.querySelector(
