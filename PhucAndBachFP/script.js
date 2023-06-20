@@ -32,23 +32,28 @@ console.log(app);
 let email;
 let password;
 let btnComfirm = document.querySelector("#btn_comfirm");
-btnComfirm.addEventListener("click", () => {
-  email = document.querySelector("#email");
-  password = document.querySelector("#password");
-  var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-  if (email.value.length < 7) {
-  }
-  createUserWithEmailAndPassword(auth, email.value, password.value)
-    .then((userCredential) => {
-      // Signed in
-      const user = userCredential.user;
-      console.log(user.email);
-      // ...
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      console.log(errorMessage);
-      // ..
+
+window.addEventListener("DOMContentLoaded", (event) => {
+  if (btnComfirm) {
+    btnComfirm.addEventListener("click", () => {
+      email = document.querySelector("#email");
+      password = document.querySelector("#password");
+      var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+      if (email.value.length < 7) {
+      }
+      createUserWithEmailAndPassword(auth, email.value, password.value)
+        .then((userCredential) => {
+          // Signed in
+          const user = userCredential.user;
+          console.log(user.email);
+          // ...
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          console.log(errorMessage);
+          // ..
+        });
     });
+  }
 });
