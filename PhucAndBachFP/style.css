@@ -68,7 +68,7 @@ body{
 .btn:active {
   transform: scale(0.9);
 }
-.btn-log {
+.btn-re {
   width:45%;
   height:100%;
   display: flex;
@@ -84,40 +84,24 @@ body{
   box-shadow: inset 0 0 0 0 #FCCB14;
 }
 
-.btn-log:hover {
+.btn-re:hover {
   color: white;
   box-shadow: inset 0 -150px 0 0 #FF7211;
 }
 
-.btn-log:active {
+.btn-re:active {
   transform: scale(0.9);
 }
-.btn-si {
-  width:45%;
-  height:95%;
+
+#signup{
+  margin-top: 40px;
+  width: 85%;
+  height:720px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 19px;
-  border-radius: 10px;
-  border: 3px solid #FCCB14;
-  text-decoration: none;
-  color: #FCCB14;
-  cursor: pointer;
-  transition: ease-out 0.5s;
-  box-shadow: inset 0 0 0 0 #FCCB14;
 }
-
-.btn-si:hover {
-  color: white;
-  box-shadow: inset 0 -100px 0 0 #FF7211;
-  border: 3px solid #FF7211;
-}
-
-.btn-si:active {
-  transform: scale(0.9);
-}
-
 #login{
   margin-top: 40px;
   width: 85%;
@@ -135,6 +119,9 @@ body{
   margin-left: 50px;
   margin-top: 100px;
 }
+.signup-link{
+  font-size: 25px;
+}
 .login-img{
   width:45%;
   height: 100%;
@@ -142,6 +129,7 @@ body{
   flex-direction: column;
   margin-left: 50px;
   border-radius: 10px;
+  object-fit: cover;
 }
 #tieude{
   font-size: 50px;
@@ -286,4 +274,20 @@ body{
   height: 3px;
   background-color: #212121;
   opacity: 0.1;
+}
+
+
+
+.mask img{
+  width: 100%;
+  height:100vh;
+  object-fit: cover;
+}
+.mask{
+  width: 100%;
+  height:100vh;
+  -webkit-mask-image: url(mask.jpg);
+  -webkit-mask-size: auto 100%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
 }
