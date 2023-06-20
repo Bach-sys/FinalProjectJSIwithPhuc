@@ -4,7 +4,7 @@ import viteLogo from "/vite.svg";
 import { setupCounter } from "./counter.js";
 
 let Signup = document.querySelector("#signup")
-
+let Login = document.querySelector("#login")
 let signupRender = () => {
     Signup.innerHTML=`
     <img src="https://i.pinimg.com/564x/60/04/2b/60042bd77056155bd25412fa223c8eeb.jpg" alt="" class="login-img">
@@ -38,6 +38,34 @@ let signupRender = () => {
     </div>`
 }
 signupRender()
+let loginRender = () => {
+  Login.innerHTML=`
+  <img src="https://i.pinimg.com/564x/60/04/2b/60042bd77056155bd25412fa223c8eeb.jpg" alt="" class="login-img">
+  <div class="form-container">
+    <div class="logo-container">
+      Log In
+    </div>
+    <div class="line"></div>
+    <div class="form">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input placeholder="Enter your email" name="email" id="email" type="text">
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input name="password" placeholder="Enter your password" id="password" type="password">
+      </div>
+
+      <button type="submit" class="form-submit-btn">Log In</button>
+    </div>
+    <p class="signup-link">
+      Have an account?
+      <a class="signup-link link" href="#"> Sign up now</a>
+    </p>
+  </div>`
+}
+loginRender()
 document.querySelector("#app").innerHTML = `
 <a href="#" class="link-logo"><img src="logo.png" alt="" class="logo"></a>
 <div class="nav-child">
