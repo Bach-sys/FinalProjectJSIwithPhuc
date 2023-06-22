@@ -1,25 +1,16 @@
 import "./style.css";
 import javascriptLogo from "./javascript.svg";
-import viteLogo from "/vite.svg";
 import { setupCounter } from "./counter.js";
 
 let Register = document.querySelector("#register");
-document.querySelector("#navbar").innerHTML = `
-<a href="#" class="link-logo"><img src="logo.png" alt="" class="logo"></a>
-<div class="nav-child">
-    <a class="btn" href="#">Home</a>
-    <a class="btn" href="#">About us</a>
-    <a class="btn" href="#">Contact</a>
-    <a class="btn" href="#">Book tour</a>
-</div>
-<div class="register">
-    <button class="btn-re" id="Login" >Log in</button>
-    <button class="btn-re" id="Signup">Sign up</button>
-</div>
+let navMain = document.querySelector("#navbar-main")
+let navMainRender = () =>{
+  navMain.innerHTML = `
 `;
+}
 //!thay đổi ở đây
-let btnlog = document.querySelector("#Login");
-let btnsign = document.querySelector("#Signup");
+let btnlog = document.querySelector("#btn-nav-log");
+let btnsign = document.querySelector("#btn-nav-sign");
 let signupRender = () => {
   Register.innerHTML = `
     <img src="https://i.pinimg.com/564x/60/04/2b/60042bd77056155bd25412fa223c8eeb.jpg" alt="" class="login-img">
@@ -74,18 +65,18 @@ let loginRender = () => {
       <button type="submit" class="form-submit-btn">Log In</button>
     </div>
     <p class="ques-link">
-      Have an account?
-      <button class="register-link link" href="#"> Sign up now</button>
+      Don't have an account?
+      <button class="register-link link" href="#" id="sLog"> Sign up now</button>
     </p>
   </div>`;
 };
-if (btnlog) {
   btnlog.addEventListener("click", () => {
     loginRender();
+
   });
-}
-if (btnsign) {
   btnsign.addEventListener("click", () => {
     signupRender();
+
   });
-}
+
+
