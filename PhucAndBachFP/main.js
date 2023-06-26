@@ -1,8 +1,6 @@
 import "./style.css";
 import javascriptLogo from "./javascript.svg";
 import viteLogo from "/vite.svg";
-import { setupCounter } from "./counter.js";
-
 let Register = document.querySelector("#register");
 document.querySelector("#navbar").innerHTML = `
 <a href="#" class="link-logo"><img src="logo.png" alt="" class="logo"></a>
@@ -71,7 +69,7 @@ let loginRender = () => {
         <input name="password" placeholder="Enter your password" id="password" type="password">
       </div>
 
-      <button type="submit" class="form-submit-btn">Log In</button>
+      <button type="submit" class="form-submit-btn" id = "buttonLogin">Log In</button>
     </div>
     <p class="ques-link">
       Have an account?
