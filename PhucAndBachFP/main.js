@@ -251,10 +251,16 @@ btnhome.addEventListener("click", () => {
   homeTVRender();
 });
 
-window.addEventListener("scroll", function(){
-  let header = document.querySelector("header");
-  header.classList.toggle("sticky", window.scrollY > 0)
-})
+function changeBgc () {
+  let navbar = document.querySelector('header')
+  let scrollValue = window.scrollY;
+  if(scrollValue > 10){
+    navbar.classList.add('BgcNav')
 
+  }else{
+    navbar.classList.remove('BgcNav')
+  }
+}
+window.addEventListener('scroll', changeBgc)
 
 
