@@ -31,36 +31,42 @@ console.log(app);
 //Initialize variable
 let email;
 let password;
-let btnComfirm = document.querySelector("#buttonLogin");
+let ComfirmPass;
+let btnComfirm = document.querySelector("#buttonSignUp");
+console.log(btnComfirm);
 //when the doom are loaded then do the click to submit function
-window.addEventListener("DOMContentLoaded", (event) => {
-  if (btnComfirm) {
-    //add event listener
-    btnComfirm.addEventListener("click", () => {
-      //take the email and pass
-      email = document.querySelector("#email");
-      password = document.querySelector("#password");
-      emailCheck = email.value;
-      let regex = new RegExp("[a-z0-9]+@[a-z]+.[a-z]{2,3}");
-      console.log(emailCheck.length);
-      // if (email.value.length > 7) {
-      //   console.log(btnComfirm);
-      // } else {}
-      if (email.value != "" && password.value != "") {
-        createUserWithEmailAndPassword(auth, email.value, password.value)
-          .then((userCredential) => {
-            // Signed in
-            const user = userCredential.user;
-            console.log(user.email);
-            // ...
-          })
-          .catch((error) => {
-            const errorCode = error.code;
-            const errorMessage = error.message;
-            console.log(errorMessage);
-            // ..
-          });
-      }
-    });
-  }
-});
+// window.addEventListener("DOMContentLoaded", (event) => {
+//   if (btnComfirm) {
+//     console.log("cannot get btn");
+//     //add event listener
+//     btnComfirm.addEventListener("click", () => {
+//       console.log("cannot get btn");
+//       email = document.querySelector("#email");
+//       password = document.querySelector("#password");
+//       ComfirmPass = document.querySelector("#comfirm-password");
+//       emailCheck = email.value;
+//       let regex = new RegExp("[a-z0-9]+@[a-z]+.[a-z]{2,3}");
+//       console.log(email, password, ComfirmPass);
+//       // if (email.value.length > 7) {
+//       //   console.log(btnComfirm);
+//       // } else {}
+//       //! condition to accesss the account
+//       // if (email.value != "" && password.value != "") {
+//       //   //! pass all condition
+//       //   createUserWithEmailAndPassword(auth, email.value, password.value)
+//       //     .then((userCredential) => {
+//       //       // Signed in
+//       //       const user = userCredential.user;
+//       //       console.log(user.email);
+//       //       // ...
+//       //     })
+//       //     .catch((error) => {
+//       //       const errorCode = error.code;
+//       //       const errorMessage = error.message;
+//       //       console.log(errorMessage);
+//       //       // ..
+//       //     }); //! here is finnish the authentication
+//       // }
+//     });
+//   }
+// });
