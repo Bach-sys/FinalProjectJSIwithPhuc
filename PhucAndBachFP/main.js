@@ -283,3 +283,14 @@ btnhome.addEventListener("click", () => {
   homeHSRender();
   homeTVRender();
 });
+
+function changeBgc() {
+  let navbar = document.querySelector("header");
+  let scrollValue = window.scrollY;
+  if (scrollValue > 10) {
+    navbar.classList.add("BgcNav");
+  } else {
+    navbar.classList.remove("BgcNav");
+  }
+}
+window.addEventListener("scroll", changeBgc);
