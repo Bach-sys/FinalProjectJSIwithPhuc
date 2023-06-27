@@ -2,6 +2,7 @@ import "./style.css";
 import javascriptLogo from "./javascript.svg";
 
 let nav = document.querySelector("#nav");
+let navImg = document.querySelector("#nav-main-img")
 let page = document.querySelector("#page");
 let page1 = document.querySelector("#page1");
 let page2 = document.querySelector("#page2");
@@ -10,59 +11,24 @@ let page4 = document.querySelector("#page4");
 
 let navRender = () => {
   nav.innerHTML = `
-  <div id="nav-main-img">
-  <div class="nav-main">
-    <a href="#" class="nav-logo-link"><img class="nav-logo" src="./img/logo.PNG" alt=""></a>
-    <div class="nav-main-child">
-      <button class="btn-nav" id ="home" >Home</button>
-      <button class="btn-nav">About us</button>
-      <button class="btn-nav">Contact</button>
-      <button class="btn-nav">Book tour</button>
-      <button class="btn-nav"id="btn-nav-log">Sign In</button>
-      <button class="btn-nav"id="btn-nav-sign">Sign Up</button>
-    </div>
+  <header>
+  <a href="#" class="nav-logo-link"><img class="nav-logo" src="./img/logo.PNG" alt=""></a>
+  <div class="nav-main-child">
+    <button class="btn-nav" id ="home" >Home</button>
+    <button class="btn-nav">About us</button>
+    <button class="btn-nav">Contact</button>
+    <button class="btn-nav">Book tour</button>
+    <button class="btn-nav"id="btn-nav-log">Sign In</button>
+    <button class="btn-nav"id="btn-nav-sign">Sign Up</button>
   </div>
-  <p>TREKKING</p>
+</header>
+<div id="nav-main-img">
+<p>TREKKING</p>
 </div>
-  `;
+  `
 };
 navRender();
-let navSigninRender = () => {
-  nav.innerHTML = `
-  <div id="nav-main-img1">
-  <div class="nav-main">
-    <a href="#" class="nav-logo-link"><img class="nav-logo" src="./img/logo.PNG" alt=""></a>
-    <div class="nav-main-child">
-      <button class="btn-nav" id ="home" >Home</button>
-      <button class="btn-nav">About us</button>
-      <button class="btn-nav">Contact</button>
-      <button class="btn-nav">Book tour</button>
-      <button class="btn-nav"id="btn-nav-log">Sign In</button>
-      <button class="btn-nav"id="btn-nav-sign">Sign Up</button>
-    </div>
-  </div>
-  <p>Sign In</p>
-</div>
-  `;
-};
-let navSignupRender = () => {
-  nav.innerHTML = `
-  <div id="nav-main-img2">
-  <div class="nav-main">
-    <a href="#" class="nav-logo-link"><img class="nav-logo" src="./img/logo.PNG" alt=""></a>
-    <div class="nav-main-child">
-      <button class="btn-nav" id ="home" >Home</button>
-      <button class="btn-nav">About us</button>
-      <button class="btn-nav">Contact</button>
-      <button class="btn-nav">Book tour</button>
-      <button class="btn-nav"id="btn-nav-log">Sign In</button>
-      <button class="btn-nav"id="btn-nav-sign">Sign Up</button>
-    </div>
-  </div>
-  <p>Sign Up</p>
-</div>
-  `;
-};
+
 let btnlog = document.querySelector("#btn-nav-log");
 let btnsign = document.querySelector("#btn-nav-sign");
 let btnhome = document.querySelector("#home");
@@ -273,11 +239,9 @@ let loginRender = () => {
 };
 btnlog.addEventListener("click", () => {
   loginRender();
-  navSigninRender();
 });
 btnsign.addEventListener("click", () => {
   signupRender();
-  navSignupRender();
 });
 btnhome.addEventListener("click", () => {
   homeTNPDRender();
@@ -286,3 +250,11 @@ btnhome.addEventListener("click", () => {
   homeHSRender();
   homeTVRender();
 });
+
+window.addEventListener("scroll", function(){
+  let header = document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 0)
+})
+
+
+

@@ -13,12 +13,13 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  scroll-behavior: smooth;
 }
 #nav{
   width:100%;
   height:970px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 #nav-main-img{
@@ -30,7 +31,8 @@ body{
   background-position: top left;
   background-attachment: fixed;
   object-fit: cover;
-  filter:brightness(0.85)
+  filter:brightness(0.85);
+  z-index: -1;
 }
 #nav-main-img p{
   font-size: 300px;
@@ -77,13 +79,20 @@ body{
   opacity: 0;
   animation:showtitle 3s ease-in-out 0.7s 1 forwards 
 }
-.nav-main{
+header{
   width: 100%;
   height:12%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  position:fixed;
+  transition: all 2s;
+  top: 1px;
+  z-index:1;
+}
+header .sticky {
+  background-color: #fff;
 }
 .nav-logo-link{
   width:7.5%;
@@ -101,6 +110,7 @@ body{
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  z-index:2;
 }
 .nav-register{
   width:20%;
@@ -128,7 +138,7 @@ body{
 }
 
 .btn-nav:hover {
-  color: white;
+  color: #FCCB14;
   text-decoration:#FCCB14 dashed;
 }
 
