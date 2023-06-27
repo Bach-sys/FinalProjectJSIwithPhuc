@@ -20,11 +20,8 @@ let navRender = () => {
       <button class="btn-nav">Book tour</button>
       <button class="btn-nav"id="btn-nav-log">Sign In</button>
       <button class="btn-nav"id="btn-nav-sign">Sign Up</button>
-    </div>
-  </div>
-  <p>TREKKING</p>
-</div>
-  `;
+    </div> 
+     `;
 };
 navRender();
 let navSigninRender = () => {
