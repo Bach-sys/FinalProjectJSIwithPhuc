@@ -23,7 +23,7 @@ body{
 }
 #nav-main-img{
   width:100%;
-  height:100%;
+  height:970px;
   background-image: url(./img/img-trekk2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,7 +56,7 @@ body{
 }
 #nav-main-img1{
   width:100%;
-  height:100%;
+  height:970px;
   background-image: url(./img/img-trekk3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
