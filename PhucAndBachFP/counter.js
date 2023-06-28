@@ -1,9 +1,12 @@
-export function setupCounter(element) {
-  let counter = 0
-  const setCounter = (count) => {
-    counter = count
-    element.innerHTML = `count is ${counter}`
-  }
-  element.addEventListener('click', () => setCounter(counter + 1))
-  setCounter(0)
-}
+let regex = new RegExp("[a-z0-9]+@[a-z]+.[a-z]{2,3}");
+
+let testEmails = [
+  "notanemail.com",
+  "workingexample@email.com",
+  "another_working@somethingelse.org",
+  "notworking@1.com",
+];
+
+testEmails.forEach((address) => {
+  console.log(regex.test(address));
+});
