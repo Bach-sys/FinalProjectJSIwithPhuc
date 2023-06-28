@@ -2,17 +2,9 @@ import "./style.css";
 import javascriptLogo from "./javascript.svg";
 
 let nav = document.querySelector("#nav");
-<<<<<<< HEAD
-let page = document.querySelector("#page");
-let page1 = document.querySelector("#page1");
-let page2 = document.querySelector("#page2");
-let page3 = document.querySelector("#page3");
-let page4 = document.querySelector("#page4");
-=======
-let mainPage = document.querySelector('#mainPage')
+let mainPage = document.querySelector("#mainPage");
 
 // Render Navbar
->>>>>>> aae63fb3b6341b3b139662fae2cd12b73a911c63
 
 let navRender = () => {
   nav.innerHTML = `
@@ -73,24 +65,23 @@ let btnhome = document.querySelector("#home");
 // Render mainPage là div bao gồm tất cả các page
 
 let mainPageRender = () => {
-  mainPage.innerHTML=`
+  mainPage.innerHTML = `
   <div id="page"></div>
     <div id="page1"></div>
     <div id="page2"></div>
     <div id="page3"></div>
     <div id="page4"></div>
     <div id="footer-page"></div>
-  `
-}
-mainPageRender()
-
+  `;
+};
+mainPageRender();
 
 let page = document.querySelector("#page");
 let page1 = document.querySelector("#page1");
 let page2 = document.querySelector("#page2");
 let page3 = document.querySelector("#page3");
 let page4 = document.querySelector("#page4");
-let footer = document.querySelector("#footer-page")
+let footer = document.querySelector("#footer-page");
 
 // Render tour ở trang Home
 
@@ -269,10 +260,9 @@ let footerRender = () => {
     </div>
   </div>
 </footer>
-  `
-}
-footerRender()
-
+  `;
+};
+footerRender();
 
 // Render trang Sign in, Sign up
 
@@ -340,7 +330,6 @@ let loginRender = () => {
   </div>`;
 };
 
-
 // Chức năng click của từng button
 
 btnlog.addEventListener("click", () => {
@@ -359,27 +348,14 @@ btnhome.addEventListener("click", () => {
   homeTVRender();
 });
 
-<<<<<<< HEAD
-function changeBgc() {
-  let navbar = document.querySelector("header");
-=======
-
 // Navbar effect
 
-window.addEventListener('scroll', () =>{
-  let navbar = document.querySelector('header')
->>>>>>> aae63fb3b6341b3b139662fae2cd12b73a911c63
-  let scrollValue = window.scrollY;
-  if (scrollValue > 10) {
-    navbar.classList.add("BgcNav");
-  } else {
-    navbar.classList.remove("BgcNav");
-  }
-<<<<<<< HEAD
-}
-window.addEventListener("scroll", changeBgc);
-=======
-})
-
-
->>>>>>> aae63fb3b6341b3b139662fae2cd12b73a911c63
+// window.addEventListener("scroll", () => {
+//   let navbar = document.querySelector("header");
+//   let scrollValue = window.scrollY;
+//   if (scrollValue > 10) {
+//     navbar.classList.add("BgcNav");
+//   } else {
+//     navbar.classList.remove("BgcNav");
+//   }
+// });
