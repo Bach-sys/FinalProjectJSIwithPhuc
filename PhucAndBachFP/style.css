@@ -16,10 +16,17 @@ body{
   align-items: center;
   scroll-behavior: smooth;
 }
+#homePage{
+  width:100%;
+  height:auto;
+}
 #mainPage{
   width:100%;
-  height:6000px;
-  background-color: cyan;
+  height:auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
 }
 #nav{
   width:100%;
@@ -74,6 +81,29 @@ body{
   filter:brightness(0.85)
 }
 #nav-main-img1 p{
+  font-size: 300px;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #fff;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 300px;
+  opacity: 0;
+  animation:showtitle 3s ease-in-out 0.7s 1 forwards 
+}
+#nav-main-img2{
+  width:100%;
+  height:970px;
+  background-image: url(./img/img-trekk.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  background-attachment: fixed;
+  object-fit: cover;
+  filter:brightness(0.85)
+}
+#nav-main-img2 p{
   font-size: 300px;
   font-family: 'Bebas Neue', sans-serif;
   color: #fff;
@@ -692,4 +722,98 @@ header{
 }
 .svg{
   color: #fff;
+}
+
+
+
+
+
+                      /* BOOK TOUR PAGE */
+#tourPage{
+  width: 100%;
+  height:auto;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./img/footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  background-attachment: fixed;
+  filter:brightness(0.85)
+}
+.bookTour{
+  width: 85%;
+  height: 760px;
+  margin-top: 50px;
+  background-color: #fff;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+#tourPage h1{
+  font-size: 60px;
+  margin-top: 60px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+.tourContainer{
+  width:100%;
+  height: 100%;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.tourProduct{
+  width:25%;
+  height:500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tourProductimg{
+  width: 100%;
+  height: 60%;
+  margin-bottom: 20px;
+}
+.tourProductdes{
+  width:100%;
+  height:35%;
+}
+.tourProductdes h2{
+  font-size: 30px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.tourProductdes p{
+  font-size: 20px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.tourProductdes-child{
+  width: 100%;
+  font-size:25px;
+  height:auto;
+  display: flex;
+  flex-direction: row;
+}
+.tourProductdes-child i{
+  margin-right: 10px;
+  font-size:25px;
+}
+.tourProductsubmit{
+  width: 100%;
+  height:10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.tourProduct-btn{
+  width: 40%;
+  height:100%;
+  font-size: 15px;
+  border-radius: 0;
+  font-weight: 700;
+  border: 2px solid #000;
+  font-family: 'Barlow Condensed', sans-serif;
+  background-color: transparent;
 }
