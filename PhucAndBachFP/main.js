@@ -1,5 +1,5 @@
 import "./style.css";
-import javascriptLogo from "./javascript.svg";
+
 
 let nav = document.querySelector("#nav");
 let mainPage = document.querySelector('#mainPage')
@@ -414,11 +414,11 @@ let signupRender = () => {
         <input name="password" placeholder="Enter your password agian" id="confirm-password" type="password">
       </div>
 
-      <button type="submit" class="form-submit-btn">Sign up</button>
+      <button type="submit" class="form-submit-btn" id = "btn-SignUpComF">Sign up</button>
     </div>
     <p class="ques-link">
       Have an account?
-      <button class="register-link link"> Log In now</button>
+      <button class="register-link link" id=""> Log In now</button>
     </p>
   </div>
 </div>`;
@@ -443,7 +443,7 @@ let loginRender = () => {
         <input name="password" placeholder="Enter your password" id="password" type="password">
       </div>
 
-      <button type="submit" class="form-submit-btn">Log In</button>
+      <button type="submit" class="form-submit-btn" id="btn-signIn-submit">Log In</button>
     </div>
     <p class="ques-link">
       Don't have an account?
@@ -486,7 +486,7 @@ window.addEventListener('scroll', () =>{
   }
 })
 
-s
+
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -521,13 +521,6 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 //khởi tạo biến xác thực firebase gồm phần giả lập và hệ thống đăng nhập
 const auth = getAuth(app);
-console.log(app);
-
-
-
-
-
-
 
 //Initialize variable
 let email;
@@ -539,31 +532,30 @@ let SignUp = document.querySelector("#btn-nav-sign");
 // when the doom are loaded then do the click to submit function
 window.addEventListener("DOMContentLoaded", (event) => {
  
- 
   if (SignUp) {
    
-
     //add event listener
     SignUp.addEventListener("click", () => {
       
-      console.log("cannot get btn");
       let btnComfirm = document.querySelector("#btn-SignUpComF")
       email = document.querySelector("#email");
       password = document.querySelector("#password");
       ComfirmPass = document.querySelector("#confirm-password");
       let regex = new RegExp("[a-z0-9]+@[a-z]+.[a-z]{2,3}");
       btnComfirm.addEventListener("click" , ()=> {
-        
+        console.log("cannot get btn");
          if (email.value.length > 7 ) {
           
            if(regex.test(email.value)){
-           
+           if(password.value == ComfirmPass.value){
+
+
             createUserWithEmailAndPassword(auth, email.value, password.value)
             .then((userCredential) => {
-              // Signed in
+              
               const user = userCredential.user;
               console.log(user.email);
-              // ...
+              
                btnlog.style.display = "none"
                btnsign.style.display = "none"
                mainPageRender()
@@ -574,21 +566,52 @@ window.addEventListener("DOMContentLoaded", (event) => {
               const errorMessage = error.message;
               console.log(errorMessage);
               alert(errorMessage)
-              // ..
-            }); //! here is finnish the authentication
+            });
+           
+          }else {
+            alert("Password does not match")
+          }
+             //! here is finnish the authentication
            }else{
             alert("email is invalid")
            }
          } else {
           alert("email mush be 7 chareacters")
          }
-        // ! condition to accesss the account
-        // if (email.value != "" && password.value != "") {
-        //   //! pass all condition
-          
-        // }
+       // ! condition to accesss the account
+          //! pass all condition
       })
+      
+      
     });
   }
 });
 
+
+
+
+btnlog.addEventListener("click", () => {
+  window.addEventListener("DOMContentLoaded",()=>{
+    email = document.querySelector("#email")
+    password = document.querySelector("#password")
+    let btncomfirmSignin = document.querySelector("#btn-signIn-submit")
+    btncomfirmSignin.addEventListener("click",()=>{
+console.log(email,password)
+
+      signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in 
+        const user = userCredential.user;
+        console.log("SUccessfully")
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        alert(errorMessage)
+      });
+        
+
+    })
+    
+  })
+});
