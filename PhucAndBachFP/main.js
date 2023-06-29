@@ -35,7 +35,13 @@ let navImghomeRender = () => {
   `
 }
 navImghomeRender()
-
+let navImgtourRender = () => {
+  navImg.innerHTML = `
+  <div id="nav-main-img3">
+    <p>Book Tour</p>
+  </div>
+  `
+};
 let navImgsigninRender = () => {
   navImg.innerHTML = `
   <div id="nav-main-img1">
@@ -185,8 +191,6 @@ let mainPageRender = () => {
       </div>
     </div>
   </div>
-    </div>
-    <div id="footer-page">
     </div>
   </div>
   `
@@ -345,12 +349,11 @@ let bookTourRender = () => {
   </div>
 </div>
 
-<div id="footer-page"></div>
   `
 }
 
 // Render footer
-let footer = document.querySelector("#footer-page")
+let footer = document.querySelector("#footer")
 let footerRender = () => {
   footer.innerHTML = `
   <footer class="footer">
@@ -376,13 +379,14 @@ let footerRender = () => {
     <div class="ft-contact-child">
       <i class="bi bi-envelope-fill"></i>
       <p>nhoangphuc960@gmail.com</p>
-      
     </div>
   </div>
 </footer>
   `
 }
 footerRender()
+
+
 // Render trang Sign in, Sign up
 
 let signupRender = () => {
@@ -463,11 +467,10 @@ btnsign.addEventListener("click", () => {
 btnhome.addEventListener("click", () => {
 mainPageRender()
 navImghomeRender()
-footerRender()
 });
 btnbooktour.addEventListener("click", () => {
   bookTourRender()
-  footerRender()
+  navImgtourRender()
   });
 
 // Navbar effect
