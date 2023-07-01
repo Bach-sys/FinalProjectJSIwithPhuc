@@ -22,7 +22,7 @@ body{
 }
 #mainPage{
   width:100%;
-  height:auto;
+  height:fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,7 +118,7 @@ body{
 #nav-main-img3{
   width:100%;
   height:970px;
-  background-image: url(./img/img-trekk.jpg);
+  background-image: url(./img/book-tour.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
@@ -127,6 +127,34 @@ body{
   filter:brightness(0.85)
 }
 #nav-main-img3 p{
+
+  width: 100%;
+  height: auto;
+  font-size: 300px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #fff;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 300px;
+  opacity: 0;
+  animation:showtitle 3s ease-in-out 0.7s 1 forwards 
+}
+#nav-main-img4{
+  width:100%;
+  height:970px;
+  background-image: url(./img/about-us.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  background-attachment: fixed;
+  object-fit: cover;
+  filter:brightness(0.85)
+}
+#nav-main-img4 p{
 
   width: 100%;
   height: auto;
@@ -153,11 +181,18 @@ header{
   position:fixed;
   transition: background-color 0.4s ease-in-out;
   top: 0;
-  z-index:1;
+  z-index:2;
 }
 .BgcNav {
   background-color: #fff;
   opacity: 0.98;
+  border-bottom: 2px solid #000;
+  animation: showfixed 1s ease-in-out 1 forwards;
+}
+@keyframes showfixed {
+  from{
+    top: -100px;
+  }
 }
 .nav-logo-link{
   width:7.5%;
@@ -214,7 +249,7 @@ header{
 .register{
   margin-top: 40px;
   width: 100%;
-  height:80%;
+  height:65%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -685,11 +720,10 @@ header{
 
 
 
-
+                                      /* FOOTER */
 #footer{
   width:100%;
   height:500px;
-  position: relative;
 }
 .footer{
   width: 100%;
@@ -760,7 +794,7 @@ header{
                       /* BOOK TOUR PAGE */
 #tourPage{
   width: 100%;
-  height:auto;
+  height: 3500px;
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -855,3 +889,148 @@ header{
   font-family: 'Barlow Condensed', sans-serif;
   background-color: transparent;
 }
+
+
+
+
+
+
+
+
+
+                                        /* ABOUT US */
+#aboutUs{
+  width:100%;
+  height:970px;
+  background-image: url(./img/about-us-page.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.aboutUs-Container{
+  width: 85%;
+  height:90%;
+  margin-top: 50px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutUs-bg{
+  background-color: #fff;
+  opacity: 0.9;
+  width: 90%;
+  height:95%;
+  position: absolute;
+  z-index: 0;
+  right: 5%;
+}
+.aboutUs-Container h1{
+  font-size: 70px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.aboutUs-Container h2{
+  font-size: 40px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.aboutUs-Container p{
+  font-size: 25px;
+  font-family: 'Barlow Condensed', sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.aboutUs-child{
+  margin-top: 30px;
+  width:100%;
+  height:80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.aboutUs-inform{
+  width:30%;
+  height:80%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./img/img-product.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  background-attachment: fixed;
+  filter:brightness(0.85);
+  box-shadow: -9px 9px 18px #5a5a5a,
+  9px -9px 18px #ffffff;
+  padding-top: 20px;
+  padding-left: 15px;
+}
+.aboutUs-inform:hover{
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px 2px #5a5a5a;
+}
+
+
+
+
+
+
+
+                          /* SCROLL ANIMATION */
+
+
+.showtotop{
+  opacity: 0;
+}
+.active .showtotop{
+  animation: showtop 2s ease-in-out 1 forwards;
+}
+
+@keyframes showtop {
+  from{
+    opacity: 0;
+    transform:  translate(0, 100px);
+  }
+  to{
+    opacity:  1 ;
+    transform: translate(0,0)
+  }
+}
+
+.delay-02{
+  animation-delay: 0.1s!important;
+}
+.delay-04{
+  animation-delay: 0.2s!important;
+}
+.delay-06{
+  animation-delay: 0.4s!important;
+}
+.delay-08{
+  animation-delay: 0.6s!important;
+}
+.delay-10{
+  animation-delay: 0.8s!important;
+}
+.delay-12{
+  animation-delay: 1s!important;
+}
+.delay-14{
+  animation-delay: 1.2s!important;
+}
+.delay-16{
+  animation-delay: 1.4s!important;
+}
+.delay-18{
+  animation-delay: 1.6s!important;
+}
+.delay-2{
+  animation-delay: 1.8s!important;
+}
+
