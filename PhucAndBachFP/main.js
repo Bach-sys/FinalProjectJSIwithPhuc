@@ -12,7 +12,7 @@ let navRender = () => {
   <div class="nav-main-child">
     <button class="btn-nav" id ="home" >Home</button>
     <button class="btn-nav" id="aboutus" >About us</button>
-    <button class="btn-nav">Contact</button>
+    <button class="btn-nav" id="contact" >Contact</button>
     <button class="btn-nav" id="bookTour" >Book tour</button>
     <button class="btn-nav"id="btn-nav-log">Sign In</button>
     <button class="btn-nav"id="btn-nav-sign">Sign Up</button>
@@ -35,6 +35,8 @@ let navImghomeRender = () => {
   `
 }
 navImghomeRender()
+
+
 let navImgtourRender = () => {
   navImg.innerHTML = `
   <div id="nav-main-img3">
@@ -49,7 +51,6 @@ let navImgsigninRender = () => {
   </div>
   `
 };
-
 let navImgsignupRender = () => {
   navImg.innerHTML = `
   <div id="nav-main-img2">
@@ -64,12 +65,20 @@ let navImgaboutusRender = () => {
   </div>
   `
 };
+let navImgcontactRender = () => {
+  navImg.innerHTML = `
+  <div id="nav-main-img5">
+    <p>Contact</p>
+  </div>
+  `
+};
 
 let btnlog = document.querySelector("#btn-nav-log");
 let btnsign = document.querySelector("#btn-nav-sign");
 let btnhome = document.querySelector("#home");
 let btnbooktour = document.querySelector("#bookTour")
 let btnaboutus = document.querySelector("#aboutus")
+let btncontact =document.querySelector("#contact")
 
 
 
@@ -210,15 +219,17 @@ mainPageRender()
 
 
 
+
+
 // Render trang Book Tour 
 
 let bookTourRender = () => {
   mainPage.innerHTML = `
   <div id="tourPage">
-  <h1>HÀNH TRÌNH TREKKING CÙNG THE HAPPY TRIP</h1>
+  <h1 class="showtotop" >HÀNH TRÌNH TREKKING CÙNG THE HAPPY TRIP</h1>
   <div class="bookTour item">
     <div class="tourContainer">
-      <div class="tourProduct">
+      <div class="tourProduct showtotop delay-02">
         <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
         <div class="tourProductdes">
           <h2>Tà năng phan dũng</h2>
@@ -241,7 +252,7 @@ let bookTourRender = () => {
           <button class="tourProduct-btn">XEM CHI TIẾT</button>
         </div>
       </div>
-      <div class="tourProduct">
+      <div class="tourProduct showtotop delay-04">
         <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
         <div class="tourProductdes">
           <h2>Tà năng phan dũng</h2>
@@ -264,7 +275,7 @@ let bookTourRender = () => {
           <button class="tourProduct-btn">XEM CHI TIẾT</button>
         </div>
       </div>
-      <div class="tourProduct">
+      <div class="tourProduct showtotop delay-06">
       <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
       <div class="tourProductdes">
         <h2>Tà năng phan dũng</h2>
@@ -287,7 +298,7 @@ let bookTourRender = () => {
         <button class="tourProduct-btn">XEM CHI TIẾT</button>
       </div>
     </div>
-    <div class="tourProduct">
+    <div class="tourProduct showtotop delay-08">
       <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
       <div class="tourProductdes">
         <h2>Tà năng phan dũng</h2>
@@ -310,7 +321,7 @@ let bookTourRender = () => {
         <button class="tourProduct-btn">XEM CHI TIẾT</button>
       </div>
     </div>
-    <div class="tourProduct">
+    <div class="tourProduct showtotop delay-10">
     <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
     <div class="tourProductdes">
       <h2>Tà năng phan dũng</h2>
@@ -333,7 +344,7 @@ let bookTourRender = () => {
       <button class="tourProduct-btn">XEM CHI TIẾT</button>
     </div>
   </div>
-  <div class="tourProduct">
+  <div class="tourProduct showtotop delay-12">
   <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
   <div class="tourProductdes">
     <h2>Tà năng phan dũng</h2>
@@ -356,7 +367,7 @@ let bookTourRender = () => {
     <button class="tourProduct-btn">XEM CHI TIẾT</button>
   </div>
 </div>
-<div class="tourProduct">
+<div class="tourProduct showtotop delay-12">
   <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
   <div class="tourProductdes">
     <h2>Tà năng phan dũng</h2>
@@ -379,7 +390,7 @@ let bookTourRender = () => {
     <button class="tourProduct-btn">XEM CHI TIẾT</button>
   </div>
 </div>
-<div class="tourProduct">
+<div class="tourProduct showtotop delay-14">
 <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
 <div class="tourProductdes">
   <h2>Tà năng phan dũng</h2>
@@ -402,7 +413,7 @@ let bookTourRender = () => {
   <button class="tourProduct-btn">XEM CHI TIẾT</button>
 </div>
 </div>
-<div class="tourProduct">
+<div class="tourProduct showtotop delay-16">
 <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
 <div class="tourProductdes">
   <h2>Tà năng phan dũng</h2>
@@ -425,7 +436,7 @@ let bookTourRender = () => {
   <button class="tourProduct-btn">XEM CHI TIẾT</button>
 </div>
 </div>
-      <div class="tourProduct">
+      <div class="tourProduct showtotop delay-18">
         <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
         <div class="tourProductdes">
           <h2>Tà năng phan dũng</h2>
@@ -639,6 +650,9 @@ let bookTourRender = () => {
 }
 
 
+
+
+
 // Render trang About Us
 
 let aboutUsRender = () => {
@@ -677,6 +691,65 @@ let aboutUsRender = () => {
         <div class="aboutUs-bg"></div>
       </div>`
 }
+
+
+
+
+
+//Render trang Contact
+let contactRender = () =>{
+  mainPage.innerHTML = `
+  <div id="contactPage">
+  <div class="contactContainer iten">
+    <div class="formContact item">
+      <h1 class="showtotop" >Contact Us</h1>
+      <p class="showtotop delay-02">Họ</p>
+      <input class="showtotop delay-04" type="text" placeholder="Họ">
+      <p class="showtotop delay-06">Tên</p>
+      <input class="showtotop delay-08" type="text" placeholder="Tên">
+      <p class="showtotop delay-10">Email</p>
+      <input class="showtotop delay-12" type="email" placeholder="Email">
+      <p class="showtotop delay-14">Số điện thoại</p>
+      <input class="showtotop delay-16" type="text" placeholder="Số điện thoại">
+      <p class="showtotop delay-18">Lời nhắn</p>
+      <input class="showtotop delay-20" type="text" id="message" placeholder="Nhắn gửi">
+      <button class="showtotop delay-22">Gửi</button>
+    </div>
+    <div class="ourContact item">
+      <div class="formOur item showtotop">
+        <img class="showtotop delay-02" src="./img/sign-up.jpg" alt="">
+        <div class="informContact">
+          <p class="showtotop delay-04">Tên: Nguyễn Hoàng Phúc</p>
+          <p class="showtotop delay-06">Email: nhoangphuc960@gmail.com</p>
+          <p class="showtotop delay-08">Số điện thoại: 0906785477</p>
+        </div>
+      </div>
+      <div class="formOur item showtotop">
+        <img class="showtotop delay-12" src="./img/sign-in.jpg" alt="">
+        <div class="informContact">
+          <p class="showtotop delay-14">Tên: Lê Hoàng Bách</p>
+          <p class="showtotop delay-16">Email: Bachloppho1202@gmail.com</p>
+          <p class="showtotop delay-18">Số điện thoại: 0838673979</p>
+        </div>
+      </div>
+      <div class="otherContact item">
+        <h1 class="showtotop delay-20">Other way to contact us</h1>
+        <div class="otherContact-child">
+          <img class="showtotop delay-20"src="./img/sign-in.jpg" alt="">
+          <img class="showtotop delay-20"src="./img/sign-in.jpg" alt="">
+          <img class="showtotop delay-20"src="./img/sign-in.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contactBg"></div>
+</div>
+  `
+}
+
+
+
+
 
 // Render trang Sign in, Sign up
 
@@ -798,8 +871,8 @@ btnsign.addEventListener("click", () => {
   footerRender()
 });
 btnhome.addEventListener("click", () => {
-mainPageRender()
-navImghomeRender()
+  mainPageRender()
+  navImghomeRender()
 });
 btnbooktour.addEventListener("click", () => {
   bookTourRender()
@@ -811,7 +884,11 @@ btnaboutus.addEventListener("click", () => {
   navImgaboutusRender()
   footerRender()
     });
-
+btncontact.addEventListener("click", () => {
+  contactRender();
+  navImgcontactRender()
+  footerRender()
+})
 
 
 
