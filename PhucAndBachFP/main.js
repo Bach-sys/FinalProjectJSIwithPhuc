@@ -14,8 +14,8 @@ let navRender = () => {
     <button class="btn-nav"><a id="aboutus" href="#">About us</a></button>
     <button class="btn-nav"><a id="contact" href="#">Contact</a></button>
     <button class="btn-nav"><a id="bookTour" href="#">Book tour</a></button>
-    <button class="btn-nav"><a id="btn-nav-log" href="#">Sign In</a></button>
-    <button class="btn-nav"><a id="btn-nav-sign" href="#">Sign Up</a></button>
+    <button class="btn-nav" id="btn-Sign"><a id="btn-nav-log" href="#">Sign In</a></button>
+    <button class="btn-nav" id="btn-Sign"><a id="btn-nav-sign" href="#">Sign Up</a></button>
   </div>
 </header>
 <div id="nav-img"></div>
@@ -108,6 +108,7 @@ let mainPageRender = () => {
     <img class="des-img showtotop delay-12" src="./img/TNPD.jpg" alt="">
     <img class="des-img showtotop delay-14" src="./img/TNPD2.jpg" alt="">
     <img class="des-img showtotop delay-16" src="./img/TNPD3.jpg" alt="">
+    
     </div>
   </div>
 </div>
@@ -219,7 +220,7 @@ mainPageRender()
 
 
 
-
+//!magic
 
 // Render trang Book Tour 
 
@@ -330,6 +331,7 @@ let bookTourRender = () => {
         <i class="bi bi-pin-map-fill"></i>
         <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
       </div>
+
       <div class="tourProductdes-child">
         <i class="bi bi-clock-fill"></i>
         <p>Thời gian: 2 ngày 2 đêm</p>
@@ -441,6 +443,7 @@ let bookTourRender = () => {
         <div class="tourProductdes">
           <h2>Tà năng phan dũng</h2>
           <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
+
           <div class="tourProductdes-child">
             <i class="bi bi-pin-map-fill"></i>
             <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
@@ -552,6 +555,7 @@ let bookTourRender = () => {
         </div>
       </div>
       <div class="tourProduct">
+
       <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
       <div class="tourProductdes">
         <h2>Tà năng phan dũng</h2>
@@ -663,7 +667,8 @@ let aboutUsRender = () => {
           <h1 class="showtotop delay-02">GIỚI THIỆU VỀ THE HAPPY TRIP</h1>
           <p class="showtotop delay-04">
             The Happy Trip là đơn vị chuyên tổ chức các tour du lịch mạo hiểm ở Việt Nam gắn liền với trải nghiệm thiên nhiên. Hiện nay, The Happy Trip đang là đơn vị tổ chức các tour trekking, climbing, camping kết hợp với các môn thể thao mạo hiểm như leo vách đá, chèo thuyền hơi, chèo kayak, zipline và nhận được sự tin tưởng và yêu thích của các khách hàng hàng đầu miền Nam. 
-          </p>
+
+            </p>
           <p class="showtotop delay-04">
             Với ba giá trị cốt lõi An toàn – Chuyên nghiệp – Bền Vững, The Happy Trip luôn tập trung vào xây dựng chất lượng chuyên môn của đội ngũ, để mang đến cho khách hàng những trải nghiệm đáng giá mà vẫn đảm bảo an toàn, kĩ thuật. Xem thiên nhiên là nguồn sống, Tổ Ong luôn kết hợp với các Vườn Quốc Gia và địa phương để cùng xây dựng cộng đồng bền vững với thiên nhiên và đời sống của người dân địa phương. 
           </p>
@@ -774,7 +779,8 @@ let signupRender = () => {
       </div>
 
       <div class="form-group item">
-        <label class="showtotop delay-10" for="password">Confirm Password</label>
+
+      <label class="showtotop delay-10" for="password">Confirm Password</label>
         <input class="showtotop delay-12" name="password" placeholder="Enter your password agian" id="confirm-password" type="password">
       </div>
 
@@ -885,13 +891,12 @@ btnaboutus.addEventListener("click", () => {
   navImgaboutusRender()
   footerRender()
     });
-btncontact.addEventListener("click", () => {
+
+    btncontact.addEventListener("click", () => {
   contactRender();
   navImgcontactRender()
   footerRender()
 })
-
-
 
 // Navbar effect
 
@@ -926,6 +931,7 @@ import {
   signInWithEmailAndPassword,
   signOut,
 } from "firebase/auth";
+import { getFirestore, collection, addDoc } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -946,7 +952,7 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 //khởi tạo biến xác thực firebase gồm phần giả lập và hệ thống đăng nhập
 const auth = getAuth(app);
-
+const db = getFirestore(app);
 //Initialize variable
 let email;
 let password;
@@ -996,7 +1002,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
           }else {
             alert("Password does not match")
           }
-             //! here is finnish the authentication
+  
+          //! here is finnish the authentication
            }else{
             alert("email is invalid")
            }
@@ -1022,13 +1029,20 @@ window.addEventListener("DOMContentLoaded",()=>{
       let regex = new RegExp("[a-z0-9]+@[a-z]+.[a-z]{2,3}");
       btncomfirmSignin.addEventListener("click",()=>{
    
-  
-        signInWithEmailAndPassword(auth, email.value, password.value)
+        if (email.value.length > 7 ) {
+          if(regex.test(email.value)){
+          if(password.value.length > 6 ){
+
+
+            signInWithEmailAndPassword(auth, email.value, password.value)
         .then((userCredential) => {
           // Signed in 
           const user = userCredential.user;
-          
-          console.log(user)
+          btnlog.style.display = "none"
+          btnsign.style.display = "none"
+          document.querySelector("#btn-Sign").style.display = "none"
+          mainPageRender()
+          navImghomeRender()
         })
         .catch((error) => {
           const errorCode = error.code;
@@ -1036,40 +1050,16 @@ window.addEventListener("DOMContentLoaded",()=>{
           alert(errorMessage)
         });
 
-
-
-
-
-
-        // if (email.value.length > 7 ) {
-          
-        //   if(regex.test(email.value)){
-        //   if(password.value != ""){
-
-
-        //     signInWithEmailAndPassword(auth, email.value, password.value)
-        // .then((userCredential) => {
-        //   // Signed in 
-        //   const user = userCredential.user;
-          
-        //   console.log(user)
-        // })
-        // .catch((error) => {
-        //   const errorCode = error.code;
-        //   const errorMessage = error.message;
-        //   alert(errorMessage)
-        // });
-
-        //  }else {
-        //    alert("Password does not match")
-        //  }
-        //     //! here is finnish the authentication
-        //   }else{
-        //    alert("email is invalid")
-        //   }
-        // } else {
-        //  alert("email mush be 7 chareacters")
-        // }
+         }else {
+           alert("Password does not match")
+         }
+            //! here is finnish the authentication
+          }else{
+           alert("email is invalid")
+          }
+        } else {
+         alert("email mush be 7 chareacters")
+        }
           
   
       })
