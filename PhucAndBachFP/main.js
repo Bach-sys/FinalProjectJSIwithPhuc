@@ -75,6 +75,13 @@ let navImgcontactRender = () => {
   </div>
   `
 };
+let navImgcartRender = () => {
+  navImg.innerHTML = `
+  <div id="nav-main-img6">
+    <p>SUBCRISED</p>
+  </div>
+  `
+};
 
 let btnlog = document.querySelector("#btn-nav-log");
 let btnsign = document.querySelector("#btn-nav-sign");
@@ -82,7 +89,7 @@ let btnhome = document.querySelector("#home");
 let btnbooktour = document.querySelector("#bookTour")
 let btnaboutus = document.querySelector("#aboutus")
 let btncontact =document.querySelector("#contact")
-
+let btncart = document.querySelector("#cart")
 
 
 // Render mainPage là div bao gồm tất cả các page
@@ -733,7 +740,6 @@ let aboutUsRender = () => {
 
 
 
-
 //Render trang Contact
 let contactRender = () =>{
   mainPage.innerHTML = `
@@ -786,7 +792,138 @@ let contactRender = () =>{
 }
 
 
-
+//Render trang Cart
+let cartRender = () => {
+  mainPage.innerHTML=`
+  <div id="cart">
+  <div class="cartContainer item">
+    <h1 class="showtotop" >SUBCRISED</h1>
+    <div class="cartProduct item">
+      <div class="productSubcrised item showtotop delay-02">
+        <img src="./img/about-us.jpg" alt="">
+        <div class="subProduct-inform">
+          <h2>Tà năng phan dũng</h2>
+          <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35km</p>
+          <div class="subProduct-child">
+            <i class="bi bi-pin-map-fill"></i>
+            <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
+          </div>
+          <div class="subProduct-child">
+            <i class="bi bi-clock-fill"></i>
+            <p>Thời gian: 2 ngày 2 đêm</p>
+          </div>
+          <div class="subProduct-child">
+            <i class="bi bi-trophy-fill"></i>
+            <p>Độ khó: 7/10</p>
+          </div>
+          <h3>Đã đăng ký</h3>
+        </div>
+      </div>
+      <div class="productSubcrised item showtotop delay-04">
+        <img src="./img/about-us.jpg" alt="">
+        <div class="subProduct-inform">
+          <h2>Tà năng phan dũng</h2>
+          <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35km</p>
+          <div class="subProduct-child">
+            <i class="bi bi-pin-map-fill"></i>
+            <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
+          </div>
+          <div class="subProduct-child">
+            <i class="bi bi-clock-fill"></i>
+            <p>Thời gian: 2 ngày 2 đêm</p>
+          </div>
+          <div class="subProduct-child">
+            <i class="bi bi-trophy-fill"></i>
+            <p>Độ khó: 7/10</p>
+          </div>
+          <h3>Đã đăng ký</h3>
+        </div>
+      </div>
+      <div class="productSubcrised item showtotop delay-06">
+        <img src="./img/about-us.jpg" alt="">
+        <div class="subProduct-inform">
+          <h2>Tà năng phan dũng</h2>
+          <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35km</p>
+          <div class="subProduct-child">
+            <i class="bi bi-pin-map-fill"></i>
+            <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
+          </div>
+          <div class="subProduct-child">
+            <i class="bi bi-clock-fill"></i>
+            <p>Thời gian: 2 ngày 2 đêm</p>
+          </div>
+          <div class="subProduct-child">
+            <i class="bi bi-trophy-fill"></i>
+            <p>Độ khó: 7/10</p>
+          </div>
+          <h3>Đã đăng ký</h3>
+        </div>
+      </div>
+      <div class="productSubcrised item showtotop delay-08">
+        <img src="./img/about-us.jpg" alt="">
+        <div class="subProduct-inform">
+          <h2>Tà năng phan dũng</h2>
+          <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35km</p>
+          <div class="subProduct-child">
+            <i class="bi bi-pin-map-fill"></i>
+            <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
+          </div>
+          <div class="subProduct-child">
+            <i class="bi bi-clock-fill"></i>
+            <p>Thời gian: 2 ngày 2 đêm</p>
+          </div>
+          <div class="subProduct-child">
+            <i class="bi bi-trophy-fill"></i>
+            <p>Độ khó: 7/10</p>
+          </div>
+          <h3>Đã đăng ký</h3>
+        </div>
+      </div>
+      <div class="productSubcrised item showtotop delay-10">
+        <img src="./img/about-us.jpg" alt="">
+        <div class="subProduct-inform">
+          <h2>Tà năng phan dũng</h2>
+          <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35km</p>
+          <div class="subProduct-child">
+            <i class="bi bi-pin-map-fill"></i>
+            <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
+          </div>
+          <div class="subProduct-child">
+            <i class="bi bi-clock-fill"></i>
+            <p>Thời gian: 2 ngày 2 đêm</p>
+          </div>
+          <div class="subProduct-child">
+            <i class="bi bi-trophy-fill"></i>
+            <p>Độ khó: 7/10</p>
+          </div>
+          <h3>Đã đăng ký</h3>
+        </div>
+      </div>
+      <div class="productSubcrised item showtotop delay-12">
+        <img src="./img/about-us.jpg" alt="">
+        <div class="subProduct-inform">
+          <h2>Tà năng phan dũng</h2>
+          <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35km</p>
+          <div class="subProduct-child">
+            <i class="bi bi-pin-map-fill"></i>
+            <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
+          </div>
+          <div class="subProduct-child">
+            <i class="bi bi-clock-fill"></i>
+            <p>Thời gian: 2 ngày 2 đêm</p>
+          </div>
+          <div class="subProduct-child">
+            <i class="bi bi-trophy-fill"></i>
+            <p>Độ khó: 7/10</p>
+          </div>
+          <h3>Đã đăng ký</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  `
+}
 
 
 // Render trang Sign in, Sign up
@@ -928,7 +1065,11 @@ btncontact.addEventListener("click", () => {
   navImgcontactRender()
   footerRender()
 })
-
+btncart.addEventListener("click", () => {
+  cartRender();
+  navImgcartRender()
+  footerRender()
+})
 
 
 // Navbar effect
