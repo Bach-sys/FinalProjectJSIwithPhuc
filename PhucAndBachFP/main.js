@@ -1,6 +1,5 @@
 import "./style.css";
 
-
 let nav = document.querySelector("#nav");
 let mainPage = document.querySelector('#mainPage')
 // Render Navbar
@@ -14,8 +13,8 @@ let navRender = () => {
     <button class="btn-nav"><a id="aboutus" href="#">About us</a></button>
     <button class="btn-nav"><a id="contact" href="#">Contact</a></button>
     <button class="btn-nav"><a id="bookTour" href="#">Book tour</a></button>
-    <button class="btn-nav" id="btn-Sign"><a id="btn-nav-log" href="#">Sign In</a></button>
-    <button class="btn-nav" id="btn-Sign"><a id="btn-nav-sign" href="#">Sign Up</a></button>
+    <button class="btn-nav"><a id="btn-nav-log" href="#">Sign In</a></button>
+    <button class="btn-nav"><a id="btn-nav-sign" href="#">Sign Up</a></button>
   </div>
 </header>
 <div id="nav-img"></div>
@@ -87,6 +86,41 @@ let btncontact =document.querySelector("#contact")
 let mainPageRender = () => {
   mainPage.innerHTML=`
   <div id="homePage">
+  <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./img/img-trekk3.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./img/img-trekk.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./img/book-tour.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./img/about-us.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./img/contact-page.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    </div>
     <div id="page">
     <div class="introduce-page">
   <div class="introduce">
@@ -846,7 +880,7 @@ let footerRender = () => {
     </div>
     <div class="ft-contact-child">
       <i class="bi bi-telephone-fill"></i>
-      <p>0906785477</p>
+      <p>0838673979</p>
     </div>
     <div class="ft-contact-child">
       <i class="bi bi-envelope-fill"></i>
@@ -854,7 +888,7 @@ let footerRender = () => {
     </div>
     <div class="ft-contact-child">
       <i class="bi bi-envelope-fill"></i>
-      <p>nhoangphuc960@gmail.com</p>
+      <p>Bachloppho1202@gmail.com</p>
     </div>
   </div>
 </footer>
