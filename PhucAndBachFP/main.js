@@ -343,10 +343,332 @@ let bookTourRender = () => {
           <button class="tourProduct-btn" id="TNPDpage">XEM CHI TIẾT</button>
         </div>
       </div>
-    
+      <div class="tourProduct showtotop delay-04">
+        <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
+        <div class="tourProductdes">
+          <h2>Tà năng phan dũng</h2>
+          <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
+          <div class="tourProductdes-child">
+            <i class="bi bi-pin-map-fill"></i>
+            <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
+          </div>
+          <div class="tourProductdes-child">
+            <i class="bi bi-clock-fill"></i>
+            <p>Thời gian: 2 ngày 2 đêm</p>
+          </div>
+          <div class="tourProductdes-child">
+            <i class="bi bi-trophy-fill"></i>
+            <p>Độ khó: 7/10</p>
+          </div>
+        </div>
+        <div class="tourProductsubmit">
+          <p>Giá: 3.500.000 VNĐ</p>
+          <button class="tourProduct-btn">XEM CHI TIẾT</button>
+        </div>
+      </div>
+      <div class="tourProduct showtotop delay-06">
+      <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
+      <div class="tourProductdes">
+        <h2>Tà năng phan dũng</h2>
+        <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
+        <div class="tourProductdes-child">
+          <i class="bi bi-pin-map-fill"></i>
+          <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
+        </div>
+        <div class="tourProductdes-child">
+          <i class="bi bi-clock-fill"></i>
+          <p>Thời gian: 2 ngày 2 đêm</p>
+        </div>
+        <div class="tourProductdes-child">
+          <i class="bi bi-trophy-fill"></i>
+          <p>Độ khó: 7/10</p>
+        </div>
+      </div>
+      <div class="tourProductsubmit">
+        <p>Giá: 3.500.000 VNĐ</p>
+        <button class="tourProduct-btn">XEM CHI TIẾT</button>
+      </div>
+    </div>
+    <div class="tourProduct showtotop delay-08">
+      <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
+      <div class="tourProductdes">
+        <h2>Tà năng phan dũng</h2>
+        <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
+        <div class="tourProductdes-child">
+          <i class="bi bi-pin-map-fill"></i>
+          <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
+        </div>
+        <div class="tourProductdes-child">
+          <i class="bi bi-clock-fill"></i>
+          <p>Thời gian: 2 ngày 2 đêm</p>
+        </div>
+        <div class="tourProductdes-child">
+          <i class="bi bi-trophy-fill"></i>
+          <p>Độ khó: 7/10</p>
+        </div>
+      </div>
+      <div class="tourProductsubmit">
+        <p>Giá: 3.500.000 VNĐ</p>
+        <button class="tourProduct-btn">XEM CHI TIẾT</button>
+      </div>
+    </div>
+    <div class="tourProduct showtotop delay-10">
+    <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
+    <div class="tourProductdes">
+      <h2>Tà năng phan dũng</h2>
+      <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
+      <div class="tourProductdes-child">
+        <i class="bi bi-pin-map-fill"></i>
+        <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
+      </div>
+      <div class="tourProductdes-child">
+        <i class="bi bi-clock-fill"></i>
+        <p>Thời gian: 2 ngày 2 đêm</p>
+      </div>
+      <div class="tourProductdes-child">
+        <i class="bi bi-trophy-fill"></i>
+        <p>Độ khó: 7/10</p>
+      </div>
+    </div>
+    <div class="tourProductsubmit">
+      <p>Giá: 3.500.000 VNĐ</p>
+      <button class="tourProduct-btn">XEM CHI TIẾT</button>
     </div>
   </div>
+  <div class="tourProduct showtotop delay-12">
+  <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
+  <div class="tourProductdes">
+    <h2>Tà năng phan dũng</h2>
+    <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
+    <div class="tourProductdes-child">
+      <i class="bi bi-pin-map-fill"></i>
+      <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
+    </div>
+    <div class="tourProductdes-child">
+      <i class="bi bi-clock-fill"></i>
+      <p>Thời gian: 2 ngày 2 đêm</p>
+    </div>
+    <div class="tourProductdes-child">
+      <i class="bi bi-trophy-fill"></i>
+      <p>Độ khó: 7/10</p>
+    </div>
+  </div>
+  <div class="tourProductsubmit">
+    <p>Giá: 3.500.000 VNĐ</p>
+    <button class="tourProduct-btn">XEM CHI TIẾT</button>
+  </div>
 </div>
+<div class="tourProduct showtotop delay-12">
+  <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
+  <div class="tourProductdes">
+    <h2>Tà năng phan dũng</h2>
+    <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
+    <div class="tourProductdes-child">
+      <i class="bi bi-pin-map-fill"></i>
+      <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
+    </div>
+    <div class="tourProductdes-child">
+      <i class="bi bi-clock-fill"></i>
+      <p>Thời gian: 2 ngày 2 đêm</p>
+    </div>
+    <div class="tourProductdes-child">
+      <i class="bi bi-trophy-fill"></i>
+      <p>Độ khó: 7/10</p>
+    </div>
+  </div>
+  <div class="tourProductsubmit">
+    <p>Giá: 3.500.000 VNĐ</p>
+    <button class="tourProduct-btn">XEM CHI TIẾT</button>
+  </div>
+</div>
+<div class="tourProduct showtotop delay-14">
+<img src="./img/TNPD.jpg" alt="" class="tourProductimg">
+<div class="tourProductdes">
+  <h2>Tà năng phan dũng</h2>
+  <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
+  <div class="tourProductdes-child">
+    <i class="bi bi-pin-map-fill"></i>
+    <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
+  </div>
+  <div class="tourProductdes-child">
+    <i class="bi bi-clock-fill"></i>
+    <p>Thời gian: 2 ngày 2 đêm</p>
+  </div>
+  <div class="tourProductdes-child">
+    <i class="bi bi-trophy-fill"></i>
+    <p>Độ khó: 7/10</p>
+  </div>
+</div>
+<div class="tourProductsubmit">
+  <p>Giá: 3.500.000 VNĐ</p>
+  <button class="tourProduct-btn">XEM CHI TIẾT</button>
+</div>
+</div>
+<div class="tourProduct showtotop delay-16">
+<img src="./img/TNPD.jpg" alt="" class="tourProductimg">
+<div class="tourProductdes">
+  <h2>Tà năng phan dũng</h2>
+  <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
+  <div class="tourProductdes-child">
+    <i class="bi bi-pin-map-fill"></i>
+    <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
+  </div>
+  <div class="tourProductdes-child">
+    <i class="bi bi-clock-fill"></i>
+    <p>Thời gian: 2 ngày 2 đêm</p>
+  </div>
+  <div class="tourProductdes-child">
+    <i class="bi bi-trophy-fill"></i>
+    <p>Độ khó: 7/10</p>
+  </div>
+</div>
+<div class="tourProductsubmit">
+  <p>Giá: 3.500.000 VNĐ</p>
+  <button class="tourProduct-btn">XEM CHI TIẾT</button>
+</div>
+</div>
+      <div class="tourProduct showtotop delay-18">
+        <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
+        <div class="tourProductdes">
+          <h2>Tà năng phan dũng</h2>
+          <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
+          <div class="tourProductdes-child">
+            <i class="bi bi-pin-map-fill"></i>
+            <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
+          </div>
+          <div class="tourProductdes-child">
+            <i class="bi bi-clock-fill"></i>
+            <p>Thời gian: 2 ngày 2 đêm</p>
+          </div>
+          <div class="tourProductdes-child">
+            <i class="bi bi-trophy-fill"></i>
+            <p>Độ khó: 7/10</p>
+          </div>
+        </div>
+        <div class="tourProductsubmit">
+          <p>Giá: 3.500.000 VNĐ</p>
+          <button class="tourProduct-btn">XEM CHI TIẾT</button>
+        </div>
+      </div>
+      <div class="tourProduct">
+      <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
+      <div class="tourProductdes">
+        <h2>Tà năng phan dũng</h2>
+        <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
+        <div class="tourProductdes-child">
+          <i class="bi bi-pin-map-fill"></i>
+          <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
+        </div>
+        <div class="tourProductdes-child">
+          <i class="bi bi-clock-fill"></i>
+          <p>Thời gian: 2 ngày 2 đêm</p>
+        </div>
+        <div class="tourProductdes-child">
+          <i class="bi bi-trophy-fill"></i>
+          <p>Độ khó: 7/10</p>
+        </div>
+      </div>
+      <div class="tourProductsubmit">
+        <p>Giá: 3.500.000 VNĐ</p>
+        <button class="tourProduct-btn">XEM CHI TIẾT</button>
+      </div>
+    </div>
+    <div class="tourProduct">
+        <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
+        <div class="tourProductdes">
+          <h2>Tà năng phan dũng</h2>
+          <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
+          <div class="tourProductdes-child">
+            <i class="bi bi-pin-map-fill"></i>
+            <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
+          </div>
+          <div class="tourProductdes-child">
+            <i class="bi bi-clock-fill"></i>
+            <p>Thời gian: 2 ngày 2 đêm</p>
+          </div>
+          <div class="tourProductdes-child">
+            <i class="bi bi-trophy-fill"></i>
+            <p>Độ khó: 7/10</p>
+          </div>
+        </div>
+        <div class="tourProductsubmit">
+          <p>Giá: 3.500.000 VNĐ</p>
+          <button class="tourProduct-btn">XEM CHI TIẾT</button>
+        </div>
+      </div>
+      <div class="tourProduct">
+      <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
+      <div class="tourProductdes">
+        <h2>Tà năng phan dũng</h2>
+        <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
+        <div class="tourProductdes-child">
+          <i class="bi bi-pin-map-fill"></i>
+          <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
+        </div>
+        <div class="tourProductdes-child">
+          <i class="bi bi-clock-fill"></i>
+          <p>Thời gian: 2 ngày 2 đêm</p>
+        </div>
+        <div class="tourProductdes-child">
+          <i class="bi bi-trophy-fill"></i>
+          <p>Độ khó: 7/10</p>
+        </div>
+      </div>
+      <div class="tourProductsubmit">
+        <p>Giá: 3.500.000 VNĐ</p>
+        <button class="tourProduct-btn">XEM CHI TIẾT</button>
+      </div>
+    </div>
+    <div class="tourProduct">
+        <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
+        <div class="tourProductdes">
+          <h2>Tà năng phan dũng</h2>
+          <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
+          <div class="tourProductdes-child">
+            <i class="bi bi-pin-map-fill"></i>
+            <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
+          </div>
+          <div class="tourProductdes-child">
+            <i class="bi bi-clock-fill"></i>
+            <p>Thời gian: 2 ngày 2 đêm</p>
+          </div>
+          <div class="tourProductdes-child">
+            <i class="bi bi-trophy-fill"></i>
+            <p>Độ khó: 7/10</p>
+          </div>
+        </div>
+        <div class="tourProductsubmit">
+          <p>Giá: 3.500.000 VNĐ</p>
+          <button class="tourProduct-btn">XEM CHI TIẾT</button>
+        </div>
+      </div>
+
+  <div class="tourProduct">
+  <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
+  <div class="tourProductdes">
+    <h2>Tà năng phan dũng</h2>
+    <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
+    <div class="tourProductdes-child">
+      <i class="bi bi-pin-map-fill"></i>
+      <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
+    </div>
+    <div class="tourProductdes-child">
+      <i class="bi bi-clock-fill"></i>
+      <p>Thời gian: 2 ngày 2 đêm</p>
+    </div>
+    <div class="tourProductdes-child">
+      <i class="bi bi-trophy-fill"></i>
+      <p>Độ khó: 7/10</p>
+    </div>
+  </div>
+  <div class="tourProductsubmit">
+    <p>Giá: 3.500.000 VNĐ</p>
+    <button class="tourProduct-btn">XEM CHI TIẾT</button>
+  </div>
+</div>
+    </div>
+  </div>
+  </div>
   `
 }
 
@@ -706,49 +1028,20 @@ let TNPDrender = () => {
 <div class="trekkingInformtour">
   <div class="trekkingInformtour-Container">
     <div class="trekkingTab">
-      <button>LỊCH TRÌNH</button>
-      <button>GIỚI THIỆU</button>
-      <button>CHUẨN BỊ</button>
+      <button id="lt">LỊCH TRÌNH</button>
+      <button id="gt">GIỚI THIỆU</button>
+      <button id="cb">CHUẨN BỊ</button>
     </div>
     <div class="trekkingContent">
       <h1>LỊCH TRÌNH TOUR TREKKING TÀ NĂNG PHAN DŨNG</h1>
-      <div class="trekkingContenttour">
-        <div class="trekkingContenttour-column">
-          <h2>NGÀY 0: KHỞI HÀNH</h2>
-          <p>20:30 Tập trung và điểm danh tại điểm hẹn ở TP. Hồ Chí Minh</p>
-          <p>21:30 Xe bắt đầu di chuyển và đón các thành viên dọc đường (nếu có). Trên xe Hướng dẫn viên (HDV) tổ chức làm quen, kết nối các thành viên trước khi bắt đầu Hành Trình Trekking Tour Tà Năng Phan Dũng vào sáng mai.</p>
-          <p>23:30 Ghé trạm dừng chân tại Đồng Nai để khách đi vệ sinh. Ngủ đêm trên xe.</p>
-        </div>
-        <div class="trekkingContenttour-column">
-          <h2>NGÀY 1: TREKKING TÀ NĂNG</h2>
-          <p>05:00 – 06:00 Đoàn dừng chân tại điểm ăn sáng thuộc Đức Trọng – Lâm Đồng. Tại đây có bố trí khu vực vệ sinh cá nhân, quý khách chuẩn bị hành lý cá nhân, ăn sáng, uống cà phê trong khí trời se lạnh của Lâm Đồng.</p>
-          <p>06:30 Trải nghiệm đi xe công nông di chuyển vào rừng bìa rừng. Xe di chuyển đến bìa rừng, tại đây khách hàng được phổ biến quy tắt đi rừng, đảm bảo an toàn suốt hành trình, bảo vệ môi trường và kỹ năng trekking cơ bản. Đoàn thực hiện khởi động theo hướng dẫn của HDV trước khi bắt đầu hành trình</p>
-          <p>07:30 – 11:00 Bắt đầu Hành Trình Trekking Tà Năng, lắng nghe và cảm nhận vẻ đẹp của núi rừng. Đoạn đường trekking đưa quý khách đi qua nhiều địa hình rừng, đồi thoai thoải khác nhau, từng thảm thực vật cũng thay đổi theo độ cao, quý khách được nghe chia sẻ nhiều thông tin về các loại cây rừng và thảm thực vật đặc biệt tại đây.</p>
-          <p>11:00 Checkin cột mốc Tà Năng – Phan Dũng, nơi giáp ranh giữa 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận. Ngắm toàn cảnh đẹp đặc trưng của đồi cỏ theo mùa.</p>
-          <p>1:30 – 12:30 Đoàn trải nghiệm bữa trưa giữa núi rừng Tà Năng. Có thời gian nghỉ ngơi tại chỗ, lắng nghe tiếng thiên nhiên.</p>
-          <p>12:30 Đoàn được tiếp nước và tiếp tục hành trình qua những sườn đồi để về điểm cắm trại. Tuỳ vào mỗi mùa, đoạn đường trekking này sẽ mãn nhãn được du khách bởi cảnh đẹp hùng vĩ của núi đồi bao la, trùng điệp những đồi cỏ dài nối tiếp nhau. Đây cũng chính là đoạn trekking đẹp nhất khiến quý khách phải nao lòng khi rời khỏi.</p>
-          <p>16:00 Đến điểm cắm trại, quý khách nhận lều, vệ sinh cá nhân và ngắm hoàng hôn tuyệt đẹp trên đồi.</p>
-          <p>18:00 Trong không khí se lạnh của núi rừng Tây Nguyên, quý khách trải nghiệm bữa tối BBQ kết hợp cùng đêm nhạc acoustic được thiết kế đặc biệt dành riêng kết nối những người bạn mới. Quý khách dùng bữa tối, ca hát quay quần bên nhau.</p>
-          <p>22:00 Kết thúc ngày sinh hoạt, quý khách quay về lều nghỉ ngơi.</p>
-        </div>
-        <div class="trekkingContenttour-column">
-          <h2>NGÀY 2: ĐÓN BÌNH MINH TẠI PHAN DŨNG</h2>
-          <p>05:00 Đoàn dậy sớm, đón bình minh trên đồi. Dùng điểm tâm sáng, nhâm nhi ly cà phê, trà nóng trong không khí se lạnh trên đồi Tà Năng.</p>
-          <p>06:30 – 10:00 Tiếp tục hành trình trekking rừng Phan Dũng, đoạn đường trekking dài 18km. Đoạn đường trekking đưa quý khách hạ đồ cao dần xuống đồng bằng, với thảm thực vật cũng thay đổi phong phú từ những mảng rừng lá kim đến các tán rừng già nguyên sinh trù phú. Nếu may mắn quý khách còn được ngắm nhìn rất nhiều hoa nghệ rừng, hoa gạo, hoa sâm bố chính nở rực cả một mảng rừng tuyệt đẹp.</p>
-          <p>10:00 Đến bờ suối Phan Dũng, đoàn dừng nghỉ ngơi, ngâm chân bên bờ suối và ăn nhẹ trái cây, khoai luộc. Sau đó tiếp tục hành trình.</p>
-          <p>12:00 Kết thúc hành trình tại xã Phan Dũng – Bình Thuận. Đoàn được bố trí khu vực vệ sinh cá nhân, sắp xếp lại hành lý và dùng cơm trưa do người địa phương chuẩn bị.</p>
-          <p>14:00 Xe đón đoàn, bắt đầu di chuyển về lại TP Hồ Chí Minh.</p>
-          <p>17:00 Đoàn ghé ăn tối tại khu vực Phan Thiết. Trên đường về HDV sẽ tổng kết hành trình, ôn lại kỷ niệm trong suốt chuyến đi, và chia tay đoàn.</p>
-          <p>22:00 Xe về đến TP. Hồ Chí Minh, kết thúc hành trình Trekking Tà Năng – Phan Dũng.</p>
-          <p>*Lưu ý: Lịch trình có thể thay đổi tuỳ vào tình hình thực tế như: thời tiết, trường hợp bất khả kháng nhằm đảm bảo an toàn tối đa cho khách hàng và sẽ được thông báo đến khách hàng khi có thay đổi</p>
-        </div>
+      <div class="trekkingContenttour" id="informPage">
+        
       </div>
     </div>
   </div>
 </div>
   `
 }
-
 
 
 
@@ -806,8 +1099,18 @@ btnhome.addEventListener("click", () => {
 });
 btnbooktour.addEventListener("click", () => {
   bookTourRender()
+  let btnTNPD = document.querySelector("#TNPDpage")
   navImgtourRender()
   footerRender()
+  btnTNPD.addEventListener("click", () => {
+    TNPDrender()
+    let informPage = document.querySelector("#informPage")
+    let btnlt = document.querySelector("#lt")
+    btnlt.addEventListener("click", ()=>{
+
+    }) 
+    footerRender();
+  })
   });
 btnaboutus.addEventListener("click", () => {
   aboutUsRender()
@@ -818,13 +1121,12 @@ btncontact.addEventListener("click", () => {
   contactRender();
   navImgcontactRender()
   footerRender()
-})
+});
 btncart.addEventListener("click", () => {
   cartRender();
   navImgcartRender()
   footerRender()
-})
-
+});
 
 
 // Navbar effect
@@ -844,7 +1146,6 @@ window.addEventListener('scroll', () =>{
     }
 })
 })
-
 
 
 
