@@ -211,7 +211,33 @@ body{
   filter:brightness(0.85)
 }
 #nav-main-img6 p{
-
+  width: 100%;
+  height: auto;
+  font-size: 300px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #fff;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 300px;
+  opacity: 0;
+  animation:showtitle 3s ease-in-out 0.7s 1 forwards 
+}
+#nav-main-img7{
+  width:100%;
+  height:970px;
+  background-image: url(./img/Cart.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  background-attachment: fixed;
+  object-fit: cover;
+  filter:brightness(0.85)
+}
+#nav-main-img7 p{
   width: 100%;
   height: auto;
   font-size: 300px;
@@ -1066,6 +1092,7 @@ header button {
 .tourContainer{
   width:100%;
   height: 100%;
+  gap: 30px;
   flex-wrap: wrap;
   display:flex;
   flex-direction: row;
@@ -1295,6 +1322,162 @@ header button {
   height:auto;
   font-size: 25px;
 }    
+
+
+                          /* TREKKING PRODUCT */
+.trekkingPage{
+  width:100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trekkingContainer{
+  width:80%;
+  height:70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+}
+.trekkingDiv{
+  width:50%;
+  height: 100%;
+  padding-right: 20px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.trekkingDiv h3{
+  font-size: 30px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.trekkingDiv h2{
+  font-size: 35px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.trekkingDiv h1{
+  font-size: 40px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.trekkingDiv p{
+  font-size: 20px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.trekkingContainer img {
+  width:50%;
+  height:100%;
+}
+.trekkingIcon{
+  width:100%;
+  height:15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.trekkingIcon-child{
+  width:30%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.trekkingIcon-child svg{
+  width:30%;
+  height:30%;
+}
+.trekkingIcon-child h4{
+  font-size: 30px;
+  margin-top: 20px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.trekkingIcon-child p{
+  font-size: 40px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.trekkingInformtour{
+  width:100%;
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.trekkingInformtour-Container{
+  width:70%;
+  height:90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+}
+.trekkingTab{
+  width:100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+}
+.trekkingTab button {
+  width:35%;
+  height: 100%;
+  font-size: 40px;
+  transition: ease-out 0.3s;
+  background-color: transparent;
+  border: none;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.trekkingTab button:hover{
+  width:35%;
+  height: 100%;
+  font-size: 40px;
+  background-color: #FCCB14;
+}
+.trekkingTab button:active {
+transform: scale(0.9);
+}
+.trekkingContent{
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.trekkingContent h1{
+  width:90%;
+  height:20%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border:  3px #FCCB14 solid;
+  font-size: 40px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.trekkingContenttour{
+  width: 95%;
+  height:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.trekkingContenttour-column{
+  width:32%;
+  height:100%;
+}
+.trekkingContenttour-column h2{
+  font-size: 30px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.trekkingContenttour-column p{
+  font-size: 20px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
                           /* SCROLL ANIMATION */
 
 
