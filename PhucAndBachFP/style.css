@@ -301,6 +301,15 @@ header{
   align-items: center;
   justify-content: space-around;
   z-index:2;
+  position: relative;
+}
+.alert{
+  position: absolute;
+  top : 90%;
+  left : 1%;
+  color: red;
+  font-weight: bolder;
+  font-size: 20px;
 }
 .nav-register{
   width:20%;
