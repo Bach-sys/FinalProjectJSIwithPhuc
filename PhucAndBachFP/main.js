@@ -82,9 +82,6 @@ let btnaboutus = document.querySelector("#aboutus");
 let btncontact = document.querySelector("#contact");
 let checker = "";
 
-// btnbooktour.setAttribute("id","unvalid")
-// btnaboutus.setAttribute("id","unvalid")
-// btncontact.setAttribute("id","unvalid")
 
 // Render mainPage là div bao gồm tất cả các page
 
@@ -961,7 +958,7 @@ const auth = getAuth(app);
 const db = getFirestore(app); // database
 const querySnapshot = await getDocs(collection(db, "Product"));
 let Data = querySnapshot.forEach((doc) => {
-  console.log(doc.id , doc.data());
+  // console.log(doc.id , doc.data());
 });
 
 
@@ -995,9 +992,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
                   btnsign.style.display = "none";
                   mainPageRender();
                   navImghomeRender();
-                  //  btnbooktour.setAttribute("id","bookTour")
-                  //  btnaboutus.setAttribute("id","aboutus")
-                  //  btncontact.setAttribute("id","contact")
+               
                 })
                 .catch((error) => {
                   const errorCode = error.code;
@@ -1025,26 +1020,26 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
 window.addEventListener("DOMContentLoaded", () => {
   btnlog.addEventListener("click", () => {
+    console.log("btn")
     email = document.querySelector("#email");
     password = document.querySelector("#password");
     let btncomfirmSignin = document.querySelector("#btn-signIn-submit");
     let regex = new RegExp("[a-z0-9]+@[a-z]+.[a-z]{2,3}");
     btncomfirmSignin.addEventListener("click", () => {
+      console.log("btn")
       if (email.value.length > 7) {
         if (regex.test(email.value)) {
           if (password.value.length > 6) {
             signInWithEmailAndPassword(auth, email.value, password.value)
               .then((userCredential) => {
                 // Signed in
+                console.log("Success")
                 const user = userCredential.user;
-                checker = user.email;
-                btnlog.style.display = "none";
-                btnsign.style.display = "none";
-                mainPageRender();
-                navImghomeRender();
-                btnbooktour.setAttribute("id", "bookTour");
-                btnaboutus.setAttribute("id", "aboutus");
-                btncontact.setAttribute("id", "contact");
+          
+                // btnlog.style.display = "none";
+                // btnsign.style.display = "none";
+                // mainPageRender();
+                // navImghomeRender()
               })
               .catch((error) => {
                 const errorCode = error.code;
