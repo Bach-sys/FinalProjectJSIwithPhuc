@@ -1233,6 +1233,10 @@ window.addEventListener("DOMContentLoaded", () => {
                 btnsign.style.display = "none";
                 mainPageRender();
                 navImghomeRender()
+                btnbooktour.style.display = "block"  
+                btnaboutus.style.display = "block" 
+                btncontact.style.display = "block"
+                btncart.style.display = "block"
               })
               .catch((error) => {
                 const errorCode = error.code;
