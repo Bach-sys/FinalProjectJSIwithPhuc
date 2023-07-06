@@ -73,14 +73,27 @@ let navImgcontactRender = () => {
   </div>
   `;
 };
+let navImgcartRender = () => {
+  navImg.innerHTML = `
+  <div id="nav-main-img6">
+    <p>SUBCRISED</p>
+  </div>
+  `
+};
+let navImgtnpdRender = () => {
+  navImg.innerHTML = `
+  <div id="nav-main-img7">
+    <p>TÀ NĂNG PHAN DŨNG</p>
+  </div>
+  `
+};
 
 let btnlog = document.querySelector("#btn-nav-log");
 let btnsign = document.querySelector("#btn-nav-sign");
 let btnhome = document.querySelector("#home");
-let btnbooktour = document.querySelector("#bookTour");
-let btnaboutus = document.querySelector("#aboutus");
-let btncontact = document.querySelector("#contact");
-let checker = "";
+let btnbooktour = document.querySelector("#bookTour")
+let btnaboutus = document.querySelector("#aboutus")
+let btncontact =document.querySelector("#contact")
 
 
 // Render mainPage là div bao gồm tất cả các page
@@ -281,7 +294,7 @@ let bookTourRender = () => {
         </div>
         <div class="tourProductsubmit">
           <p>Giá: 3.500.000 VNĐ</p>
-          <button class="tourProduct-btn">XEM CHI TIẾT</button>
+          <button class="tourProduct-btn" id="TNPDpage">XEM CHI TIẾT</button>
         </div>
       </div>
       <div class="tourProduct showtotop delay-04">
@@ -678,8 +691,12 @@ let bookTourRender = () => {
     </div>
   </div>
 </div>
-  `;
-};
+  `
+}
+
+
+
+
 
 // Render trang About Us
 
@@ -719,6 +736,10 @@ let aboutUsRender = () => {
         <div class="aboutUs-bg"></div>
       </div>`;
 };
+
+
+
+
 
 //Render trang Contact
 let contactRender = () => {
@@ -770,6 +791,10 @@ let contactRender = () => {
 </div>
   `;
 };
+
+
+
+
 
 // Render trang Sign in, Sign up
 
@@ -839,6 +864,9 @@ let loginRender = () => {
   `;
 };
 
+
+
+
 // Render footer
 let footer = document.querySelector("#footer");
 let footerRender = () => {
@@ -901,9 +929,11 @@ btnaboutus.addEventListener("click", () => {
 });
 btncontact.addEventListener("click", () => {
   contactRender();
-  navImgcontactRender();
-  footerRender();
-});
+  navImgcontactRender()
+  footerRender()
+})
+
+
 
 // Navbar effect
 
@@ -924,6 +954,7 @@ window.addEventListener("scroll", () => {
 });
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 //Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
