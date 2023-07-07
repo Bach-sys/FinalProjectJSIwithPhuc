@@ -1414,7 +1414,7 @@ header button {
 }
 .trekkingInformtour-Container{
   width:70%;
-  height:90%;
+  height:95%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1422,7 +1422,7 @@ header button {
 }
 .trekkingTab{
   width:100%;
-  height: 10%;
+  height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1454,9 +1454,37 @@ transform: scale(0.9);
   flex-direction: column;
   align-items: center;
 }
-.trekkingContent h1{
+.trekkingContent-details{
+  width:100%;
+  height:80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.trekkingContent-GioiThieu{
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trekkingContent-details h1{
   width:90%;
   height:20%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border:  3px #FCCB14 solid;
+  font-size: 40px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.trekkingContent-GioiThieu h1{
+  width:90%;
+  height:10%;
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
@@ -1474,6 +1502,7 @@ transform: scale(0.9);
   flex-direction: row;
   justify-content: space-between;
 }
+
 .trekkingContenttour-column{
   width:32%;
   height:100%;
@@ -1486,7 +1515,128 @@ transform: scale(0.9);
   font-size: 20px;
   font-family: 'Barlow Condensed', sans-serif;
 }
+.trekkingContenttour-column-gioithieu{
+  width:47%;
+  height:100%;
+}
+.trekkingContenttour-column-gioithieu h2{
+  font-size: 30px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.trekkingContenttour-column-gioithieu p{
+  font-size: 20px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.trekkingContenttour-inform{
+  width:100%;
+  height:70%;
+}
+.trekkingContenttour-inform-child{
+  width: 100%;
+  height: 7%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.trekkingContenttour-inform-child h4{
+  width:35%;
+  height:100%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.trekkingContenttour-inform-child p{
+  width:70%;
+  height:100%;
+  font-size: 20px;
+  border: 0px;
+  display: flex;
+  align-items: center;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.trekkingContenttour-inform-child button{
+  width:30%;
+  height:70%;
+  font-size: 20px;
+  margin-right: 200px;
+  background-color: #FCCB14;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.trekkingContenttour-price{
+  width:100%;
+  height: 85%;
+}
+.trekkingContenttour-price p{
+  margin-bottom: 5px;
+  font-size: 23px;
+}
+.include{
+  margin-left: 40px;
+}
+.trekkingContenttour-price-detail{
+  width:100%;
+  height:auto;
+  display: flex;
+  flex-direction: row;
+}
+.trekkingContenttour-price-detail i{
+  width:10%;
+  font-size: 30px;
+  height:100%;
+  color: #FCCB14;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trekkingContenttour-price-detail p{
+  width: 90%;
+}
+.trekkingContenttour-notprice{
+  width:100%;
+  height: 15%;
+}
+.trekkingContenttour-notprice p{
+  margin-bottom: 5px;
+  font-size: 23px;
+}
+.trekkingContent-ChuanBi{
+  width:90%;
+  height:90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.trekkingContent-ChuanBi-child{
+  width:90%;
+  height:100%;
 
+}
+.trekkingContenttour-cb-detail{
+  width:100%;
+  height:auto;
+  display: flex;
+  flex-direction: row;
+}
+.trekkingContenttour-cb-detail i{
+  width:10%;
+  font-size: 30px;
+  height:100%;
+  color: #FCCB14;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trekkingContenttour-cb-detail p{
+  width: 100%;
+  font-size: 25px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
                           /* SCROLL ANIMATION */
 
 
