@@ -1,36 +1,7 @@
 import "./style.css";
+import { returnData } from "./script"; ""
 
 
-//Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut} from "firebase/auth";
-import { getFirestore, collection, addDoc, getDocs } from "firebase/firestore";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyDZNxTHPNkJM1tX2n0fUVYzKMh1VYnQxL8",
-  authDomain: "finalproject-4227e.firebaseapp.com",
-  projectId: "finalproject-4227e",
-  storageBucket: "finalproject-4227e.appspot.com",
-  messagingSenderId: "928682874879",
-  appId: "1:928682874879:web:a5526cfe1a50acf96139ca",
-  measurementId: "G-8XR793HVFL",
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-//khởi tạo biến xác thực firebase gồm phần giả lập và hệ thống đăng nhập
-const auth = getAuth(app);
-// const db = getFirestore(app); // database
-// const querySnapshot = await getDocs(collection(db, "Product"));
-// let Data = querySnapshot.forEach((doc) => {
-//   // console.log(doc.id , doc.data());
-// });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 let nav = document.querySelector("#nav");
@@ -132,7 +103,7 @@ let btnbooktour = document.querySelector("#bookTour")
 let btnaboutus = document.querySelector("#aboutus")
 let btncontact =document.querySelector("#contact")
 let btncart = document.querySelector("#cart")
-
+let alertP = document.querySelector(".alert")
  btnbooktour.style.display = "none"  
  btnaboutus.style.display = "none" 
  btncontact.style.display = "none"
@@ -1151,108 +1122,142 @@ window.addEventListener('scroll', () =>{
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-
-
-//Initialize variable
-let email;
-let password;
-let ComfirmPass;
-let SignUp = document.querySelector("#btn-nav-sign");
-
-// when the doom are loaded then do the click to submit function
-window.addEventListener("DOMContentLoaded", (event) => {
-  if (SignUp) {
-    //add event listener
-    SignUp.addEventListener("click", () => {
-      let btnComfirm = document.querySelector("#btn-SignUpComF");
-      email = document.querySelector("#email");
-      password = document.querySelector("#password");
-      ComfirmPass = document.querySelector("#confirm-password");
-      let regex = new RegExp("[a-z0-9]+@[a-z]+.[a-z]{2,3}");
-      btnComfirm.addEventListener("click", () => {
-        console.log("cannot get btn");
-        if (email.value.length > 7) {
-          if (regex.test(email.value)) {
-            if (password.value == ComfirmPass.value) {
-              createUserWithEmailAndPassword(auth, email.value, password.value)
-                .then((userCredential) => {
-                  const user = userCredential.user;
-                  
-                  btnlog.style.display = "none";
-                  btnsign.style.display = "none";
-                  mainPageRender();
-                  navImghomeRender();
-                  btnbooktour.style.display = "block"  
-                  btnaboutus.style.display = "block" 
-                  btncontact.style.display = "block"
-                  btncart.style.display = "block"
-                })
-                .catch((error) => {
-                  const errorCode = error.code;
-                  const errorMessage = error.message;
-                  console.log(errorMessage);
-                  alert(errorMessage);
-                });
+    //Import the functions you need from the SDKs you need
+    import { initializeApp } from "firebase/app";
+    import { getAnalytics } from "firebase/analytics";
+    import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut} from "firebase/auth";
+    import { getFirestore, collection, addDoc, getDocs } from "firebase/firestore";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+    
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDZNxTHPNkJM1tX2n0fUVYzKMh1VYnQxL8",
+      authDomain: "finalproject-4227e.firebaseapp.com",
+      projectId: "finalproject-4227e",
+      storageBucket: "finalproject-4227e.appspot.com",
+      messagingSenderId: "928682874879",
+      appId: "1:928682874879:web:a5526cfe1a50acf96139ca",
+      measurementId: "G-8XR793HVFL",
+    };
+    
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    //khởi tạo biến xác thực firebase gồm phần giả lập và hệ thống đăng nhập
+    const auth = getAuth(app);
+    const db = getFirestore(app); // database
+    //Initialize variable
+    let email;
+    let password;
+    let ComfirmPass;
+    let SignUp = document.querySelector("#btn-nav-sign");
+    
+    // when the doom are loaded then do the click to submit function
+    window.addEventListener("DOMContentLoaded", (event) => {
+      if (SignUp) {
+        //add event listener
+        SignUp.addEventListener("click", () => {
+          let btnComfirm = document.querySelector("#btn-SignUpComF");
+          email = document.querySelector("#email");
+          password = document.querySelector("#password");
+          ComfirmPass = document.querySelector("#confirm-password");
+          let regex = new RegExp("[a-z0-9]+@[a-z]+.[a-z]{2,3}");
+          btnComfirm.addEventListener("click", () => {
+            console.log("cannot get btn");
+            if (email.value.length > 7) {
+              if (regex.test(email.value)) {
+                if (password.value == ComfirmPass.value) {
+                  createUserWithEmailAndPassword(auth, email.value, password.value)
+                    .then((userCredential) => {
+                      const user = userCredential.user;
+                      
+                      btnlog.style.display = "none";
+                      btnsign.style.display = "none";
+                      mainPageRender();
+                      navImghomeRender();
+                      btnbooktour.style.display = "block"  
+                      btnaboutus.style.display = "block" 
+                      btncontact.style.display = "block"
+                      btncart.style.display = "block"
+                      alertP.style.display = "none"
+                    })
+                    .catch((error) => {
+                      const errorCode = error.code;
+                      const errorMessage = error.message;
+                      console.log(errorMessage);
+                      alert(errorMessage);
+                    });
+                } else {
+                  alert("Password does not match");
+                }
+                //! here is finnish the authentication
+              } else {
+                alert("email is invalid");
+              }
             } else {
-              alert("Password does not match");
+              alert("email mush be 7 chareacters");
             }
-            //! here is finnish the authentication
-          } else {
-            alert("email is invalid");
-          }
-        } else {
-          alert("email mush be 7 chareacters");
-        }
-        // ! condition to accesss the account
-        //! pass all condition
-      });
-    });
-  }
-});
-
-window.addEventListener("DOMContentLoaded", () => {
-  btnlog.addEventListener("click", () => {
-    console.log("btn")
-    email = document.querySelector("#email");
-    password = document.querySelector("#password");
-    let btncomfirmSignin = document.querySelector("#btn-signIn-submit");
-    let regex = new RegExp("[a-z0-9]+@[a-z]+.[a-z]{2,3}");
-    btncomfirmSignin.addEventListener("click", () => {
-      console.log("btn")
-      if (email.value.length > 7) {
-        if (regex.test(email.value)) {
-          if (password.value.length > 6) {
-            signInWithEmailAndPassword(auth, email.value, password.value)
-              .then((userCredential) => {
-                // Signed in
-                console.log("Success")
-                const user = userCredential.user;
-          
-                btnlog.style.display = "none";
-                btnsign.style.display = "none";
-                mainPageRender();
-                navImghomeRender()
-                btnbooktour.style.display = "block"  
-                btnaboutus.style.display = "block" 
-                btncontact.style.display = "block"
-                btncart.style.display = "block"
-              })
-              .catch((error) => {
-                const errorCode = error.code;
-                const errorMessage = error.message;
-                alert(errorMessage);
-              });
-          } else {
-            alert("Password does not match");
-          }
-          //! here is finnish the authentication
-        } else {
-          alert("email is invalid");
-        }
-      } else {
-        alert("email mush be 7 chareacters");
+            // ! condition to accesss the account
+            //! pass all condition
+          });
+        });
       }
     });
-  });
-});
+    
+    window.addEventListener("DOMContentLoaded", () => {
+      btnlog.addEventListener("click", () => {
+        console.log("btn")
+        email = document.querySelector("#email");
+        password = document.querySelector("#password");
+        let btncomfirmSignin = document.querySelector("#btn-signIn-submit");
+        let regex = new RegExp("[a-z0-9]+@[a-z]+.[a-z]{2,3}");
+        btncomfirmSignin.addEventListener("click", () => {
+          console.log("btn")
+          if (email.value.length > 7) {
+            if (regex.test(email.value)) {
+              if (password.value.length > 6) {
+                signInWithEmailAndPassword(auth, email.value, password.value)
+                .then((userCredential) => {
+                    // Signed in
+                    console.log("Success")
+                    const user = userCredential.user;
+              
+                    btnlog.style.display = "none";
+                    btnsign.style.display = "none";
+                    mainPageRender();
+                    navImghomeRender()
+                    btnbooktour.style.display = "block"  
+                    btnaboutus.style.display = "block" 
+                    btncontact.style.display = "block"
+                    btncart.style.display = "block"
+                    alertP.style.display = "none"
+                  })
+                  .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    alert(errorMessage);
+                  });
+              } else {
+                alert("Password does not match");
+              }
+              //! here is finnish the authentication
+            } else {
+              alert("email is invalid");
+            }
+          } else {
+            alert("email mush be 7 chareacters");
+          }
+        });
+      });
+    });
+    
+    
+let data = returnData(db)
+data.then(result => {
+  console.log(result)
+})
+.catch(err => {
+  console.log(err)
+})
