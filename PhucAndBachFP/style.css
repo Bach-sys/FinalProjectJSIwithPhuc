@@ -1073,7 +1073,7 @@ header button {
                       /* BOOK TOUR PAGE */
 #tourPage{
   width: 100%;
-  height: 3500px;
+  height: 80vh;
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -1094,7 +1094,7 @@ header button {
   align-items: center;
 }
 #tourPage h1{
-  font-size: 60px;
+  /* font-size: 60px; */
   margin-top: 60px;
   font-family: 'Bebas Neue', sans-serif;
 }
@@ -1109,13 +1109,13 @@ header button {
 }
 .tourProduct{
   width:25%;
-  height:fit-content;
+  height:clamp(20.5rem, 50.5vw, 40rem); ;
   border: 3px solid #FCCB14;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+
 }
 .tourProductimg{
   width: 100%;
@@ -1178,7 +1178,7 @@ header button {
 
 
 
-                                        /* ABOUT US */
+                                        /*! ABOUT US */
 #aboutUs{
   width:100%;
   height:970px;

@@ -32,6 +32,12 @@ export async function returnData(db) {
 
 
 
+const accessKey = '416aa0d1-867e-4810-a913-72d6e6f3826f';
 
+const headers = {
+    'X-Meteum-API-Key': accessKey
+};
 
-let go = "to the zoo"
+fetch('https://api.meteum.ai/v1/forecast?lat=52.37125&lon=4.89388', { headers })
+    .then(response => response.json())
+    .then(json => console.log(json));

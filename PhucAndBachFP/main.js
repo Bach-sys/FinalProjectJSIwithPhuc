@@ -1,13 +1,12 @@
 import "./style.css";
-import { returnData } from "./script"; ""
-
-
+import { returnData } from "./script";
+("");
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 let nav = document.querySelector("#nav");
-let mainPage = document.querySelector('#mainPage')
+let mainPage = document.querySelector("#mainPage");
+let shoppingPage = document.querySelector("#shopping");
 // Render Navbar
-
 
 let navRender = () => {
   nav.innerHTML = `
@@ -28,91 +27,90 @@ let navRender = () => {
   </div>
 </header>
 <div id="nav-img"></div>
-  `
+  `;
 };
 navRender();
 
-
 // Render ảnh navbar
 
-let navImg = document.querySelector('#nav-img')
+let navImg = document.querySelector("#nav-img");
 let navImghomeRender = () => {
   navImg.innerHTML = `
   <div id="nav-main-img">
     <p>TREKKING</p>
   </div>
-  `
-}
-navImghomeRender()
-
+  `;
+};
+navImghomeRender();
 
 let navImgtourRender = () => {
   navImg.innerHTML = `
   <div id="nav-main-img3">
     <p>Book Tour</p>
   </div>
-  `
+  `;
 };
 let navImgsigninRender = () => {
   navImg.innerHTML = `
   <div id="nav-main-img1">
     <p>Sign In</p>
   </div>
-  `
+  `;
 };
 let navImgsignupRender = () => {
   navImg.innerHTML = `
   <div id="nav-main-img2">
     <p>Sign Up</p>
   </div>
-  `
+  `;
 };
 let navImgaboutusRender = () => {
   navImg.innerHTML = `
   <div id="nav-main-img4">
     <p>About Us</p>
   </div>
-  `
+  `;
 };
 let navImgcontactRender = () => {
   navImg.innerHTML = `
   <div id="nav-main-img5">
     <p>Contact</p>
   </div>
-  `
+  `;
 };
 let navImgcartRender = () => {
   navImg.innerHTML = `
   <div id="nav-main-img6">
     <p>SUBCRISED</p>
   </div>
-  `
+  `;
 };
 let navImgtnpdRender = () => {
   navImg.innerHTML = `
   <div id="nav-main-img7">
     <p>TÀ NĂNG PHAN DŨNG</p>
   </div>
-  `
+  `;
 };
 
 let btnlog = document.querySelector("#btn-nav-log");
 let btnsign = document.querySelector("#btn-nav-sign");
 let btnhome = document.querySelector("#home");
-let btnbooktour = document.querySelector("#bookTour")
-let btnaboutus = document.querySelector("#aboutus")
-let btncontact =document.querySelector("#contact")
-let btncart = document.querySelector("#cart")
-let alertP = document.querySelector(".alert")
- btnbooktour.style.display = "none"  
- btnaboutus.style.display = "none" 
- btncontact.style.display = "none"
- btncart.style.display = "none"
+let btnbooktour = document.querySelector("#bookTour");
+let btnaboutus = document.querySelector("#aboutus");
+let btncontact = document.querySelector("#contact");
+let btncart = document.querySelector("#cart");
+let alertP = document.querySelector(".alert");
+btnbooktour.style.display = "none";
+btnaboutus.style.display = "none";
+btncontact.style.display = "none";
+btncart.style.display = "none";
 
 // Render mainPage là div bao gồm tất cả các page
 
 let mainPageRender = () => {
-  mainPage.innerHTML=`
+  mainPage.style.display = "block"
+  mainPage.innerHTML = `
   <div id="homePage">
   <div id="carouselExampleIndicators" class="carousel slide">
   <div class="carousel-indicators">
@@ -275,56 +273,51 @@ let mainPageRender = () => {
   </div>
     </div>
   </div>
-  `
-}
-mainPageRender()
+  `;
+};
+mainPageRender();
 
-
-
-
-
-// Render trang Book Tour 
+// Render trang Book Tour
 
 let bookTourRender = () => {
-  mainPage.innerHTML = `
-  <div id="tourPage">
-  <h1 class="showtotop" >HÀNH TRÌNH TREKKING CÙNG THE HAPPY TRIP</h1>
-  <div class="bookTour item">
-    < class="tourContainer">
-      <div class="tourProduct showtotop delay-02">
-        <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
-        <div class="tourProductdes">
-          <h2>Tà năng phan dũng</h2>
-          <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
-          <div class="tourProductdes-child">
-            <i class="bi bi-pin-map-fill"></i>
-            <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
-          </div>
-          <div class="tourProductdes-child">
-            <i class="bi bi-clock-fill"></i>
-            <p>Thời gian: 2 ngày 2 đêm</p>
-          </div>
-          <div class="tourProductdes-child">
-            <i class="bi bi-trophy-fill"></i>
-            <p>Độ khó: 7/10</p>
-          </div>
-        </div>
-        <div class="tourProductsubmit">
-          <p>Giá: 3.500.000 VNĐ</p>
-          <button class="tourProduct-btn" id="TNPDpage">XEM CHI TIẾT</button>
-        </div>
-      </div>
+  mainPage.style.display = "flex"
+  mainPage.style.flexDirection = "row" 
+  mainPage.style.justifyContent = "space-between";
+  mainPage.style.flexWrap = "wrap"
+  let render = data.map((data) => {
+    return `
+   <div class="tourProduct" style ="gap:100px;">
+   <img src="${data.img}" alt="" class="tourProductimg">
+   <div class="tourProductdes">
+     <h2>${data.Title}</h2>
+     <p>Hành Trình: ${data.Tongquan}}</p>
+     <div class="tourProductdes-child">
+       <i class="bi bi-pin-map-fill"></i>
+       <p>Nơi khởi hành: ${data.startPlace}}</p>
+     </div>
+     <div class="tourProductdes-child">
+       <i class="bi bi-clock-fill"></i>
+       <p>Thời gian:${data.Thoigian}</p>
+     </div>
+     <div class="tourProductdes-child">
+       <i class="bi bi-trophy-fill"></i>
+       <p>Độ khó: ${data.Level}</p>
+     </div>
+   </div>
+   <div class="tourProductsubmit">
+     <p>Giá: ${data.Price} VNĐ</p>
+     <button class="tourProduct-btn" id="TNPDpage">XEM CHI TIẾT</button>
+   </div>
   </div>
-  </div>
-  `
-}
-
-
-
+  `;
+  });
+  mainPage.innerHTML = render;
+};
 
 // Render trang About Us
 
 let aboutUsRender = () => {
+  mainPage.style.display = "block"
   mainPage.innerHTML = `
   
   <div id="aboutUs">
@@ -358,14 +351,12 @@ let aboutUsRender = () => {
           </div>
         </div>
         <div class="aboutUs-bg"></div>
-      </div>`
-}
-
-
-
+      </div>`;
+};
 
 //Render trang Contact
-let contactRender = () =>{
+let contactRender = () => {
+  mainPage.style.display = "block"
   mainPage.innerHTML = `
   <div id="contactPage">
   <div class="contactContainer iten">
@@ -412,13 +403,12 @@ let contactRender = () =>{
   </div>
   <div class="contactBg"></div>
 </div>
-  `
-}
-
+  `;
+};
 
 //Render trang Cart
-let cartRender = () => {
-  mainPage.innerHTML=`
+let cartRender = () => {  mainPage.style.display = "block"
+  mainPage.innerHTML = `
   <div id="cart">
   <div class="cartContainer item">
     <h1 class="showtotop" >SUBCRISED</h1>
@@ -546,13 +536,13 @@ let cartRender = () => {
     </div>
   </div>
 </div>
-  `
-}
-
+  `;
+};
 
 // Render trang Sign in, Sign up
 
 let signupRender = () => {
+  mainPage.style.display = "block"
   mainPage.innerHTML = `
   <div class="register item">
   <img src="./img/sign-up.jpg" alt="" class="login-img ">
@@ -588,6 +578,7 @@ let signupRender = () => {
 `;
 };
 let loginRender = () => {
+  mainPage.style.display = "block"
   mainPage.innerHTML = `
   <div class="register ">
   <img src="./img/sign-in.jpg" alt="" class="login-img ">
@@ -618,10 +609,10 @@ let loginRender = () => {
   `;
 };
 
-
 //Render trang chi tiết sản phẩm
 
 let TNPDrender = () => {
+  mainPage.style.display = "block"
   mainPage.innerHTML = `
   <div class="trekkingPage">
   <div class="trekkingContainer">
@@ -684,14 +675,11 @@ let TNPDrender = () => {
     </div>
   </div>
 </div>
-  `
-}
-
-
-
+  `;
+};
 
 // Render footer
-let footer = document.querySelector("#footer")
+let footer = document.querySelector("#footer");
 let footerRender = () => {
   footer.innerHTML = `
   <footer class="footer">
@@ -720,48 +708,48 @@ let footerRender = () => {
     </div>
   </div>
 </footer>
-  `
-}
-footerRender()
+  `;
+};
+footerRender();
 
 // Chức năng click của từng button
 
 btnlog.addEventListener("click", () => {
   loginRender();
-  navImgsigninRender()
-  footerRender()
+  navImgsigninRender();
+  footerRender();
 });
 btnsign.addEventListener("click", () => {
   signupRender();
-  navImgsignupRender()
-  footerRender()
+  navImgsignupRender();
+  footerRender();
 });
 btnhome.addEventListener("click", () => {
-  mainPageRender()
-  navImghomeRender()
+  mainPageRender();
+  navImghomeRender();
 });
 btnbooktour.addEventListener("click", () => {
-  bookTourRender()
-  let btnTNPD = document.querySelector("#TNPDpage")
-  navImgtourRender()
-  footerRender()
+  bookTourRender();
+  let btnTNPD = document.querySelector("#TNPDpage");
+  navImgtourRender();
+  footerRender();
   btnTNPD.addEventListener("click", () => {
-    TNPDrender()
-    let informPage = document.querySelector("#informPage")
-    let btnlt = document.querySelector("#lt")
-    let btngt = document.querySelector("#gt")
-    let btncb = document.querySelector("#cb")
-    btnlt.addEventListener("click", ()=>{
-      lichtrinhRender()
-    }) 
-    btngt.addEventListener("click", ()=>{
-      gioithieuRender()
-    }) 
-    btncb.addEventListener("click", ()=>{
-      chuanbiRender()
-    }) 
+    TNPDrender();
+    let informPage = document.querySelector("#informPage");
+    let btnlt = document.querySelector("#lt");
+    let btngt = document.querySelector("#gt");
+    let btncb = document.querySelector("#cb");
+    btnlt.addEventListener("click", () => {
+      lichtrinhRender();
+    });
+    btngt.addEventListener("click", () => {
+      gioithieuRender();
+    });
+    btncb.addEventListener("click", () => {
+      chuanbiRender();
+    });
     let lichtrinhRender = () => {
-      informPage.innerHTML=`
+      informPage.innerHTML = `
       <h1>LỊCH TRÌNH TOUR TREKKING TÀ NĂNG PHAN DŨNG</h1>
       <div class="trekkingContenttour">
       <div class="trekkingContenttour-column">
@@ -793,11 +781,11 @@ btnbooktour.addEventListener("click", () => {
               <p>22:00 Xe về đến TP. Hồ Chí Minh, kết thúc hành trình Trekking Tà Năng – Phan Dũng.</p>
               <p>*Lưu ý: Lịch trình có thể thay đổi tuỳ vào tình hình thực tế như: thời tiết, trường hợp bất khả kháng nhằm đảm bảo an toàn tối đa cho khách hàng và sẽ được thông báo đến khách hàng khi có thay đổi</p>
             </div>
-          </div>`
-    }
-    lichtrinhRender()
+          </div>`;
+    };
+    lichtrinhRender();
     let gioithieuRender = () => {
-      informPage.innerHTML=`
+      informPage.innerHTML = `
       <div class="trekkingContent-GioiThieu">
               <h1>GIỚI THIỆU TOUR TREKKING TÀ NĂNG PHAN DŨNG</h1>
               <div class="trekkingContenttour">
@@ -945,8 +933,8 @@ btnbooktour.addEventListener("click", () => {
                       </div>
                     </div>
                   </div>
-            </div>`
-    }
+            </div>`;
+    };
     let chuanbiRender = () => {
       informPage.innerHTML = `
       <div class="trekkingContent-ChuanBi">
@@ -989,188 +977,198 @@ btnbooktour.addEventListener("click", () => {
           <p>1 đôi dép gọn nhẹ (đề xuất dép tổ ong, có thể thay thế giày khi đau chân)</p>
         </div>
       </div>
-    </div>`
-    }
+    </div>`;
+    };
     footerRender();
-  })
   });
+});
 btnaboutus.addEventListener("click", () => {
-  aboutUsRender()
-  navImgaboutusRender()
-  footerRender()   
+  aboutUsRender();
+  navImgaboutusRender();
+  footerRender();
 });
 btncontact.addEventListener("click", () => {
   contactRender();
-  navImgcontactRender()
-  footerRender()
+  navImgcontactRender();
+  footerRender();
 });
 btncart.addEventListener("click", () => {
   cartRender();
-  navImgcartRender()
-  footerRender()
+  navImgcartRender();
+  footerRender();
 });
-
 
 // Navbar effect
 
-window.addEventListener('scroll', () =>{
-  let items = document.querySelectorAll('.item');
-  let navbar = document.querySelector('header')
-  let tab = document.querySelector("#tab")
+window.addEventListener("scroll", () => {
+  let items = document.querySelectorAll(".item");
+  let navbar = document.querySelector("header");
+  let tab = document.querySelector("#tab");
   let scrollValue = window.scrollY;
-  if(scrollValue > 10){
-    navbar.classList.add('BgcNav')
+  if (scrollValue > 10) {
+    navbar.classList.add("BgcNav");
     // tab.classList.add('BgcNav')
-  }else{
-    navbar.classList.remove('BgcNav')
+  } else {
+    navbar.classList.remove("BgcNav");
     // tab.classList.remove('BgcNav')
-  }    items.forEach(item =>{
-    if(item.offsetTop - window.scrollY < 750){
-        item.classList.add('active');
+  }
+  items.forEach((item) => {
+    if (item.offsetTop - window.scrollY < 750) {
+      item.classList.add("active");
     }
-})
-})
+  });
+});
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+//Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  signOut,
+} from "firebase/auth";
+import {
+  getFirestore,
+  collection,
+  addDoc,
+  getDocs,
+  doc,
+} from "firebase/firestore";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDZNxTHPNkJM1tX2n0fUVYzKMh1VYnQxL8",
+  authDomain: "finalproject-4227e.firebaseapp.com",
+  projectId: "finalproject-4227e",
+  storageBucket: "finalproject-4227e.appspot.com",
+  messagingSenderId: "928682874879",
+  appId: "1:928682874879:web:a5526cfe1a50acf96139ca",
+  measurementId: "G-8XR793HVFL",
+};
 
-    //Import the functions you need from the SDKs you need
-    import { initializeApp } from "firebase/app";
-    import { getAnalytics } from "firebase/analytics";
-    import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut} from "firebase/auth";
-    import { getFirestore, collection, addDoc, getDocs } from "firebase/firestore";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-    
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyDZNxTHPNkJM1tX2n0fUVYzKMh1VYnQxL8",
-      authDomain: "finalproject-4227e.firebaseapp.com",
-      projectId: "finalproject-4227e",
-      storageBucket: "finalproject-4227e.appspot.com",
-      messagingSenderId: "928682874879",
-      appId: "1:928682874879:web:a5526cfe1a50acf96139ca",
-      measurementId: "G-8XR793HVFL",
-    };
-    
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-    //khởi tạo biến xác thực firebase gồm phần giả lập và hệ thống đăng nhập
-    const auth = getAuth(app);
-    const db = getFirestore(app); // database
-    //Initialize variable
-    let email;
-    let password;
-    let ComfirmPass;
-    let SignUp = document.querySelector("#btn-nav-sign");
-    
-    // when the doom are loaded then do the click to submit function
-    window.addEventListener("DOMContentLoaded", (event) => {
-      if (SignUp) {
-        //add event listener
-        SignUp.addEventListener("click", () => {
-          let btnComfirm = document.querySelector("#btn-SignUpComF");
-          email = document.querySelector("#email");
-          password = document.querySelector("#password");
-          ComfirmPass = document.querySelector("#confirm-password");
-          let regex = new RegExp("[a-z0-9]+@[a-z]+.[a-z]{2,3}");
-          btnComfirm.addEventListener("click", () => {
-            console.log("cannot get btn");
-            if (email.value.length > 7) {
-              if (regex.test(email.value)) {
-                if (password.value == ComfirmPass.value) {
-                  createUserWithEmailAndPassword(auth, email.value, password.value)
-                    .then((userCredential) => {
-                      const user = userCredential.user;
-                      
-                      btnlog.style.display = "none";
-                      btnsign.style.display = "none";
-                      mainPageRender();
-                      navImghomeRender();
-                      btnbooktour.style.display = "block"  
-                      btnaboutus.style.display = "block" 
-                      btncontact.style.display = "block"
-                      btncart.style.display = "block"
-                      alertP.style.display = "none"
-                    })
-                    .catch((error) => {
-                      const errorCode = error.code;
-                      const errorMessage = error.message;
-                      console.log(errorMessage);
-                      alert(errorMessage);
-                    });
-                } else {
-                  alert("Password does not match");
-                }
-                //! here is finnish the authentication
-              } else {
-                alert("email is invalid");
-              }
-            } else {
-              alert("email mush be 7 chareacters");
-            }
-            // ! condition to accesss the account
-            //! pass all condition
-          });
-        });
-      }
-    });
-    
-    window.addEventListener("DOMContentLoaded", () => {
-      btnlog.addEventListener("click", () => {
-        console.log("btn")
-        email = document.querySelector("#email");
-        password = document.querySelector("#password");
-        let btncomfirmSignin = document.querySelector("#btn-signIn-submit");
-        let regex = new RegExp("[a-z0-9]+@[a-z]+.[a-z]{2,3}");
-        btncomfirmSignin.addEventListener("click", () => {
-          console.log("btn")
-          if (email.value.length > 7) {
-            if (regex.test(email.value)) {
-              if (password.value.length > 6) {
-                signInWithEmailAndPassword(auth, email.value, password.value)
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+//khởi tạo biến xác thực firebase gồm phần giả lập và hệ thống đăng nhập
+const auth = getAuth(app);
+const db = getFirestore(app); // database
+//Initialize variable
+let email;
+let password;
+let ComfirmPass;
+let SignUp = document.querySelector("#btn-nav-sign");
+
+// when the doom are loaded then do the click to submit function
+window.addEventListener("DOMContentLoaded", (event) => {
+  if (SignUp) {
+    //add event listener
+    SignUp.addEventListener("click", () => {
+      let btnComfirm = document.querySelector("#btn-SignUpComF");
+      email = document.querySelector("#email");
+      password = document.querySelector("#password");
+      ComfirmPass = document.querySelector("#confirm-password");
+      let regex = new RegExp("[a-z0-9]+@[a-z]+.[a-z]{2,3}");
+      btnComfirm.addEventListener("click", () => {
+        console.log("cannot get btn");
+        if (email.value.length > 7) {
+          if (regex.test(email.value)) {
+            if (password.value == ComfirmPass.value) {
+              createUserWithEmailAndPassword(auth, email.value, password.value)
                 .then((userCredential) => {
-                    // Signed in
-                    console.log("Success")
-                    const user = userCredential.user;
-              
-                    btnlog.style.display = "none";
-                    btnsign.style.display = "none";
-                    mainPageRender();
-                    navImghomeRender()
-                    btnbooktour.style.display = "block"  
-                    btnaboutus.style.display = "block" 
-                    btncontact.style.display = "block"
-                    btncart.style.display = "block"
-                    alertP.style.display = "none"
-                  })
-                  .catch((error) => {
-                    const errorCode = error.code;
-                    const errorMessage = error.message;
-                    alert(errorMessage);
-                  });
-              } else {
-                alert("Password does not match");
-              }
-              //! here is finnish the authentication
+                  const user = userCredential.user;
+
+                  btnlog.style.display = "none";
+                  btnsign.style.display = "none";
+                  mainPageRender();
+                  navImghomeRender();
+                  btnbooktour.style.display = "block";
+                  btnaboutus.style.display = "block";
+                  btncontact.style.display = "block";
+                  btncart.style.display = "block";
+                  alertP.style.display = "none";
+                })
+                .catch((error) => {
+                  const errorCode = error.code;
+                  const errorMessage = error.message;
+                  console.log(errorMessage);
+                  alert(errorMessage);
+                });
             } else {
-              alert("email is invalid");
+              alert("Password does not match");
             }
+            //! here is finnish the authentication
           } else {
-            alert("email mush be 7 chareacters");
+            alert("email is invalid");
           }
-        });
+        } else {
+          alert("email mush be 7 chareacters");
+        }
+        // ! condition to accesss the account
+        //! pass all condition
       });
     });
-    
-    
-let data = returnData(db)
-data.then(result => {
-  console.log(result)
-})
-.catch(err => {
-  console.log(err)
-})
+  }
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+  btnlog.addEventListener("click", () => {
+    console.log("btn");
+    email = document.querySelector("#email");
+    password = document.querySelector("#password");
+    let btncomfirmSignin = document.querySelector("#btn-signIn-submit");
+    let regex = new RegExp("[a-z0-9]+@[a-z]+.[a-z]{2,3}");
+    btncomfirmSignin.addEventListener("click", () => {
+      console.log("btn");
+      if (email.value.length > 7) {
+        if (regex.test(email.value)) {
+          if (password.value.length > 6) {
+            signInWithEmailAndPassword(auth, email.value, password.value)
+              .then((userCredential) => {
+                // Signed in
+                console.log("Success");
+                const user = userCredential.user;
+
+                btnlog.style.display = "none";
+                btnsign.style.display = "none";
+                mainPageRender();
+                navImghomeRender();
+                btnbooktour.style.display = "block";
+                btnaboutus.style.display = "block";
+                btncontact.style.display = "block";
+                btncart.style.display = "block";
+                alertP.style.display = "none";
+              })
+              .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                alert(errorMessage);
+              });
+          } else {
+            alert("Password does not match");
+          }
+          //! here is finnish the authentication
+        } else {
+          alert("email is invalid");
+        }
+      } else {
+        alert("email mush be 7 chareacters");
+      }
+    });
+  });
+});
+
+let data = returnData(db);
+data
+  .then((result) => {
+    data = result;
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
