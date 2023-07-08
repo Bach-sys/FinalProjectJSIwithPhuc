@@ -662,7 +662,7 @@ let aboutUsRender = () => {
             
             <div class="aboutUs-inform showtotop delay-06">
               <h2>AN TOÀN</h2>
-              <p>Giá trị an toàn được The Happy Trip đưa lên là kim chỉ nam của công ty. Mọi hoạt động với khách hàng đều phải đặt giá trị này làm trọng tâm. Chúng tôi quan niệm rằng, thiên nhiên kỳ vĩ luôn ẩn chứa những thách thức, vì vậy để được sống và làm bạn cùng thiên nhiên, ta phải trang bị những kiến thức sinh tồn và kĩ năng bảo vệ bản thân thật tốt. Để trải nghiệm của khách hàng được chỉnh chu nhất, để công việc của chúng tôi được trọn vẹn nhất, an toàn là yếu tố hàng đầu.
+              <p>Giá trị an toàn được The Happy Trip đưa lên là kim chỉ nam của công ty. Mọi hoạt động với khách hàng đều phải đặt giá trị này làm trọng tâm. Chúng tôi quan niệm rằng, thiên nhiên kỳ vĩ luôn ẩn chứa những thách thức, vì vậy để được sống và làm bạn cùng thiên nhiên, ta phải trang bị những kiến thức sinh tồn và kĩ năng bảo vệ bản thân thật tốt.
               </p>
             </div>
             <div class="aboutUs-inform showtotop delay-06">
@@ -999,10 +999,56 @@ let TNPDrender = () => {
       <button id="gt">GIỚI THIỆU</button>
       <button id="cb">CHUẨN BỊ</button>
     </div>
-    <div class="trekkingContent-details" id="informPage">
+    <div class="Trekking" id="informPage">
             
     </div>
   </div>
+</div>
+<div class="trekkingProduct-img">
+<div class="trekkingProduct-img-column">
+  <div class="divImg1">
+    <h3>TÀ NĂNG PHAN DŨNG</h3>
+  </div>
+  <div class="divImg2">
+    <h3>TÀ NĂNG PHAN DŨNG</h3>
+  </div>
+  <div class="divImg3">
+    <h3>TÀ NĂNG PHAN DŨNG</h3>
+  </div>
+</div>
+<div class="trekkingProduct-img-column">
+  <div class="divImg4">
+    <h3>PHƯỚC BÌNH TÀ GIANG</h3>
+  </div>
+  <div class="divImg5">
+    <h3>PHƯỚC BÌNH TÀ GIANG</h3>
+  </div>
+  <div class="divImg6">
+    <h3>PHƯỚC BÌNH TÀ GIANG</h3>
+  </div>
+</div>
+<div class="trekkingProduct-img-column">
+  <div class="divImg7">
+    <h3>HÒN SƠN</h3>
+  </div>
+  <div class="divImg8">
+    <h3>HÒN SƠN</h3>
+  </div>
+  <div class="divImg9">
+    <h3>HÒN SƠN</h3>
+  </div>
+</div>
+<div class="trekkingProduct-img-column">
+  <div class="divImg10">
+    <h3>TÀ ĐÙNG</h3>
+  </div>
+  <div class="divImg11">
+    <h3>TÀ ĐÙNG</h3>
+  </div>
+  <div class="divImg12">
+    <h3>TÀ ĐÙNG</h3>
+  </div>
+</div>
 </div>
   `;
 };
@@ -1078,7 +1124,7 @@ btnbooktour.addEventListener("click", () => {
       chuanbiRender();
     });
     let lichtrinhRender = () => {
-      informPage.innerHTML = `
+      informPage.innerHTML=`
       <h1>LỊCH TRÌNH TOUR TREKKING TÀ NĂNG PHAN DŨNG</h1>
       <div class="trekkingContenttour">
       <div class="trekkingContenttour-column">
@@ -1110,9 +1156,9 @@ btnbooktour.addEventListener("click", () => {
               <p>22:00 Xe về đến TP. Hồ Chí Minh, kết thúc hành trình Trekking Tà Năng – Phan Dũng.</p>
               <p>*Lưu ý: Lịch trình có thể thay đổi tuỳ vào tình hình thực tế như: thời tiết, trường hợp bất khả kháng nhằm đảm bảo an toàn tối đa cho khách hàng và sẽ được thông báo đến khách hàng khi có thay đổi</p>
             </div>
-          </div>`;
-    };
-    lichtrinhRender();
+          </div>`
+    }
+    lichtrinhRender()
     let gioithieuRender = () => {
       informPage.innerHTML = `
       <div class="trekkingContent-GioiThieu">
