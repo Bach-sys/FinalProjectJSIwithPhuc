@@ -1125,6 +1125,7 @@ btnbooktour.addEventListener("click", () => {
     });
     let lichtrinhRender = () => {
       informPage.innerHTML=`
+      <div class="trekkingContent-details">
       <h1>LỊCH TRÌNH TOUR TREKKING TÀ NĂNG PHAN DŨNG</h1>
       <div class="trekkingContenttour">
       <div class="trekkingContenttour-column">
@@ -1160,7 +1161,7 @@ btnbooktour.addEventListener("click", () => {
     }
     lichtrinhRender()
     let gioithieuRender = () => {
-      informPage.innerHTML = `
+      informPage.innerHTML=`
       <div class="trekkingContent-GioiThieu">
               <h1>GIỚI THIỆU TOUR TREKKING TÀ NĂNG PHAN DŨNG</h1>
               <div class="trekkingContenttour">
@@ -1311,6 +1312,7 @@ btnbooktour.addEventListener("click", () => {
             </div>`;
     };
     let chuanbiRender = () => {
+      document.querySelector(".trekkingInformtour").style.height = "35%"
       informPage.innerHTML = `
       <div class="trekkingContent-ChuanBi">
       <h1>CHUẨN BỊ CHO TOUR TREKKING TÀ NĂNG PHAN DŨNG</h1>
