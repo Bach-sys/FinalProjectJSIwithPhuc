@@ -108,540 +108,213 @@ btncart.style.display = "none";
 
 // Render mainPage là div bao gồm tất cả các page
 
-// let mainPageRender = () => {
-//   mainPage.innerHTML=`
-//   <div id="homePage">
-//   <div id="carouselExampleIndicators" class="carousel slide">
-//   <div class="carousel-indicators">
-//     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-//     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-//     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-//     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-//     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-//   </div>
-//   <div class="carousel-inner">
-//     <div class="carousel-item active">
-//       <img src="./img/img-trekk3.jpg" class="d-block w-100" alt="...">
-//     </div>
-//     <div class="carousel-item">
-//       <img src="./img/img-trekk.jpg" class="d-block w-100" alt="...">
-//     </div>
-//     <div class="carousel-item">
-//       <img src="./img/book-tour.jpg" class="d-block w-100" alt="...">
-//     </div>
-//     <div class="carousel-item">
-//       <img src="./img/about-us.jpg" class="d-block w-100" alt="...">
-//     </div>
-//     <div class="carousel-item">
-//       <img src="./img/contact-page.jpg" class="d-block w-100" alt="...">
-//     </div>
-//   </div>
-//   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-//     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-//     <span class="visually-hidden">Previous</span>
-//   </button>
-//   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-//     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-//     <span class="visually-hidden">Next</span>
-//   </button>
-// </div>
-//     </div>
-//     <div id="page">
-//     <div class="introduce-page">
-//   <div class="introduce">
-//   <div class="introduce-child item">
-//     <div class="introduce-des">
-//     <h1 class="showtotop delay-02" >Tour Trekking</h1>
-//     <h2 class="showtotop delay-04">TÀ NĂNG PHAN DŨNG</h2>
-//       <p class="des showtotop delay-06">Không dễ dàng để Tà Năng được biết đến với cái tên: Cung đường Trekking đẹp nhất miền Nam. Vẻ đẹp trữ tình khiến bao người khao khát một lần được đặt chân đến đây và tận mắt chiêm ngưỡng. Cung đường trekking băng qua những triền đồi xanh mướt, phóng tầm mắt thưởng thức núi rừng xanh biếc và cảm nhận không khí trong trẻo khiến ta quên hết những vội vã thường nhật. 
-//       </p>
-//     <div class="inform showtotop delay-08">
-//     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480V317.1c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"/></svg>    
-//     <p>35KM</p>
-//     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M396.6 6.5L235.8 129.1c9.6 1.8 18.9 5.8 27 12l168 128c13.2 10.1 22 24.9 24.5 41.4l6.2 41.5H608c9.3 0 18.2-4.1 24.2-11.1s8.8-16.4 7.4-25.6l-24-160c-1.2-8.2-5.6-15.7-12.3-20.7l-168-128c-11.5-8.7-27.3-8.7-38.8 0zm-153.2 160c-11.5-8.7-27.3-8.7-38.8 0l-168 128c-6.6 5-11 12.5-12.3 20.7l-24 160c-1.4 9.2 1.3 18.6 7.4 25.6S22.7 512 32 512H224V352l96 160h96c9.3 0 18.2-4.1 24.2-11.1s8.8-16.4 7.4-25.6l-24-160c-1.2-8.2-5.6-15.7-12.3-20.7l-168-128z"/></svg>
-//     <p>2N-2Đ</p>
-//     <button class="detail showtotop delay-10">GIỚI THIỆU</button>
-//     </div>
-//     </div>
-//     <div class="TNPD">
-//     <img class="des-img showtotop delay-12" src="./img/TNPD.jpg" alt="">
-//     <img class="des-img showtotop delay-14" src="./img/TNPD2.jpg" alt="">
-//     <img class="des-img showtotop delay-16" src="./img/TNPD3.jpg" alt="">
-//     </div>
-//   </div>
-// </div>
-// </div>
-//     </div>
-//     <div id="page1">
-//     <div class="introduce-page1">
-//     <div class="introduce">
-//     <div class="introduce-child item">
-//       <div class="TNPD">
-//       <img class="des-img showtotop delay-12" src="./img/TD1.jpg" alt="">
-//       <img class="des-img showtotop delay-14" src="./img/TD2.png" alt="">
-//       <img class="des-img showtotop delay-18" src="./img/TD3.jpg" alt="">
-//       </div>
-//       <div class="introduce-des">
-//       <h1 class="showtotop delay-02">Tour Trekking</h1>
-//       <h2 class="showtotop delay-04">TÀ ĐÙNG</h2>
-//         <p class="des showtotop">Vịnh Hạ Long của Tây Nguyên đã làm xao xuyến bao nhiêu tâm hồn lữ khách. Nơi bình yên gõ cửa tâm hồn và bao muộn phiền dần tan biến trong màn sương mai. Con thuyền nhỏ đưa bạn dạo trên mặt hồ xanh biếc khám phá những nét đẹp êm đềm. Giấc mơ về chốn thần tiên nay đã gần ngay trước mắt bạn.
-//         </p>
-//       <div class="inform showtotop delay-08">
-//       <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480V317.1c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"/></svg>    
-//       <p>14KM</p>
-//       <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M396.6 6.5L235.8 129.1c9.6 1.8 18.9 5.8 27 12l168 128c13.2 10.1 22 24.9 24.5 41.4l6.2 41.5H608c9.3 0 18.2-4.1 24.2-11.1s8.8-16.4 7.4-25.6l-24-160c-1.2-8.2-5.6-15.7-12.3-20.7l-168-128c-11.5-8.7-27.3-8.7-38.8 0zm-153.2 160c-11.5-8.7-27.3-8.7-38.8 0l-168 128c-6.6 5-11 12.5-12.3 20.7l-24 160c-1.4 9.2 1.3 18.6 7.4 25.6S22.7 512 32 512H224V352l96 160h96c9.3 0 18.2-4.1 24.2-11.1s8.8-16.4 7.4-25.6l-24-160c-1.2-8.2-5.6-15.7-12.3-20.7l-168-128z"/></svg>
-//       <p>2N-2Đ</p>
-//       <button class="detail showtotop delay-10">GIỚI THIỆU</button>
-//       </div>
-//       </div>
-//     </div>
-//   </div>
-//   </div>
-//     </div>
-//     <div id="page2">  
-//     <div class="introduce-page2">
-//     <div class="introduce">
-//     <div class="introduce-child item">
-//       <div class="introduce-des">
-//       <h1 class="showtotop delay-02">Tour Trekking</h1>
-//       <h2 class="showtotop delay-04">PHƯỚC BÌNH - TÀ GIANG</h2>
-//         <p class="des showtotop delay-06">Nâng cấp trải nghiệm với hành trình Bidoup – Phước Bình – Tà Giang – Cung đường đẹp bậc nhất miền Nam cùng The happy trip và những người bạn vui tính.
-//         Quãng đường trekking 28km, xuyên qua 3 tỉnh Lâm Đồng – Ninh Thuận – Khánh Hoà là mục tiêu chinh phục của những trekkers thực thụ.
-//         </p>
-//       <div class="inform showtotop delay-08">
-//       <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480V317.1c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"/></svg>    
-//       <p>28KM</p>
-//       <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M396.6 6.5L235.8 129.1c9.6 1.8 18.9 5.8 27 12l168 128c13.2 10.1 22 24.9 24.5 41.4l6.2 41.5H608c9.3 0 18.2-4.1 24.2-11.1s8.8-16.4 7.4-25.6l-24-160c-1.2-8.2-5.6-15.7-12.3-20.7l-168-128c-11.5-8.7-27.3-8.7-38.8 0zm-153.2 160c-11.5-8.7-27.3-8.7-38.8 0l-168 128c-6.6 5-11 12.5-12.3 20.7l-24 160c-1.4 9.2 1.3 18.6 7.4 25.6S22.7 512 32 512H224V352l96 160h96c9.3 0 18.2-4.1 24.2-11.1s8.8-16.4 7.4-25.6l-24-160c-1.2-8.2-5.6-15.7-12.3-20.7l-168-128z"/></svg>
-//       <p>2N-2Đ</p>
-//       <button class="detail showtotop delay-10">GIỚI THIỆU</button>
-//       </div>
-//       </div>
-//       <div class="TNPD">
-//       <img class="des-img showtotop delay-12" src="./img/PBTG1.jpg" alt="">
-//       <img class="des-img showtotop delay-14" src="./img/PBTG2.jpg" alt="">
-//       <img class="des-img showtotop delay-16" src="./img/PBTG3.jpg" alt="">
-//       </div>
-//     </div>
-//   </div>
-//   </div></div>
-//     <div id="page3">
-//     <div class="introduce-page3">
-//     <div class="introduce">
-//     <div class="introduce-child item">
-//       <div class="TNPD">
-//       <img class="des-img showtotop delay-12" src="./img/HS1.jpg" alt="">
-//       <img class="des-img showtotop delay-14" src="./img/HS2.jpg" alt="">
-//       <img class="des-img showtotop delay-16" src="./img/HS3.jpg" alt="">
-//       </div>
-//       <div class="introduce-des">
-//       <h1 class="showtotop delay-02">Tour Trekking</h1>
-//       <h2 class="showtotop delay-04">HÒN SƠN</h2>
-//         <p class="des showtotop delay-06">Hành trình là sự kết hợp các trải nghiệm biển đảo đa dạng: khám phá hòn đảo xinh đẹp bằng xe máy, trekking chinh phục đỉnh Ma Thiên Lãnh, ngắm toàn cảnh Đảo Hòn Sơn từ bãi đá tiên.
-//         </p>
-//       <div class="inform showtotop delay-08">
-//       <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480V317.1c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"/></svg>    
-//       <p>14KM</p>
-//       <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M396.6 6.5L235.8 129.1c9.6 1.8 18.9 5.8 27 12l168 128c13.2 10.1 22 24.9 24.5 41.4l6.2 41.5H608c9.3 0 18.2-4.1 24.2-11.1s8.8-16.4 7.4-25.6l-24-160c-1.2-8.2-5.6-15.7-12.3-20.7l-168-128c-11.5-8.7-27.3-8.7-38.8 0zm-153.2 160c-11.5-8.7-27.3-8.7-38.8 0l-168 128c-6.6 5-11 12.5-12.3 20.7l-24 160c-1.4 9.2 1.3 18.6 7.4 25.6S22.7 512 32 512H224V352l96 160h96c9.3 0 18.2-4.1 24.2-11.1s8.8-16.4 7.4-25.6l-24-160c-1.2-8.2-5.6-15.7-12.3-20.7l-168-128z"/></svg>
-//       <p>2N-2Đ</p>
-//       <button class="detail showtotop delay-10">GIỚI THIỆU</button>
-//       </div>
-//       </div>
-//     </div>
-//   </div>
-//   </div>
-//     </div>
-//     <div id="page4">
-//     <div class="img-settime">
-//     <div class="settime item">
-//       <div class="settime-des">
-//         <h1 class="settime-des-h1">TƯ VẤN TREKKING</h1>
-//       <p class="settime-des-p">Bạn lần đầu đi trekking hoặc chỉ đang cần thêm thông tin về hành trình để tham khảo, đội ngũ The happy trip sẵn sàng hỗ trợ bạn thêm thông tin để dễ hình dung nhất. Hãy chọn khung giờ phù hợp, chúng tôi sẽ liên hệ với bạn nhé!</p>
-//       </div>
-//       <div class="settime-form">
-//         <div class="settime-form-top">
-//           <input type="text" placeholder="Họ và tên">
-//           <input type="phone" placeholder="Số điện thoại">
-//         </div>
-//         <div class="settime-form-bottom">
-//           <input type="text" placeholder="Hẹn giờ">
-//           <input type="phone" placeholder="Ghi chú (nếu có)">
-//         </div>
-//         <button class="settime-btn">TƯ VẤN</button>
-//       </div>
-//     </div>
-//   </div>
-//     </div>
-//   </div>
-//   `
-// }
-// mainPageRender()
-
-
-
-
+let mainPageRender = () => {
+  mainPage.style.display = "block"
+  mainPage.innerHTML = `
+  <div id="homePage">
+  <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./img/img-trekk3.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./img/img-trekk.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./img/book-tour.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./img/about-us.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./img/contact-page.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    </div>
+    <div id="page">
+    <div class="introduce-page">
+  <div class="introduce">
+  <div class="introduce-child item">
+    <div class="introduce-des">
+    <h1 class="showtotop delay-02" >Tour Trekking</h1>
+    <h2 class="showtotop delay-04">TÀ NĂNG PHAN DŨNG</h2>
+      <p class="des showtotop delay-06">Không dễ dàng để Tà Năng được biết đến với cái tên: Cung đường Trekking đẹp nhất miền Nam. Vẻ đẹp trữ tình khiến bao người khao khát một lần được đặt chân đến đây và tận mắt chiêm ngưỡng. Cung đường trekking băng qua những triền đồi xanh mướt, phóng tầm mắt thưởng thức núi rừng xanh biếc và cảm nhận không khí trong trẻo khiến ta quên hết những vội vã thường nhật. 
+      </p>
+    <div class="inform showtotop delay-08">
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480V317.1c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"/></svg>    
+    <p>35KM</p>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M396.6 6.5L235.8 129.1c9.6 1.8 18.9 5.8 27 12l168 128c13.2 10.1 22 24.9 24.5 41.4l6.2 41.5H608c9.3 0 18.2-4.1 24.2-11.1s8.8-16.4 7.4-25.6l-24-160c-1.2-8.2-5.6-15.7-12.3-20.7l-168-128c-11.5-8.7-27.3-8.7-38.8 0zm-153.2 160c-11.5-8.7-27.3-8.7-38.8 0l-168 128c-6.6 5-11 12.5-12.3 20.7l-24 160c-1.4 9.2 1.3 18.6 7.4 25.6S22.7 512 32 512H224V352l96 160h96c9.3 0 18.2-4.1 24.2-11.1s8.8-16.4 7.4-25.6l-24-160c-1.2-8.2-5.6-15.7-12.3-20.7l-168-128z"/></svg>
+    <p>2N-2Đ</p>
+    <button class="detail showtotop delay-10">GIỚI THIỆU</button>
+    </div>
+    </div>
+    <div class="TNPD">
+    <img class="des-img showtotop delay-12" src="./img/TNPD.jpg" alt="">
+    <img class="des-img showtotop delay-14" src="./img/TNPD2.jpg" alt="">
+    <img class="des-img showtotop delay-16" src="./img/TNPD3.jpg" alt="">
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+    <div id="page1">
+    <div class="introduce-page1">
+    <div class="introduce">
+    <div class="introduce-child item">
+      <div class="TNPD">
+      <img class="des-img showtotop delay-12" src="./img/TD1.jpg" alt="">
+      <img class="des-img showtotop delay-14" src="./img/TD2.png" alt="">
+      <img class="des-img showtotop delay-18" src="./img/TD3.jpg" alt="">
+      </div>
+      <div class="introduce-des">
+      <h1 class="showtotop delay-02">Tour Trekking</h1>
+      <h2 class="showtotop delay-04">TÀ ĐÙNG</h2>
+        <p class="des showtotop">Vịnh Hạ Long của Tây Nguyên đã làm xao xuyến bao nhiêu tâm hồn lữ khách. Nơi bình yên gõ cửa tâm hồn và bao muộn phiền dần tan biến trong màn sương mai. Con thuyền nhỏ đưa bạn dạo trên mặt hồ xanh biếc khám phá những nét đẹp êm đềm. Giấc mơ về chốn thần tiên nay đã gần ngay trước mắt bạn.
+        </p>
+      <div class="inform showtotop delay-08">
+      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480V317.1c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"/></svg>    
+      <p>14KM</p>
+      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M396.6 6.5L235.8 129.1c9.6 1.8 18.9 5.8 27 12l168 128c13.2 10.1 22 24.9 24.5 41.4l6.2 41.5H608c9.3 0 18.2-4.1 24.2-11.1s8.8-16.4 7.4-25.6l-24-160c-1.2-8.2-5.6-15.7-12.3-20.7l-168-128c-11.5-8.7-27.3-8.7-38.8 0zm-153.2 160c-11.5-8.7-27.3-8.7-38.8 0l-168 128c-6.6 5-11 12.5-12.3 20.7l-24 160c-1.4 9.2 1.3 18.6 7.4 25.6S22.7 512 32 512H224V352l96 160h96c9.3 0 18.2-4.1 24.2-11.1s8.8-16.4 7.4-25.6l-24-160c-1.2-8.2-5.6-15.7-12.3-20.7l-168-128z"/></svg>
+      <p>2N-2Đ</p>
+      <button class="detail showtotop delay-10">GIỚI THIỆU</button>
+      </div>
+      </div>
+    </div>
+  </div>
+  </div>
+    </div>
+    <div id="page2">  
+    <div class="introduce-page2">
+    <div class="introduce">
+    <div class="introduce-child item">
+      <div class="introduce-des">
+      <h1 class="showtotop delay-02">Tour Trekking</h1>
+      <h2 class="showtotop delay-04">PHƯỚC BÌNH - TÀ GIANG</h2>
+        <p class="des showtotop delay-06">Nâng cấp trải nghiệm với hành trình Bidoup – Phước Bình – Tà Giang – Cung đường đẹp bậc nhất miền Nam cùng The happy trip và những người bạn vui tính.
+        Quãng đường trekking 28km, xuyên qua 3 tỉnh Lâm Đồng – Ninh Thuận – Khánh Hoà là mục tiêu chinh phục của những trekkers thực thụ.
+        </p>
+      <div class="inform showtotop delay-08">
+      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480V317.1c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"/></svg>    
+      <p>28KM</p>
+      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M396.6 6.5L235.8 129.1c9.6 1.8 18.9 5.8 27 12l168 128c13.2 10.1 22 24.9 24.5 41.4l6.2 41.5H608c9.3 0 18.2-4.1 24.2-11.1s8.8-16.4 7.4-25.6l-24-160c-1.2-8.2-5.6-15.7-12.3-20.7l-168-128c-11.5-8.7-27.3-8.7-38.8 0zm-153.2 160c-11.5-8.7-27.3-8.7-38.8 0l-168 128c-6.6 5-11 12.5-12.3 20.7l-24 160c-1.4 9.2 1.3 18.6 7.4 25.6S22.7 512 32 512H224V352l96 160h96c9.3 0 18.2-4.1 24.2-11.1s8.8-16.4 7.4-25.6l-24-160c-1.2-8.2-5.6-15.7-12.3-20.7l-168-128z"/></svg>
+      <p>2N-2Đ</p>
+      <button class="detail showtotop delay-10">GIỚI THIỆU</button>
+      </div>
+      </div>
+      <div class="TNPD">
+      <img class="des-img showtotop delay-12" src="./img/PBTG1.jpg" alt="">
+      <img class="des-img showtotop delay-14" src="./img/PBTG2.jpg" alt="">
+      <img class="des-img showtotop delay-16" src="./img/PBTG3.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  </div></div>
+    <div id="page3">
+    <div class="introduce-page3">
+    <div class="introduce">
+    <div class="introduce-child item">
+      <div class="TNPD">
+      <img class="des-img showtotop delay-12" src="./img/HS1.jpg" alt="">
+      <img class="des-img showtotop delay-14" src="./img/HS2.jpg" alt="">
+      <img class="des-img showtotop delay-16" src="./img/HS3.jpg" alt="">
+      </div>
+      <div class="introduce-des">
+      <h1 class="showtotop delay-02">Tour Trekking</h1>
+      <h2 class="showtotop delay-04">HÒN SƠN</h2>
+        <p class="des showtotop delay-06">Hành trình là sự kết hợp các trải nghiệm biển đảo đa dạng: khám phá hòn đảo xinh đẹp bằng xe máy, trekking chinh phục đỉnh Ma Thiên Lãnh, ngắm toàn cảnh Đảo Hòn Sơn từ bãi đá tiên.
+        </p>
+      <div class="inform showtotop delay-08">
+      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480V317.1c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"/></svg>    
+      <p>14KM</p>
+      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M396.6 6.5L235.8 129.1c9.6 1.8 18.9 5.8 27 12l168 128c13.2 10.1 22 24.9 24.5 41.4l6.2 41.5H608c9.3 0 18.2-4.1 24.2-11.1s8.8-16.4 7.4-25.6l-24-160c-1.2-8.2-5.6-15.7-12.3-20.7l-168-128c-11.5-8.7-27.3-8.7-38.8 0zm-153.2 160c-11.5-8.7-27.3-8.7-38.8 0l-168 128c-6.6 5-11 12.5-12.3 20.7l-24 160c-1.4 9.2 1.3 18.6 7.4 25.6S22.7 512 32 512H224V352l96 160h96c9.3 0 18.2-4.1 24.2-11.1s8.8-16.4 7.4-25.6l-24-160c-1.2-8.2-5.6-15.7-12.3-20.7l-168-128z"/></svg>
+      <p>2N-2Đ</p>
+      <button class="detail showtotop delay-10">GIỚI THIỆU</button>
+      </div>
+      </div>
+    </div>
+  </div>
+  </div>
+    </div>
+    <div id="page4">
+    <div class="img-settime">
+    <div class="settime item">
+      <div class="settime-des">
+        <h1 class="settime-des-h1">TƯ VẤN TREKKING</h1>
+      <p class="settime-des-p">Bạn lần đầu đi trekking hoặc chỉ đang cần thêm thông tin về hành trình để tham khảo, đội ngũ The happy trip sẵn sàng hỗ trợ bạn thêm thông tin để dễ hình dung nhất. Hãy chọn khung giờ phù hợp, chúng tôi sẽ liên hệ với bạn nhé!</p>
+      </div>
+      <div class="settime-form">
+        <div class="settime-form-top">
+          <input type="text" placeholder="Họ và tên">
+          <input type="phone" placeholder="Số điện thoại">
+        </div>
+        <div class="settime-form-bottom">
+          <input type="text" placeholder="Hẹn giờ">
+          <input type="phone" placeholder="Ghi chú (nếu có)">
+        </div>
+        <button class="settime-btn">TƯ VẤN</button>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+  `;
+};
+mainPageRender();
 
 // Render trang Book Tour
 
 let bookTourRender = () => {
-  mainPage.innerHTML = `
-  <div id="tourPage">
-  <h1 class="showtotop" >HÀNH TRÌNH TREKKING CÙNG THE HAPPY TRIP</h1>
-  <div class="bookTour item">
-    <div class="tourContainer">
-      <div class="tourProduct showtotop delay-02">
-        <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
-        <div class="tourProductdes">
-          <h2>Tà năng phan dũng</h2>
-          <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
-          <div class="tourProductdes-child">
-            <i class="bi bi-pin-map-fill"></i>
-            <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
-          </div>
-          <div class="tourProductdes-child">
-            <i class="bi bi-clock-fill"></i>
-            <p>Thời gian: 2 ngày 2 đêm</p>
-          </div>
-          <div class="tourProductdes-child">
-            <i class="bi bi-trophy-fill"></i>
-            <p>Độ khó: 7/10</p>
-          </div>
-        </div>
-        <div class="tourProductsubmit">
-          <p>Giá: 3.500.000 VNĐ</p>
-          <button class="tourProduct-btn" id="TNPDpage">XEM CHI TIẾT</button>
-        </div>
-      </div>
-      <div class="tourProduct showtotop delay-04">
-        <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
-        <div class="tourProductdes">
-          <h2>Tà năng phan dũng</h2>
-          <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
-          <div class="tourProductdes-child">
-            <i class="bi bi-pin-map-fill"></i>
-            <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
-          </div>
-          <div class="tourProductdes-child">
-            <i class="bi bi-clock-fill"></i>
-            <p>Thời gian: 2 ngày 2 đêm</p>
-          </div>
-          <div class="tourProductdes-child">
-            <i class="bi bi-trophy-fill"></i>
-            <p>Độ khó: 7/10</p>
-          </div>
-        </div>
-        <div class="tourProductsubmit">
-          <p>Giá: 3.500.000 VNĐ</p>
-          <button class="tourProduct-btn">XEM CHI TIẾT</button>
-        </div>
-      </div>
-      <div class="tourProduct showtotop delay-06">
-      <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
-      <div class="tourProductdes">
-        <h2>Tà năng phan dũng</h2>
-        <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
-        <div class="tourProductdes-child">
-          <i class="bi bi-pin-map-fill"></i>
-          <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
-        </div>
-        <div class="tourProductdes-child">
-          <i class="bi bi-clock-fill"></i>
-          <p>Thời gian: 2 ngày 2 đêm</p>
-        </div>
-        <div class="tourProductdes-child">
-          <i class="bi bi-trophy-fill"></i>
-          <p>Độ khó: 7/10</p>
-        </div>
-      </div>
-      <div class="tourProductsubmit">
-        <p>Giá: 3.500.000 VNĐ</p>
-        <button class="tourProduct-btn">XEM CHI TIẾT</button>
-      </div>
-    </div>
-    <div class="tourProduct showtotop delay-08">
-      <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
-      <div class="tourProductdes">
-        <h2>Tà năng phan dũng</h2>
-        <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
-        <div class="tourProductdes-child">
-          <i class="bi bi-pin-map-fill"></i>
-          <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
-        </div>
-        <div class="tourProductdes-child">
-          <i class="bi bi-clock-fill"></i>
-          <p>Thời gian: 2 ngày 2 đêm</p>
-        </div>
-        <div class="tourProductdes-child">
-          <i class="bi bi-trophy-fill"></i>
-          <p>Độ khó: 7/10</p>
-        </div>
-      </div>
-      <div class="tourProductsubmit">
-        <p>Giá: 3.500.000 VNĐ</p>
-        <button class="tourProduct-btn">XEM CHI TIẾT</button>
-      </div>
-    </div>
-    <div class="tourProduct showtotop delay-10">
-    <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
+  mainPage.style.display = "flex"
+  mainPage.style.flexDirection = "row" 
+  mainPage.style.justifyContent = "space-around";
+  mainPage.style.flexWrap = "wrap"
+  let render = data.map((data) => {
+    return `
+    <div class="tourProduct" style ="gap:100px;">
+    <img src="${data.img}" alt="" class="tourProductimg">
     <div class="tourProductdes">
-      <h2>Tà năng phan dũng</h2>
-      <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
+      <h2>${data.Title}</h2>
+      <p>Hành Trình: ${data.Tongquan}</p>
       <div class="tourProductdes-child">
         <i class="bi bi-pin-map-fill"></i>
-        <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
+        <p>Nơi khởi hành: ${data.startPlace}</p>
       </div>
       <div class="tourProductdes-child">
         <i class="bi bi-clock-fill"></i>
-        <p>Thời gian: 2 ngày 2 đêm</p>
+        <p>Thời gian:${data.Thoigian}</p>
       </div>
       <div class="tourProductdes-child">
         <i class="bi bi-trophy-fill"></i>
-        <p>Độ khó: 7/10</p>
+        <p>Độ khó: ${data.Level}</p>
       </div>
     </div>
     <div class="tourProductsubmit">
-      <p>Giá: 3.500.000 VNĐ</p>
-      <button class="tourProduct-btn">XEM CHI TIẾT</button>
+      <p>Giá: ${data.Price} VNĐ</p>
+      <button class="tourProduct-btn" id="TNPDpage">XEM CHI TIẾT</button>
     </div>
-  </div>
-  <div class="tourProduct showtotop delay-12">
-  <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
-  <div class="tourProductdes">
-    <h2>Tà năng phan dũng</h2>
-    <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
-    <div class="tourProductdes-child">
-      <i class="bi bi-pin-map-fill"></i>
-      <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
-    </div>
-    <div class="tourProductdes-child">
-      <i class="bi bi-clock-fill"></i>
-      <p>Thời gian: 2 ngày 2 đêm</p>
-    </div>
-    <div class="tourProductdes-child">
-      <i class="bi bi-trophy-fill"></i>
-      <p>Độ khó: 7/10</p>
-    </div>
-  </div>
-  <div class="tourProductsubmit">
-    <p>Giá: 3.500.000 VNĐ</p>
-    <button class="tourProduct-btn">XEM CHI TIẾT</button>
-  </div>
-</div>
-<div class="tourProduct showtotop delay-12">
-  <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
-  <div class="tourProductdes">
-    <h2>Tà năng phan dũng</h2>
-    <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
-    <div class="tourProductdes-child">
-      <i class="bi bi-pin-map-fill"></i>
-      <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
-    </div>
-    <div class="tourProductdes-child">
-      <i class="bi bi-clock-fill"></i>
-      <p>Thời gian: 2 ngày 2 đêm</p>
-    </div>
-    <div class="tourProductdes-child">
-      <i class="bi bi-trophy-fill"></i>
-      <p>Độ khó: 7/10</p>
-    </div>
-  </div>
-  <div class="tourProductsubmit">
-    <p>Giá: 3.500.000 VNĐ</p>
-    <button class="tourProduct-btn">XEM CHI TIẾT</button>
-  </div>
-</div>
-<div class="tourProduct showtotop delay-14">
-<img src="./img/TNPD.jpg" alt="" class="tourProductimg">
-<div class="tourProductdes">
-  <h2>Tà năng phan dũng</h2>
-  <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
-  <div class="tourProductdes-child">
-    <i class="bi bi-pin-map-fill"></i>
-    <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
-  </div>
-  <div class="tourProductdes-child">
-    <i class="bi bi-clock-fill"></i>
-    <p>Thời gian: 2 ngày 2 đêm</p>
-  </div>
-  <div class="tourProductdes-child">
-    <i class="bi bi-trophy-fill"></i>
-    <p>Độ khó: 7/10</p>
-  </div>
-</div>
-<div class="tourProductsubmit">
-  <p>Giá: 3.500.000 VNĐ</p>
-  <button class="tourProduct-btn">XEM CHI TIẾT</button>
-</div>
-</div>
-<div class="tourProduct showtotop delay-16">
-<img src="./img/TNPD.jpg" alt="" class="tourProductimg">
-<div class="tourProductdes">
-  <h2>Tà năng phan dũng</h2>
-  <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
-  <div class="tourProductdes-child">
-    <i class="bi bi-pin-map-fill"></i>
-    <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
-  </div>
-  <div class="tourProductdes-child">
-    <i class="bi bi-clock-fill"></i>
-    <p>Thời gian: 2 ngày 2 đêm</p>
-  </div>
-  <div class="tourProductdes-child">
-    <i class="bi bi-trophy-fill"></i>
-    <p>Độ khó: 7/10</p>
-  </div>
-</div>
-<div class="tourProductsubmit">
-  <p>Giá: 3.500.000 VNĐ</p>
-  <button class="tourProduct-btn">XEM CHI TIẾT</button>
-</div>
-</div>
-      <div class="tourProduct showtotop delay-18">
-        <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
-        <div class="tourProductdes">
-          <h2>Tà năng phan dũng</h2>
-          <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
-          <div class="tourProductdes-child">
-            <i class="bi bi-pin-map-fill"></i>
-            <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
-          </div>
-          <div class="tourProductdes-child">
-            <i class="bi bi-clock-fill"></i>
-            <p>Thời gian: 2 ngày 2 đêm</p>
-          </div>
-          <div class="tourProductdes-child">
-            <i class="bi bi-trophy-fill"></i>
-            <p>Độ khó: 7/10</p>
-          </div>
-        </div>
-        <div class="tourProductsubmit">
-          <p>Giá: 3.500.000 VNĐ</p>
-          <button class="tourProduct-btn">XEM CHI TIẾT</button>
-        </div>
-      </div>
-      <div class="tourProduct">
-      <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
-      <div class="tourProductdes">
-        <h2>Tà năng phan dũng</h2>
-        <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
-        <div class="tourProductdes-child">
-          <i class="bi bi-pin-map-fill"></i>
-          <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
-        </div>
-        <div class="tourProductdes-child">
-          <i class="bi bi-clock-fill"></i>
-          <p>Thời gian: 2 ngày 2 đêm</p>
-        </div>
-        <div class="tourProductdes-child">
-          <i class="bi bi-trophy-fill"></i>
-          <p>Độ khó: 7/10</p>
-        </div>
-      </div>
-      <div class="tourProductsubmit">
-        <p>Giá: 3.500.000 VNĐ</p>
-        <button class="tourProduct-btn">XEM CHI TIẾT</button>
-      </div>
-    </div>
-    <div class="tourProduct">
-        <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
-        <div class="tourProductdes">
-          <h2>Tà năng phan dũng</h2>
-          <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
-          <div class="tourProductdes-child">
-            <i class="bi bi-pin-map-fill"></i>
-            <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
-          </div>
-          <div class="tourProductdes-child">
-            <i class="bi bi-clock-fill"></i>
-            <p>Thời gian: 2 ngày 2 đêm</p>
-          </div>
-          <div class="tourProductdes-child">
-            <i class="bi bi-trophy-fill"></i>
-            <p>Độ khó: 7/10</p>
-          </div>
-        </div>
-        <div class="tourProductsubmit">
-          <p>Giá: 3.500.000 VNĐ</p>
-          <button class="tourProduct-btn">XEM CHI TIẾT</button>
-        </div>
-      </div>
-      <div class="tourProduct">
-      <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
-      <div class="tourProductdes">
-        <h2>Tà năng phan dũng</h2>
-        <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
-        <div class="tourProductdes-child">
-          <i class="bi bi-pin-map-fill"></i>
-          <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
-        </div>
-        <div class="tourProductdes-child">
-          <i class="bi bi-clock-fill"></i>
-          <p>Thời gian: 2 ngày 2 đêm</p>
-        </div>
-        <div class="tourProductdes-child">
-          <i class="bi bi-trophy-fill"></i>
-          <p>Độ khó: 7/10</p>
-        </div>
-      </div>
-      <div class="tourProductsubmit">
-        <p>Giá: 3.500.000 VNĐ</p>
-        <button class="tourProduct-btn">XEM CHI TIẾT</button>
-      </div>
-    </div>
-    <div class="tourProduct">
-        <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
-        <div class="tourProductdes">
-          <h2>Tà năng phan dũng</h2>
-          <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
-          <div class="tourProductdes-child">
-            <i class="bi bi-pin-map-fill"></i>
-            <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
-          </div>
-          <div class="tourProductdes-child">
-            <i class="bi bi-clock-fill"></i>
-            <p>Thời gian: 2 ngày 2 đêm</p>
-          </div>
-          <div class="tourProductdes-child">
-            <i class="bi bi-trophy-fill"></i>
-            <p>Độ khó: 7/10</p>
-          </div>
-        </div>
-        <div class="tourProductsubmit">
-          <p>Giá: 3.500.000 VNĐ</p>
-          <button class="tourProduct-btn">XEM CHI TIẾT</button>
-        </div>
-      </div>
-
-  <div class="tourProduct">
-  <img src="./img/TNPD.jpg" alt="" class="tourProductimg">
-  <div class="tourProductdes">
-    <h2>Tà năng phan dũng</h2>
-    <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35kms</p>
-    <div class="tourProductdes-child">
-      <i class="bi bi-pin-map-fill"></i>
-      <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
-    </div>
-    <div class="tourProductdes-child">
-      <i class="bi bi-clock-fill"></i>
-      <p>Thời gian: 2 ngày 2 đêm</p>
-    </div>
-    <div class="tourProductdes-child">
-      <i class="bi bi-trophy-fill"></i>
-      <p>Độ khó: 7/10</p>
-    </div>
-  </div>
-  <div class="tourProductsubmit">
-    <p>Giá: 3.500.000 VNĐ</p>
-    <button class="tourProduct-btn">XEM CHI TIẾT</button>
-  </div>
-</div>
-    </div>
-  </div>
-  </div>
+   </div>
   `
-}
+  });
 
-
-
+  mainPage.innerHTML = render.join("");
+  
+};
 
 // Render trang About Us
 
@@ -662,7 +335,7 @@ let aboutUsRender = () => {
             
             <div class="aboutUs-inform showtotop delay-06">
               <h2>AN TOÀN</h2>
-              <p>Giá trị an toàn được The Happy Trip đưa lên là kim chỉ nam của công ty. Mọi hoạt động với khách hàng đều phải đặt giá trị này làm trọng tâm. Chúng tôi quan niệm rằng, thiên nhiên kỳ vĩ luôn ẩn chứa những thách thức, vì vậy để được sống và làm bạn cùng thiên nhiên, ta phải trang bị những kiến thức sinh tồn và kĩ năng bảo vệ bản thân thật tốt.
+              <p>Giá trị an toàn được The Happy Trip đưa lên là kim chỉ nam của công ty. Mọi hoạt động với khách hàng đều phải đặt giá trị này làm trọng tâm. Chúng tôi quan niệm rằng, thiên nhiên kỳ vĩ luôn ẩn chứa những thách thức, vì vậy để được sống và làm bạn cùng thiên nhiên, ta phải trang bị những kiến thức sinh tồn và kĩ năng bảo vệ bản thân thật tốt. Để trải nghiệm của khách hàng được chỉnh chu nhất, để công việc của chúng tôi được trọn vẹn nhất, an toàn là yếu tố hàng đầu.
               </p>
             </div>
             <div class="aboutUs-inform showtotop delay-06">
@@ -1055,6 +728,7 @@ let TNPDrender = () => {
 
 
 
+
 // Render footer
 let footer = document.querySelector("#footer");
 let footerRender = () => {
@@ -1111,62 +785,62 @@ btnbooktour.addEventListener("click", () => {
   navImgtourRender();
   footerRender();
   btnTNPD.addEventListener("click", () => {
-    TNPDrender()
-    let informPage = document.querySelector("#informPage")
-    let btnlt = document.querySelector("#lt")
-    let btngt = document.querySelector("#gt")
-    let btncb = document.querySelector("#cb")
-    btnlt.addEventListener("click", ()=>{
-      lichtrinhRender()
-    }) 
-    btngt.addEventListener("click", ()=>{
-      gioithieuRender()
-    }) 
-    btncb.addEventListener("click", ()=>{
-      chuanbiRender()
-    }) 
+    TNPDrender();
+    let informPage = document.querySelector("#informPage");
+    let btnlt = document.querySelector("#lt");
+    let btngt = document.querySelector("#gt");
+    let btncb = document.querySelector("#cb");
+    btnlt.addEventListener("click", () => {
+      lichtrinhRender();
+    });
+    btngt.addEventListener("click", () => {
+      gioithieuRender();
+    });
+    btncb.addEventListener("click", () => {
+      chuanbiRender();
+    });
     let lichtrinhRender = () => {
-      informPage.innerHTML=`
+      informPage.style.height = "80%"
+      informPage.innerHTML = `
       <div class="trekkingContent-details" id="Trekk">
-      <h1>LỊCH TRÌNH TOUR TREKKING TÀ NĂNG PHAN DŨNG</h1>
-      <div class="trekkingContenttour">
-      <div class="trekkingContenttour-column">
-              <h2>NGÀY 0: KHỞI HÀNH</h2>
-              <p>20:30 Tập trung và điểm danh tại điểm hẹn ở TP. Hồ Chí Minh</p>
-              <p>21:30 Xe bắt đầu di chuyển và đón các thành viên dọc đường (nếu có). Trên xe Hướng dẫn viên (HDV) tổ chức làm quen, kết nối các thành viên trước khi bắt đầu Hành Trình Trekking Tour Tà Năng Phan Dũng vào sáng mai.</p>
-              <p>23:30 Ghé trạm dừng chân tại Đồng Nai để khách đi vệ sinh. Ngủ đêm trên xe.</p>
+        <h1>LỊCH TRÌNH TOUR TREKKING TÀ NĂNG PHAN DŨNG</h1>
+        <div class="trekkingContenttour">
+        <div class="trekkingContenttour-column">
+                <h2>NGÀY 0: KHỞI HÀNH</h2>
+                <p>20:30 Tập trung và điểm danh tại điểm hẹn ở TP. Hồ Chí Minh</p>
+                <p>21:30 Xe bắt đầu di chuyển và đón các thành viên dọc đường (nếu có). Trên xe Hướng dẫn viên (HDV) tổ chức làm quen, kết nối các thành viên trước khi bắt đầu Hành Trình Trekking Tour Tà Năng Phan Dũng vào sáng mai.</p>
+                <p>23:30 Ghé trạm dừng chân tại Đồng Nai để khách đi vệ sinh. Ngủ đêm trên xe.</p>
+              </div>
+              <div class="trekkingContenttour-column">
+                <h2>NGÀY 1: TREKKING TÀ NĂNG</h2>
+                <p>05:00 – 06:00 Đoàn dừng chân tại điểm ăn sáng thuộc Đức Trọng – Lâm Đồng. Tại đây có bố trí khu vực vệ sinh cá nhân, quý khách chuẩn bị hành lý cá nhân, ăn sáng, uống cà phê trong khí trời se lạnh của Lâm Đồng.</p>
+                <p>06:30 Trải nghiệm đi xe công nông di chuyển vào rừng bìa rừng. Xe di chuyển đến bìa rừng, tại đây khách hàng được phổ biến quy tắt đi rừng, đảm bảo an toàn suốt hành trình, bảo vệ môi trường và kỹ năng trekking cơ bản. Đoàn thực hiện khởi động theo hướng dẫn của HDV trước khi bắt đầu hành trình</p>
+                <p>07:30 – 11:00 Bắt đầu Hành Trình Trekking Tà Năng, lắng nghe và cảm nhận vẻ đẹp của núi rừng. Đoạn đường trekking đưa quý khách đi qua nhiều địa hình rừng, đồi thoai thoải khác nhau, từng thảm thực vật cũng thay đổi theo độ cao, quý khách được nghe chia sẻ nhiều thông tin về các loại cây rừng và thảm thực vật đặc biệt tại đây.</p>
+                <p>11:00 Checkin cột mốc Tà Năng – Phan Dũng, nơi giáp ranh giữa 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận. Ngắm toàn cảnh đẹp đặc trưng của đồi cỏ theo mùa.</p>
+                <p>1:30 – 12:30 Đoàn trải nghiệm bữa trưa giữa núi rừng Tà Năng. Có thời gian nghỉ ngơi tại chỗ, lắng nghe tiếng thiên nhiên.</p>
+                <p>12:30 Đoàn được tiếp nước và tiếp tục hành trình qua những sườn đồi để về điểm cắm trại. Tuỳ vào mỗi mùa, đoạn đường trekking này sẽ mãn nhãn được du khách bởi cảnh đẹp hùng vĩ của núi đồi bao la, trùng điệp những đồi cỏ dài nối tiếp nhau. Đây cũng chính là đoạn trekking đẹp nhất khiến quý khách phải nao lòng khi rời khỏi.</p>
+                <p>16:00 Đến điểm cắm trại, quý khách nhận lều, vệ sinh cá nhân và ngắm hoàng hôn tuyệt đẹp trên đồi.</p>
+                <p>18:00 Trong không khí se lạnh của núi rừng Tây Nguyên, quý khách trải nghiệm bữa tối BBQ kết hợp cùng đêm nhạc acoustic được thiết kế đặc biệt dành riêng kết nối những người bạn mới. Quý khách dùng bữa tối, ca hát quay quần bên nhau.</p>
+                <p>22:00 Kết thúc ngày sinh hoạt, quý khách quay về lều nghỉ ngơi.</p>
+              </div>
+              <div class="trekkingContenttour-column">
+                <h2>NGÀY 2: ĐÓN BÌNH MINH TẠI PHAN DŨNG</h2>
+                <p>05:00 Đoàn dậy sớm, đón bình minh trên đồi. Dùng điểm tâm sáng, nhâm nhi ly cà phê, trà nóng trong không khí se lạnh trên đồi Tà Năng.</p>
+                <p>06:30 – 10:00 Tiếp tục hành trình trekking rừng Phan Dũng, đoạn đường trekking dài 18km. Đoạn đường trekking đưa quý khách hạ đồ cao dần xuống đồng bằng, với thảm thực vật cũng thay đổi phong phú từ những mảng rừng lá kim đến các tán rừng già nguyên sinh trù phú. Nếu may mắn quý khách còn được ngắm nhìn rất nhiều hoa nghệ rừng, hoa gạo, hoa sâm bố chính nở rực cả một mảng rừng tuyệt đẹp.</p>
+                <p>10:00 Đến bờ suối Phan Dũng, đoàn dừng nghỉ ngơi, ngâm chân bên bờ suối và ăn nhẹ trái cây, khoai luộc. Sau đó tiếp tục hành trình.</p>
+                <p>12:00 Kết thúc hành trình tại xã Phan Dũng – Bình Thuận. Đoàn được bố trí khu vực vệ sinh cá nhân, sắp xếp lại hành lý và dùng cơm trưa do người địa phương chuẩn bị.</p>
+                <p>14:00 Xe đón đoàn, bắt đầu di chuyển về lại TP Hồ Chí Minh.</p>
+                <p>17:00 Đoàn ghé ăn tối tại khu vực Phan Thiết. Trên đường về HDV sẽ tổng kết hành trình, ôn lại kỷ niệm trong suốt chuyến đi, và chia tay đoàn.</p>
+                <p>22:00 Xe về đến TP. Hồ Chí Minh, kết thúc hành trình Trekking Tà Năng – Phan Dũng.</p>
+                <p>*Lưu ý: Lịch trình có thể thay đổi tuỳ vào tình hình thực tế như: thời tiết, trường hợp bất khả kháng nhằm đảm bảo an toàn tối đa cho khách hàng và sẽ được thông báo đến khách hàng khi có thay đổi</p>
+              </div>
             </div>
-            <div class="trekkingContenttour-column">
-              <h2>NGÀY 1: TREKKING TÀ NĂNG</h2>
-              <p>05:00 – 06:00 Đoàn dừng chân tại điểm ăn sáng thuộc Đức Trọng – Lâm Đồng. Tại đây có bố trí khu vực vệ sinh cá nhân, quý khách chuẩn bị hành lý cá nhân, ăn sáng, uống cà phê trong khí trời se lạnh của Lâm Đồng.</p>
-              <p>06:30 Trải nghiệm đi xe công nông di chuyển vào rừng bìa rừng. Xe di chuyển đến bìa rừng, tại đây khách hàng được phổ biến quy tắt đi rừng, đảm bảo an toàn suốt hành trình, bảo vệ môi trường và kỹ năng trekking cơ bản. Đoàn thực hiện khởi động theo hướng dẫn của HDV trước khi bắt đầu hành trình</p>
-              <p>07:30 – 11:00 Bắt đầu Hành Trình Trekking Tà Năng, lắng nghe và cảm nhận vẻ đẹp của núi rừng. Đoạn đường trekking đưa quý khách đi qua nhiều địa hình rừng, đồi thoai thoải khác nhau, từng thảm thực vật cũng thay đổi theo độ cao, quý khách được nghe chia sẻ nhiều thông tin về các loại cây rừng và thảm thực vật đặc biệt tại đây.</p>
-              <p>11:00 Checkin cột mốc Tà Năng – Phan Dũng, nơi giáp ranh giữa 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận. Ngắm toàn cảnh đẹp đặc trưng của đồi cỏ theo mùa.</p>
-              <p>1:30 – 12:30 Đoàn trải nghiệm bữa trưa giữa núi rừng Tà Năng. Có thời gian nghỉ ngơi tại chỗ, lắng nghe tiếng thiên nhiên.</p>
-              <p>12:30 Đoàn được tiếp nước và tiếp tục hành trình qua những sườn đồi để về điểm cắm trại. Tuỳ vào mỗi mùa, đoạn đường trekking này sẽ mãn nhãn được du khách bởi cảnh đẹp hùng vĩ của núi đồi bao la, trùng điệp những đồi cỏ dài nối tiếp nhau. Đây cũng chính là đoạn trekking đẹp nhất khiến quý khách phải nao lòng khi rời khỏi.</p>
-              <p>16:00 Đến điểm cắm trại, quý khách nhận lều, vệ sinh cá nhân và ngắm hoàng hôn tuyệt đẹp trên đồi.</p>
-              <p>18:00 Trong không khí se lạnh của núi rừng Tây Nguyên, quý khách trải nghiệm bữa tối BBQ kết hợp cùng đêm nhạc acoustic được thiết kế đặc biệt dành riêng kết nối những người bạn mới. Quý khách dùng bữa tối, ca hát quay quần bên nhau.</p>
-              <p>22:00 Kết thúc ngày sinh hoạt, quý khách quay về lều nghỉ ngơi.</p>
-            </div>
-            <div class="trekkingContenttour-column">
-              <h2>NGÀY 2: ĐÓN BÌNH MINH TẠI PHAN DŨNG</h2>
-              <p>05:00 Đoàn dậy sớm, đón bình minh trên đồi. Dùng điểm tâm sáng, nhâm nhi ly cà phê, trà nóng trong không khí se lạnh trên đồi Tà Năng.</p>
-              <p>06:30 – 10:00 Tiếp tục hành trình trekking rừng Phan Dũng, đoạn đường trekking dài 18km. Đoạn đường trekking đưa quý khách hạ đồ cao dần xuống đồng bằng, với thảm thực vật cũng thay đổi phong phú từ những mảng rừng lá kim đến các tán rừng già nguyên sinh trù phú. Nếu may mắn quý khách còn được ngắm nhìn rất nhiều hoa nghệ rừng, hoa gạo, hoa sâm bố chính nở rực cả một mảng rừng tuyệt đẹp.</p>
-              <p>10:00 Đến bờ suối Phan Dũng, đoàn dừng nghỉ ngơi, ngâm chân bên bờ suối và ăn nhẹ trái cây, khoai luộc. Sau đó tiếp tục hành trình.</p>
-              <p>12:00 Kết thúc hành trình tại xã Phan Dũng – Bình Thuận. Đoàn được bố trí khu vực vệ sinh cá nhân, sắp xếp lại hành lý và dùng cơm trưa do người địa phương chuẩn bị.</p>
-              <p>14:00 Xe đón đoàn, bắt đầu di chuyển về lại TP Hồ Chí Minh.</p>
-              <p>17:00 Đoàn ghé ăn tối tại khu vực Phan Thiết. Trên đường về HDV sẽ tổng kết hành trình, ôn lại kỷ niệm trong suốt chuyến đi, và chia tay đoàn.</p>
-              <p>22:00 Xe về đến TP. Hồ Chí Minh, kết thúc hành trình Trekking Tà Năng – Phan Dũng.</p>
-              <p>*Lưu ý: Lịch trình có thể thay đổi tuỳ vào tình hình thực tế như: thời tiết, trường hợp bất khả kháng nhằm đảm bảo an toàn tối đa cho khách hàng và sẽ được thông báo đến khách hàng khi có thay đổi</p>
-            </div>
-          </div>
-          </div>
-      `
-    }
-    lichtrinhRender()
+            </div>`;
+    };
+    lichtrinhRender();
     let gioithieuRender = () => {
-      document.querySelector(".trekkingInformtour").style.height = "65%"
-      informPage.innerHTML=`
+      informPage.style.height = "65%"
+      informPage.innerHTML = `
       <div class="trekkingContent-GioiThieu">
               <h1>GIỚI THIỆU TOUR TREKKING TÀ NĂNG PHAN DŨNG</h1>
               <div class="trekkingContenttour">
@@ -1314,10 +988,10 @@ btnbooktour.addEventListener("click", () => {
                       </div>
                     </div>
                   </div>
-            </div>`
-    }
+            </div>`;
+    };
     let chuanbiRender = () => {
-      document.querySelector(".trekkingInformtour").style.height = "35%"
+     informPage.style.height = "35%"
       informPage.innerHTML = `
       <div class="trekkingContent-ChuanBi">
       <h1>CHUẨN BỊ CHO TOUR TREKKING TÀ NĂNG PHAN DŨNG</h1>
@@ -1359,8 +1033,8 @@ btnbooktour.addEventListener("click", () => {
           <p>1 đôi dép gọn nhẹ (đề xuất dép tổ ong, có thể thay thế giày khi đau chân)</p>
         </div>
       </div>
-    </div>`
-    }
+    </div>`;
+    };
     footerRender();
   });
 });

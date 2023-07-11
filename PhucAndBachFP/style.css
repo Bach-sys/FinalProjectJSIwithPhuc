@@ -301,15 +301,6 @@ header{
   align-items: center;
   justify-content: space-around;
   z-index:2;
-  position: relative;
-}
-.alert{
-  position: absolute;
-  top : 90%;
-  left : 1%;
-  color: red;
-  font-weight: bolder;
-  font-size: 20px;
 }
 .nav-register{
   width:20%;
@@ -1108,12 +1099,14 @@ header button {
   justify-content: space-evenly;
 }
 .tourProduct{
-  width:25%;
-  height:clamp(20.5rem, 50.5vw, 40rem); ;
+  width:30%;
+  height:30%;
   border: 3px solid #FCCB14;
   display: flex;
+  margin-top: 100px;
+  padding: 10px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 
 }
@@ -1125,7 +1118,7 @@ header button {
 .tourProductdes{
   width:95%;
   height:35%;
-
+  margin-top: -100px;
 }
 .tourProductdes h2{
   font-size: 30px;
@@ -1149,7 +1142,6 @@ header button {
 .tourProductsubmit{
   width: 95%;
   height:10%;
-  margin-bottom: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1178,7 +1170,8 @@ header button {
 
 
 
-                                        /*! ABOUT US */
+
+                                        /* ABOUT US */
 #aboutUs{
   width:100%;
   height:970px;
@@ -1407,7 +1400,7 @@ header button {
 }
 .trekkingInformtour{
   width:100%;
-  height:1800px;
+  height:fit-content;
   display: flex;
   justify-content: center;
 }
@@ -1448,13 +1441,14 @@ transform: scale(0.9);
 .trekkingContent{
   width:100%;
   height:100%;
+  margin-top: -300px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .Trekking{
   width:100%;
-  height:auto;
+  height:2300px;
   display: flex;
   justify-content: center;
 }
