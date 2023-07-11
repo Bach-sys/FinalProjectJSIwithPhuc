@@ -1235,7 +1235,7 @@ header button {
 }
 .aboutUs-inform{
   width:30%;
-  height:80%;
+  height:90%;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -1380,7 +1380,7 @@ header button {
 }
 .trekkingIcon{
   width:100%;
-  height:15%;
+  height:30vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -1407,9 +1407,8 @@ header button {
 }
 .trekkingInformtour{
   width:100%;
-  height:100%;
+  height:1800px;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .trekkingInformtour-Container{
@@ -1418,7 +1417,6 @@ header button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
 }
 .trekkingTab{
   width:100%;
@@ -1454,24 +1452,33 @@ transform: scale(0.9);
   flex-direction: column;
   align-items: center;
 }
-.trekkingContent-details{
+.Trekking{
   width:100%;
-  height:80%;
+  height:auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
-.trekkingContent-GioiThieu{
+.trekkingContent-details{
   width:100%;
   height:100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
 
+}
+.trekkingContent-GioiThieu{
+  width:100%;
+  height:1400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+
+}
 .trekkingContent-details h1{
   width:90%;
-  height:20%;
+  height:5%;
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
@@ -1484,7 +1491,7 @@ transform: scale(0.9);
 }
 .trekkingContent-GioiThieu h1{
   width:90%;
-  height:10%;
+  height:4%;
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
@@ -1570,7 +1577,7 @@ transform: scale(0.9);
 }
 .trekkingContenttour-price{
   width:100%;
-  height: 85%;
+  height: 75%;
 }
 .trekkingContenttour-price p{
   margin-bottom: 5px;
@@ -1606,11 +1613,25 @@ transform: scale(0.9);
   font-size: 23px;
 }
 .trekkingContent-ChuanBi{
-  width:90%;
-  height:90%;
+  width:100%;
+  height:650px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.trekkingContent-ChuanBi h1{
+  width:90%;
+  height:10%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border:  3px #FCCB14 solid;
+  font-size: 40px;
+  font-family: 'Barlow Condensed', sans-serif;
 }
 .trekkingContent-ChuanBi-child{
   width:90%;
@@ -1636,6 +1657,346 @@ transform: scale(0.9);
   width: 100%;
   font-size: 25px;
   font-family: 'Barlow Condensed', sans-serif;
+}
+.trekkingProduct-img{
+  width:70%;
+  height: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+}
+.trekkingProduct-img-column{
+  width:23%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.divImg1{
+  width:100%;
+  height:31%;
+  background-image: url(./img/TNPD.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  filter:brightness(0.85);
+}
+.divImg2{
+  width:100%;
+  height:31%;
+  background-image: url(./img/TNPD1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  filter:brightness(0.85);
+}
+.divImg3{
+  width:100%;
+  height:31%;
+  background-image: url(./img/TNPD4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  filter:brightness(0.85);
+}
+.divImg4{
+  width:100%;
+  height:31%;
+  background-image: url(./img/PBTG4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  filter:brightness(0.85);
+}
+.divImg4 h3{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  opacity: 0;
+  color: #fff;
+}
+.divImg5{
+  width:100%;
+  height:31%;
+  background-image: url(./img/PBTG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  filter:brightness(0.85);
+}
+.divImg5 h3{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  opacity: 0;
+  color: #fff;
+}
+.divImg6{
+  width:100%;
+  height:31%;
+  background-image: url(./img/PBTG1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  filter:brightness(0.85);
+}
+.divImg6 h3{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  opacity: 0;
+  color: #fff;
+}
+.divImg7{
+  width:100%;
+  height:31%;
+  background-image: url(./img/HS3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  filter:brightness(0.85);
+}
+.divImg7 h3{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  opacity: 0;
+  color: #fff;
+}
+.divImg8{
+  width:100%;
+  height:31%;
+  background-image: url(./img/HS.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  filter:brightness(0.85);
+}
+.divImg8 h3{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  opacity: 0;
+  color: #fff;
+}
+.divImg9{
+  width:100%;
+  height:31%;
+  background-image: url(./img/HS1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  filter:brightness(0.85);
+}
+.divImg9 h3{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  opacity: 0;
+  color: #fff;
+}
+.divImg10{
+  width:100%;
+  height:31%;
+  background-image: url(./img/HS2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  filter:brightness(0.85);
+}
+.divImg10 h3{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  opacity: 0;
+  color: #fff;
+}
+.divImg11{
+  width:100%;
+  height:31%;
+  background-image: url(./img/TD.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  filter:brightness(0.85);
+}
+.divImg11 h3{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  opacity: 0;
+  color: #fff;
+}
+.divImg12{
+  width:100%;
+  height:31%;
+  background-image: url(./img/TD1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  filter:brightness(0.85);
+}
+.divImg12 h3{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  opacity: 0;
+  color: #fff;
+}
+.divImg2 h3{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  opacity: 0;
+  color: #fff;
+}
+.divImg3 h3{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  opacity: 0;
+  color: #fff;
+}
+.divImg1 h3{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  opacity: 0;
+  color: #fff;
+}
+.divImg1 h3:hover{
+  opacity: 0.5;
+  animation: showtop 1s ease-in-out 1 forwards;
+}
+.divImg1:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+.divImg2 h3:hover{
+  opacity: 0.5;
+  animation: showtop 1s ease-in-out 1 forwards;
+}
+.divImg2:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+.divImg3 h3:hover{
+  opacity: 0.5;
+  animation: showtop 1s ease-in-out 1 forwards;
+}
+.divImg3:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+.divImg4 h3:hover{
+  opacity: 0.5;
+  animation: showtop 1s ease-in-out 1 forwards;
+}
+.divImg4:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+.divImg5 h3:hover{
+  opacity: 0.5;
+  animation: showtop 1s ease-in-out 1 forwards;
+}
+.divImg5:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+.divImg6 h3:hover{
+  opacity: 0.5;
+  animation: showtop 1s ease-in-out 1 forwards;
+}
+.divImg6:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+.divImg7 h3:hover{
+  opacity: 0.5;
+  animation: showtop 1s ease-in-out 1 forwards;
+}
+.divImg7:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+.divImg8 h3:hover{
+  opacity: 0.5;
+  animation: showtop 1s ease-in-out 1 forwards;
+}
+.divImg8:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+.divImg9 h3:hover{
+  opacity: 0.5;
+  animation: showtop 1s ease-in-out 1 forwards;
+}
+.divImg9:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+.divImg10 h3:hover{
+  opacity: 0.5;
+  animation: showtop 1s ease-in-out 1 forwards;
+}
+.divImg10:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+.divImg11 h3:hover{
+  opacity: 0.5;
+  animation: showtop 1s ease-in-out 1 forwards;
+}
+.divImg11:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+.divImg12 h3:hover{
+  opacity: 0.5;
+  animation: showtop 1s ease-in-out 1 forwards;
+}
+.divImg12:hover{
+  cursor: pointer;
+  opacity: 0.9;
 }
                           /* SCROLL ANIMATION */
 
