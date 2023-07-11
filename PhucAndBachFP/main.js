@@ -799,7 +799,7 @@ btnbooktour.addEventListener("click", () => {
       chuanbiRender();
     });
     let lichtrinhRender = () => {
-      informPage.style.height = "80%"
+      informPage.style.height = "100%"
       informPage.innerHTML = `
       <div class="trekkingContent-details" id="Trekk">
         <h1>LỊCH TRÌNH TOUR TREKKING TÀ NĂNG PHAN DŨNG</h1>
