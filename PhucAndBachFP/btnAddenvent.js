@@ -1,7 +1,7 @@
 export let lichtrinhRender = (informPage) => {
   informPage.style.height = "100%";
   informPage.innerHTML = `
-    <div class="trekkingContent-details" id="Trekk">
+    <div class="trekkingContent-details">
       <h1>LỊCH TRÌNH TOUR TREKKING TÀ NĂNG PHAN DŨNG</h1>
       <div class="trekkingContenttour">
       <div class="trekkingContenttour-column">
