@@ -247,9 +247,9 @@ export function mainPageRender(mainPage) {
 export function bookTourRender(mainPage,data) {
   mainPage.style.display = "flex";
   mainPage.style.flexDirection = "row";
-  mainPage.style.justifyContent = "space-between";
+  mainPage.style.justifyContent = "space-around";
   mainPage.style.flexWrap = "wrap";
-  let render = data.map((data) => {
+  let render = data.map((data, index) => {
     return `
    <div class="tourProduct" style ="gap:100px;">
    <img src="${data.img}" alt="" class="tourProductimg">
@@ -271,14 +271,14 @@ export function bookTourRender(mainPage,data) {
    </div>
    <div class="tourProductsubmit">
      <p>Giá: ${data.Price} VNĐ</p>
-     <button class="tourProduct-btn" id="TNPDpage">XEM CHI TIẾT</button>
+     <button class="tourProduct-btn btnTNPD" id="${data.id}">XEM CHI TIẾT</button>
    </div>
   </div>
   `;
   });
+
   mainPage.innerHTML = render.join("");
 }
-
 export function aboutUsRender(mainPage) {
   mainPage.style.display = "block";
   mainPage.innerHTML = `

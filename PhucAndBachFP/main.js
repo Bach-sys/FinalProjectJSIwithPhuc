@@ -19,6 +19,7 @@ import {
   navImgcontactRender,
   navImgcartRender,
   navImgtnpdRender,
+
 } from "./Font";
 import { lichtrinhRender,chuanbiRender,gioithieuRender } from "./btnAddenvent";
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -62,28 +63,18 @@ btnhome.addEventListener("click", () => {
 });
 btnbooktour.addEventListener("click", () => {
   bookTourRender(mainPage,data);
-  let btnTNPD = document.querySelector("#TNPDpage");
   navImgtourRender(navImg);
   footerRender(footer);
-  btnTNPD.addEventListener("click", () => {
-    TNPDrender(mainPage);
-    let informPage = document.querySelector("#informPage");
-    let btnlt = document.querySelector("#lt");
-    let btngt = document.querySelector("#gt");
-    let btncb = document.querySelector("#cb");
-    btnlt.addEventListener("click", () => {
-      lichtrinhRender(informPage);
-    });
-    btngt.addEventListener("click", () => {
-      gioithieuRender(informPage);
-    });
-    btncb.addEventListener("click", () => {
-      chuanbiRender(informPage);
-    });
-    lichtrinhRender(informPage);
-    footerRender(footer);
-  });
+  let btnEvent = document.querySelectorAll(".btnTNPD");
+  console.log(btnEvent)
+  for (let index = 0; index < btnEvent.length; index++) {
+    btnEvent[index].addEventListener("click", (e)=>{
+      console.log(e.currentTarget.id)
+    })
+    
+  }
 });
+
 btnaboutus.addEventListener("click", () => {
   aboutUsRender(mainPage);
   navImgaboutusRender(navImg);
