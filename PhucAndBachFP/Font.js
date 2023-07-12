@@ -635,6 +635,52 @@ export function TNPDrender(mainPage,data) {
     </div>
   </div>
 </div>
+<div class="trekkingProduct-img">
+<div class="trekkingProduct-img-column">
+  <div class="divImg1">
+    <h3>TÀ NĂNG PHAN DŨNG</h3>
+  </div>
+  <div class="divImg2">
+    <h3>TÀ NĂNG PHAN DŨNG</h3>
+  </div>
+  <div class="divImg3">
+    <h3>TÀ NĂNG PHAN DŨNG</h3>
+  </div>
+</div>
+<div class="trekkingProduct-img-column">
+  <div class="divImg4">
+    <h3>PHƯỚC BÌNH TÀ GIANG</h3>
+  </div>
+  <div class="divImg5">
+    <h3>PHƯỚC BÌNH TÀ GIANG</h3>
+  </div>
+  <div class="divImg6">
+    <h3>PHƯỚC BÌNH TÀ GIANG</h3>
+  </div>
+</div>
+<div class="trekkingProduct-img-column">
+  <div class="divImg7">
+    <h3>HÒN SƠN</h3>
+  </div>
+  <div class="divImg8">
+    <h3>HÒN SƠN</h3>
+  </div>
+  <div class="divImg9">
+    <h3>HÒN SƠN</h3>
+  </div>
+</div>
+<div class="trekkingProduct-img-column">
+  <div class="divImg10">
+    <h3>TÀ ĐÙNG</h3>
+  </div>
+  <div class="divImg11">
+    <h3>TÀ ĐÙNG</h3>
+  </div>
+  <div class="divImg12">
+    <h3>TÀ ĐÙNG</h3>
+  </div>
+</div>
+</div>
   `;
 }
 
