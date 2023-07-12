@@ -21,7 +21,7 @@ import {
   navImgtnpdRender,
 
 } from "./Font";
-
+import { lichtrinhRender,chuanbiRender,gioithieuRender } from "./btnAddenvent";
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 let nav = document.querySelector("#nav");
 let mainPage = document.querySelector("#mainPage");

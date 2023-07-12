@@ -570,7 +570,8 @@ export function loginRender(mainPage) {
   `;
 }
 
-export function TNPDrender(mainPage) {
+export function TNPDrender(mainPage,data) {
+  
   mainPage.style.display = "block";
   mainPage.innerHTML = `
   <div class="trekkingPage">
