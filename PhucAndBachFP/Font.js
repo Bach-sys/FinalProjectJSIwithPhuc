@@ -271,7 +271,7 @@ export function bookTourRender(mainPage,data) {
    </div>
    <div class="tourProductsubmit">
      <p>Giá: ${data.Price} VNĐ</p>
-     <button class="tourProduct-btn" id="TNPDpage">XEM CHI TIẾT</button>
+     <button class="tourProduct-btn" onclick = "renderpage()" >XEM CHI TIẾT</button>
    </div>
   </div>
   `;
