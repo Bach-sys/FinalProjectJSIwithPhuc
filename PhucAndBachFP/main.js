@@ -66,9 +66,15 @@ btnbooktour.addEventListener("click", () => {
   navImgtourRender(navImg);
   footerRender(footer);
   let btnEvent = document.querySelectorAll(".btnTNPD");
-  console.log(btnEvent)
   for (let index = 0; index < btnEvent.length; index++) {
     btnEvent[index].addEventListener("click", (e)=>{
+      console.log(e.currentTarget.id)
+      for (let i of data){
+        if (i.id == e.currentTarget.id){
+console.log(i.Title)
+
+        }
+      }
       TNPDrender(mainPage);
           let informPage = document.querySelector("#informPage");
           let btnlt = document.querySelector("#lt");
