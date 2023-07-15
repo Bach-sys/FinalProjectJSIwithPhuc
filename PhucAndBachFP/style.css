@@ -1657,6 +1657,7 @@ transform: scale(0.9);
   width:70%;
   height: 800px;
   margin-top: 30px;
+  margin-left: 250px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -2006,6 +2007,7 @@ transform: scale(0.9);
 .BookTrekking-container{
   width: 70%;
   height:850px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
