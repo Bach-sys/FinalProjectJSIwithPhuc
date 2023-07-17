@@ -630,10 +630,115 @@ export function TNPDrender(mainPage,data) {
       <button id="gt">GIỚI THIỆU</button>
       <button id="cb">CHUẨN BỊ</button>
     </div>
-    <div class="trekkingContent-details" id="informPage">
+    <div class="Trekking" id="informPage">
             
     </div>
   </div>
+</div>
+<div class="trekkingProduct-img">
+<div class="trekkingProduct-img-column">
+  <div class="divImg1">
+    <h3>TÀ NĂNG PHAN DŨNG</h3>
+  </div>
+  <div class="divImg2">
+    <h3>TÀ NĂNG PHAN DŨNG</h3>
+  </div>
+  <div class="divImg3">
+    <h3>TÀ NĂNG PHAN DŨNG</h3>
+  </div>
+</div>
+<div class="trekkingProduct-img-column">
+  <div class="divImg4">
+    <h3>PHƯỚC BÌNH TÀ GIANG</h3>
+  </div>
+  <div class="divImg5">
+    <h3>PHƯỚC BÌNH TÀ GIANG</h3>
+  </div>
+  <div class="divImg6">
+    <h3>PHƯỚC BÌNH TÀ GIANG</h3>
+  </div>
+</div>
+<div class="trekkingProduct-img-column">
+  <div class="divImg7">
+    <h3>HÒN SƠN</h3>
+  </div>
+  <div class="divImg8">
+    <h3>HÒN SƠN</h3>
+  </div>
+  <div class="divImg9">
+    <h3>HÒN SƠN</h3>
+  </div>
+</div>
+<div class="trekkingProduct-img-column">
+  <div class="divImg10">
+    <h3>TÀ ĐÙNG</h3>
+  </div>
+  <div class="divImg11">
+    <h3>TÀ ĐÙNG</h3>
+  </div>
+  <div class="divImg12">
+    <h3>TÀ ĐÙNG</h3>
+  </div>
+</div>
+</div>
+<div class="BookTrekking">
+<div class="BookTrekking-container">
+  <div class="BookTrekking-column">
+    <div class="BookTrekking-head">
+      <h1>ĐẶT TOUR</h1>
+      <h2>TÀ NĂNG PHAN DŨNG</h2>
+    </div>
+    <div class="BookTrekking-input">
+      <input type="text" placeholder="Tên" id="name">
+      <input type="text" placeholder="Số điện thoại" id="phone">
+      <input type="text" placeholder="Email" id="email">
+      <div class="number">
+        <p>Số vé</p>
+        <input type="number" id="ticket">
+      </div>
+      <div class="number">
+        <p>Chọn ngày khởi hành</p>
+        <input type="date" id="date">
+      </div>
+      <input type="text" placeholder="Ghi chú" id="mess">
+    </div>
+    <button class="btn-book" id="book">ĐẶT TOUR</button>
+  </div>
+  <div class="BookTrekking-column2">
+    <h1>Điểm Khác Biệt Tour Cực Đông Của The Happy Trip:</h1>
+    <div class="BookTrekking-inform">
+      <div class="BookTrekking-Icon">
+        <i class="bi bi-coin"></i>
+        <p>Giá: 3.190.000 vnđ, Thanh toán linh hoạt</p>
+      </div>
+      <div class="BookTrekking-Icon">
+        <i class="bi bi-chat-heart"></i>
+        <p>Tư vấn, hỗ trợ nhiệt tình, linh động trong mọi trường hợp.</p>
+      </div>
+      <div class="BookTrekking-Icon">
+        <i class="bi bi-signpost-split"></i>
+        <p>Là đơn vị chuyên nghiên cứu và tổ chức dịch vụ dành riêng cho khách lần đầu đi trekking</p>
+      </div>
+      <div class="BookTrekking-Icon">
+        <i class="bi bi-bookmark-heart"></i>
+        <p>Hành trình trekking dành riêng cho khách hàng độc thân (Cam kết khách hàng không lạc lỏng trong chuyến đi dù đi 1 mình)</p>
+      </div>
+      <div class="BookTrekking-Icon">
+        <i class="bi bi-shield-check"></i>
+        <p>Bảo hiểm du lịch suốt hành trình</p>
+      </div>
+      <div class="BookTrekking-Icon">
+        <i class="bi bi-house-heart"></i>
+        <p>KHÔNG CHỈ LÀ MỘT CHUYẾN ĐI: Đội ngũ The Happy Trip ở đây bởi chúng tôi nghĩ rằng bạn không đơn giản chỉ chọn một chuyến du lịch thuần tuý. The happy Trip mong rằng từ khi gặp bạn, mọi khoảnh khắc sẽ trở nên trọn vẹn, chúng tôi tin bạn cần được kết nối nhiều hơn một chuyến đi.</p>
+      </div>
+      <div class="BookTrekking-Icon">
+        <i class="bi bi-alarm"></i>
+        <p>The Happy Trip LUÔN ĐỢI BẠN: Nếu bạn vẫn còn phân vân thì ở The Happy Trip, chúng tôi đã sẵn sàng cho chuyến đi của bạn. Việc còn lại chỉ cần bạn đồng ý tiếp cận The Happy Trip như cách bạn đang muốn. Chúng tôi đợi bạn.</p>
+      </div>
+    </div>
+    <p class="p-book">HOTLINE:0838673979</p>
+  </div>
+</div>
 </div>
   `;
 }

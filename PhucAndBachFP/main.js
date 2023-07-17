@@ -37,6 +37,12 @@ let btnaboutus = document.querySelector("#aboutus");
 let btncontact = document.querySelector("#contact");
 let btncart = document.querySelector("#cart");
 let alertP = document.querySelector(".alert");
+let name = document.querySelector("#name")
+let phone = document.querySelector("#phone")
+let emailBooktour = document.querySelector("#email")
+let ticket = document.querySelector("#ticket")
+let date = document.querySelector("#date")
+let mess = document.querySelector("#mess")
 btnbooktour.style.display = "none";
 btnaboutus.style.display = "none";
 btncontact.style.display = "none";
@@ -66,6 +72,8 @@ btnbooktour.addEventListener("click", () => {
   navImgtourRender(navImg);
   footerRender(footer);
   let btnEvent = document.querySelectorAll(".btnTNPD");
+  let book = document.querySelector("#book")
+  console.log(btnEvent)
   for (let index = 0; index < btnEvent.length; index++) {
         
   }
@@ -107,6 +115,10 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//BOOK TOUR
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
