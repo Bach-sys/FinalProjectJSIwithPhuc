@@ -67,32 +67,7 @@ btnbooktour.addEventListener("click", () => {
   footerRender(footer);
   let btnEvent = document.querySelectorAll(".btnTNPD");
   for (let index = 0; index < btnEvent.length; index++) {
-    btnEvent[index].addEventListener("click", (e)=>{
-      console.log(e.currentTarget.id)
-      for (let i of data){
-        if (i.id == e.currentTarget.id){
-console.log(i.Title)
-
-        }
-      }
-      TNPDrender(mainPage);
-          let informPage = document.querySelector("#informPage");
-          let btnlt = document.querySelector("#lt");
-          let btngt = document.querySelector("#gt");
-          let btncb = document.querySelector("#cb");
-          btnlt.addEventListener("click", () => {
-            lichtrinhRender(informPage);
-          });
-          btngt.addEventListener("click", () => {
-            gioithieuRender(informPage);
-          });
-          btncb.addEventListener("click", () => {
-            chuanbiRender(informPage);
-          });
-          lichtrinhRender(informPage);
-          footerRender(footer);
-    })
-    
+        
   }
 });
 
