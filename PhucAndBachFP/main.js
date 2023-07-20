@@ -93,7 +93,7 @@ btnbooktour.addEventListener("click", () => {
               alert("name is undifined");
             } else if (phoneNumber == "") {
               alert("Phone number is undifined");
-            } else if (amountPerson == "" || amountPerson >= 5) {
+            } else if (amountPerson == "" || amountPerson >= 5 || amountPerson <= 0) {
               alert("The ticket is undifined or your selection is much than 4");
             } else {
                 let date = new Date();
