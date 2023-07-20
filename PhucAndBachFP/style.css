@@ -49,6 +49,20 @@ body{
   filter:brightness(0.85);
   z-index: -1;
 }
+marquee{
+  width:100%;
+  height:auto;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  font-size: 30px;
+  position: absolute;
+  background-color: transparent;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #fff;
+  top:15%;
+  left: 0%;
+}
 #nav-main-img p{
   font-size: 300px;
   font-family: 'Bebas Neue', sans-serif;

@@ -18,6 +18,9 @@ export function navRender(nav) {
 export function navImghomeRender(navImg) {
   navImg.innerHTML = `
     <div id="nav-main-img">
+    <marquee width="100%" behavior="scroll" scrollamount="15">  
+    Phuc đã đăng ký
+    </marquee>
       <p>TREKKING</p>
     </div>
     `;
