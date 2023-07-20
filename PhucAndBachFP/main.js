@@ -36,7 +36,6 @@ let btnhome = document.querySelector("#home");
 let btnbooktour = document.querySelector("#bookTour");
 let btnaboutus = document.querySelector("#aboutus");
 let btncontact = document.querySelector("#contact");
-let btncart = document.querySelector("#cart");
 let alertP = document.querySelector(".alert");
 btnbooktour.style.display = "none";
 btnaboutus.style.display = "none";
@@ -228,7 +227,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
                   btnbooktour.style.display = "block";
                   btnaboutus.style.display = "block";
                   btncontact.style.display = "block";
-                  btncart.style.display = "block";
                   alertP.style.display = "none";
                 })
                 .catch((error) => {

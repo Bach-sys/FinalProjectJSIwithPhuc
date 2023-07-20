@@ -278,8 +278,11 @@ header{
   color: #000;
 }
 .BgcNav p{
-  color: #000;
+  color: red;
   font-size: 15px;
+}
+.alert{
+  color: red;
 }
 @keyframes showfixed {
   from{
