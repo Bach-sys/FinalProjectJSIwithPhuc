@@ -5,7 +5,6 @@ import {
   bookTourRender,
   aboutUsRender,
   contactRender,
-  cartRender,
   signupRender,
   loginRender,
   TNPDrender,
@@ -17,8 +16,6 @@ import {
   navImgsignupRender,
   navImgaboutusRender,
   navImgcontactRender,
-  navImgcartRender,
-  navImgtnpdRender,
 
 } from "./Font";
 import { lichtrinhRender,chuanbiRender,gioithieuRender } from "./btnAddenvent";
@@ -35,7 +32,6 @@ let btnhome = document.querySelector("#home");
 let btnbooktour = document.querySelector("#bookTour");
 let btnaboutus = document.querySelector("#aboutus");
 let btncontact = document.querySelector("#contact");
-let btncart = document.querySelector("#cart");
 let alertP = document.querySelector(".alert");
 let name = document.querySelector("#name")
 let phone = document.querySelector("#phone")
@@ -46,7 +42,6 @@ let mess = document.querySelector("#mess")
 btnbooktour.style.display = "none";
 btnaboutus.style.display = "none";
 btncontact.style.display = "none";
-btncart.style.display = "none";
 mainPageRender(mainPage);
 let footer = document.querySelector("#footer");
 footerRender(footer);
@@ -105,11 +100,6 @@ btnaboutus.addEventListener("click", () => {
 btncontact.addEventListener("click", () => {
   contactRender(mainPage);
   navImgcontactRender(navImg);
-  footerRender(footer);
-});
-btncart.addEventListener("click", () => {
-  cartRender(mainPage);
-  navImgcartRender(navImg);
   footerRender(footer);
 });
 
@@ -209,7 +199,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
                   btnbooktour.style.display = "block";
                   btnaboutus.style.display = "block";
                   btncontact.style.display = "block";
-                  btncart.style.display = "block";
                   alertP.style.display = "none";
                 })
                 .catch((error) => {
@@ -260,7 +249,6 @@ window.addEventListener("DOMContentLoaded", () => {
                 btnbooktour.style.display = "block";
                 btnaboutus.style.display = "block";
                 btncontact.style.display = "block";
-                btncart.style.display = "block";
                 alertP.style.display = "none";
               })
               .catch((error) => {
