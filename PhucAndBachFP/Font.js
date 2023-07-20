@@ -10,8 +10,6 @@ export function navRender(nav) {
       <button><a  class="btn-nav" id="bookTour" href="#">Book tour</a></button>
       <button><a  class="btn-nav" id="btn-nav-log" href="#">Sign In</a></button>
       <button><a class="btn-nav" id="btn-nav-sign" href="#">Sign Up</a></button>
-      <button><a  class="btn-nav-cart" id="cart" href="#">
-      <i class="bi bi-bag-fill"></i>
       <p>0</p>
       </a></button>
     </div>
@@ -61,13 +59,6 @@ export function navImgcontactRender(navImg) {
     </div>
     `;
 }
-export function navImgcartRender(navImg) {
-  navImg.innerHTML = `
-    <div id="nav-main-img6">
-      <p>SUBCRISED</p>
-    </div>
-    `;
-}
 export function navImgtnpdRender(navImg) {
   navImg.innerHTML = `
     <div id="nav-main-img7">
@@ -75,7 +66,6 @@ export function navImgtnpdRender(navImg) {
     </div>
     `;
 }
-
 export function mainPageRender(mainPage) {
   mainPage.style.display = "block";
   mainPage.innerHTML = `
@@ -243,22 +233,21 @@ export function mainPageRender(mainPage) {
   </div>
   `;
 }
-
-export function bookTourRender(mainPage,data) {
+export function bookTourRender(mainPage,data) {;
   mainPage.style.display = "flex";
   mainPage.style.flexDirection = "row";
   mainPage.style.justifyContent = "space-around";
   mainPage.style.flexWrap = "wrap";
-  let render = data.map((data, index) => {
+  let render = data.map((data) => {
     return `
    <div class="tourProduct" style ="gap:100px;">
    <img src="${data.img}" alt="" class="tourProductimg">
    <div class="tourProductdes">
      <h2>${data.Title}</h2>
-     <p>Hành Trình: ${data.Tongquan}}</p>
+     <p>Hành Trình: ${data.Tongquan}</p>
      <div class="tourProductdes-child">
        <i class="bi bi-pin-map-fill"></i>
-       <p>Nơi khởi hành: ${data.startPlace}}</p>
+       <p>Nơi khởi hành: ${data.startPlace}</p>
      </div>
      <div class="tourProductdes-child">
        <i class="bi bi-clock-fill"></i>
@@ -316,7 +305,6 @@ export function aboutUsRender(mainPage) {
         <div class="aboutUs-bg"></div>
       </div>`;
 }
-
 export function contactRender(mainPage) {
   mainPage.style.display = "block";
   mainPage.innerHTML = `
@@ -367,140 +355,6 @@ export function contactRender(mainPage) {
 </div>
   `;
 }
-
-export function cartRender(mainPage) {
-  mainPage.style.display = "block";
-  mainPage.innerHTML = `
-  <div id="cart">
-  <div class="cartContainer item">
-    <h1 class="showtotop" >SUBCRISED</h1>
-    <div class="cartProduct item">
-      <div class="productSubcrised item showtotop delay-02">
-        <img src="./img/about-us.jpg" alt="">
-        <div class="subProduct-inform">
-          <h2>Tà năng phan dũng</h2>
-          <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35km</p>
-          <div class="subProduct-child">
-            <i class="bi bi-pin-map-fill"></i>
-            <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
-          </div>
-          <div class="subProduct-child">
-            <i class="bi bi-clock-fill"></i>
-            <p>Thời gian: 2 ngày 2 đêm</p>
-          </div>
-          <div class="subProduct-child">
-            <i class="bi bi-trophy-fill"></i>
-            <p>Độ khó: 7/10</p>
-          </div>
-          <h3>Đã đăng ký</h3>
-        </div>
-      </div>
-      <div class="productSubcrised item showtotop delay-04">
-        <img src="./img/about-us.jpg" alt="">
-        <div class="subProduct-inform">
-          <h2>Tà năng phan dũng</h2>
-          <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35km</p>
-          <div class="subProduct-child">
-            <i class="bi bi-pin-map-fill"></i>
-            <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
-          </div>
-          <div class="subProduct-child">
-            <i class="bi bi-clock-fill"></i>
-            <p>Thời gian: 2 ngày 2 đêm</p>
-          </div>
-          <div class="subProduct-child">
-            <i class="bi bi-trophy-fill"></i>
-            <p>Độ khó: 7/10</p>
-          </div>
-          <h3>Đã đăng ký</h3>
-        </div>
-      </div>
-      <div class="productSubcrised item showtotop delay-06">
-        <img src="./img/about-us.jpg" alt="">
-        <div class="subProduct-inform">
-          <h2>Tà năng phan dũng</h2>
-          <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35km</p>
-          <div class="subProduct-child">
-            <i class="bi bi-pin-map-fill"></i>
-            <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
-          </div>
-          <div class="subProduct-child">
-            <i class="bi bi-clock-fill"></i>
-            <p>Thời gian: 2 ngày 2 đêm</p>
-          </div>
-          <div class="subProduct-child">
-            <i class="bi bi-trophy-fill"></i>
-            <p>Độ khó: 7/10</p>
-          </div>
-          <h3>Đã đăng ký</h3>
-        </div>
-      </div>
-      <div class="productSubcrised item showtotop delay-08">
-        <img src="./img/about-us.jpg" alt="">
-        <div class="subProduct-inform">
-          <h2>Tà năng phan dũng</h2>
-          <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35km</p>
-          <div class="subProduct-child">
-            <i class="bi bi-pin-map-fill"></i>
-            <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
-          </div>
-          <div class="subProduct-child">
-            <i class="bi bi-clock-fill"></i>
-            <p>Thời gian: 2 ngày 2 đêm</p>
-          </div>
-          <div class="subProduct-child">
-            <i class="bi bi-trophy-fill"></i>
-            <p>Độ khó: 7/10</p>
-          </div>
-          <h3>Đã đăng ký</h3>
-        </div>
-      </div>
-      <div class="productSubcrised item showtotop delay-10">
-        <img src="./img/about-us.jpg" alt="">
-        <div class="subProduct-inform">
-          <h2>Tà năng phan dũng</h2>
-          <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35km</p>
-          <div class="subProduct-child">
-            <i class="bi bi-pin-map-fill"></i>
-            <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
-          </div>
-          <div class="subProduct-child">
-            <i class="bi bi-clock-fill"></i>
-            <p>Thời gian: 2 ngày 2 đêm</p>
-          </div>
-          <div class="subProduct-child">
-            <i class="bi bi-trophy-fill"></i>
-            <p>Độ khó: 7/10</p>
-          </div>
-          <h3>Đã đăng ký</h3>
-        </div>
-      </div>
-      <div class="productSubcrised item showtotop delay-12">
-        <img src="./img/about-us.jpg" alt="">
-        <div class="subProduct-inform">
-          <h2>Tà năng phan dũng</h2>
-          <p>Hành Trình: Xuyên qua ranh giới 3 tỉnh Lâm Đồng – Ninh Thuận – Bình Thuận tổng chiều dài 35km</p>
-          <div class="subProduct-child">
-            <i class="bi bi-pin-map-fill"></i>
-            <p>Nơi khởi hành: TP. Hồ Chí Minh</p>
-          </div>
-          <div class="subProduct-child">
-            <i class="bi bi-clock-fill"></i>
-            <p>Thời gian: 2 ngày 2 đêm</p>
-          </div>
-          <div class="subProduct-child">
-            <i class="bi bi-trophy-fill"></i>
-            <p>Độ khó: 7/10</p>
-          </div>
-          <h3>Đã đăng ký</h3>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-  `;
-}
-
 export function signupRender(mainPage) {
   mainPage.style.display = "block";
   mainPage.innerHTML = `
@@ -537,7 +391,6 @@ export function signupRender(mainPage) {
 </div>
 `;
 }
-
 export function loginRender(mainPage) {
   mainPage.style.display = "block";
   mainPage.innerHTML = `
@@ -569,7 +422,6 @@ export function loginRender(mainPage) {
   </div>
   `;
 }
-
 export function TNPDrender(mainPage,data) {
   
   mainPage.style.display = "block";
@@ -577,14 +429,11 @@ export function TNPDrender(mainPage,data) {
   <div class="trekkingPage">
   <div class="trekkingContainer">
     <div class="trekkingDiv">
-      <h3>Tour trekking: Tà năng phan dũng</h3>
-      <h2>TOUR TREKKING</h2>
-      <h1>TÀ NĂNG PHAN DŨNG</h1>
-      <p>Khám phá Tà Năng Phan Dũng cùng những người bạn độc thân. Một hành trình đặc biệt chinh phục những ngọn đồi trùng điệp, kéo dài hút tầm mắt. Phía xa là thung lũng, đồi cỏ xanh mướt khiến người bộ hành phải xuýt xoa, xiêu lòng như gặp người tình trong mộng lần đầu tiên. </p>
-      <p>Sự tươi trẻ, tràn đầy sức sống của núi rừng xanh biếc sẽ làm dịu tâm hồn bạn vốn đã vướng bận bao bộn bề chốn Sài Thành. </p>
-      <p>rên hành trình khám phá vùng đất mới, chúng ta những người độc thân chung một tần số, cởi mở, chân thành và nồng nhiệt sẵn sàng chia sẻ và kết nối. </p>
+      <h3>Tour trekking: ${data.Title}</h3>
+      <h2 id="TitleH2">Tour Trekking ${data.Title}</h2>
+      <p>${data.Description}</p>
     </div>
-    <img src="./img/TNPD.jpg" alt="">
+    <img src="${data.imgProduct}" alt="">
   </div>
 </div>
 <div class="trekkingIcon">
@@ -604,7 +453,7 @@ export function TNPDrender(mainPage,data) {
       <path d="M27 15H26V6C26 5.73478 25.8946 5.48043 25.7071 5.29289C25.5196 5.10536 25.2652 5 25 5H20C20 4.20435 19.6839 3.44129 19.1213 2.87868C18.5587 2.31607 17.7956 2 17 2H15C14.2044 2 13.4413 2.31607 12.8787 2.87868C12.3161 3.44129 12 4.20435 12 5H7C6.73478 5 6.48043 5.10536 6.29289 5.29289C6.10536 5.48043 6 5.73478 6 6V15H5C4.20435 15 3.44129 15.3161 2.87868 15.8787C2.31607 16.4413 2 17.2044 2 18V23C2 23.7956 2.31607 24.5587 2.87868 25.1213C3.44129 25.6839 4.20435 26 5 26H6C6 27.0609 6.42143 28.0783 7.17157 28.8284C7.92172 29.5786 8.93913 30 10 30H22C23.0609 30 24.0783 29.5786 24.8284 28.8284C25.5786 28.0783 26 27.0609 26 26H27C27.7956 26 28.5587 25.6839 29.1213 25.1213C29.6839 24.5587 30 23.7956 30 23V18C30 17.2044 29.6839 16.4413 29.1213 15.8787C28.5587 15.3161 27.7956 15 27 15ZM15 4H17C17.2652 4 17.5196 4.10536 17.7071 4.29289C17.8946 4.48043 18 4.73478 18 5H14C14 4.73478 14.1054 4.48043 14.2929 4.29289C14.4804 4.10536 14.7348 4 15 4ZM5 24C4.73478 24 4.48043 23.8946 4.29289 23.7071C4.10536 23.5196 4 23.2652 4 23V18C4 17.7348 4.10536 17.4804 4.29289 17.2929C4.48043 17.1054 4.73478 17 5 17H6V24H5ZM24 26C24 26.5304 23.7893 27.0391 23.4142 27.4142C23.0391 27.7893 22.5304 28 22 28H10C9.46957 28 8.96086 27.7893 8.58579 27.4142C8.21071 27.0391 8 26.5304 8 26V7H24V26ZM28 23C28 23.2652 27.8946 23.5196 27.7071 23.7071C27.5196 23.8946 27.2652 24 27 24H26V17H27C27.2652 17 27.5196 17.1054 27.7071 17.2929C27.8946 17.4804 28 17.7348 28 18V23Z" fill="#000"/>
       </svg>
       <h4>Thời gian</h4>
-      <p>2 ngày 2 đêm</p>
+      <p>${data.Thoigian}</p>
   </div>
   <div class="trekkingIcon-child">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bus-front" viewBox="0 0 16 16">
@@ -612,7 +461,7 @@ export function TNPDrender(mainPage,data) {
       <path d="M15 8a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1V2.64c0-1.188-.845-2.232-2.064-2.372A43.61 43.61 0 0 0 8 0C5.9 0 4.208.136 3.064.268 1.845.408 1 1.452 1 2.64V4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v3.5c0 .818.393 1.544 1 2v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5V14h6v1.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2c.607-.456 1-1.182 1-2V8ZM8 1c2.056 0 3.71.134 4.822.261.676.078 1.178.66 1.178 1.379v8.86a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 11.5V2.64c0-.72.502-1.301 1.178-1.379A42.611 42.611 0 0 1 8 1Z"/>
     </svg>
     <h4>Số Lượng</h4>
-    <p>25 - 30 khách</p>
+    <p>${data.amount}khách</p>
   </div>
   <div class="trekkingIcon-child">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
@@ -620,7 +469,7 @@ export function TNPDrender(mainPage,data) {
       <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
     </svg>
     <h4>Tính chất tour</h4>
-    <p>Hành trình kết nối</p>
+    <p>${data.Characteristic}</p>
   </div>
 </div>
 <div class="trekkingInformtour">
@@ -686,7 +535,7 @@ export function TNPDrender(mainPage,data) {
   <div class="BookTrekking-column">
     <div class="BookTrekking-head">
       <h1>ĐẶT TOUR</h1>
-      <h2>TÀ NĂNG PHAN DŨNG</h2>
+      <h2>${data.Title}}</h2>
     </div>
     <div class="BookTrekking-input">
       <input type="text" placeholder="Tên" id="name">
@@ -700,7 +549,7 @@ export function TNPDrender(mainPage,data) {
         <p>Chọn ngày khởi hành</p>
         <input type="date" id="date">
       </div>
-      <input type="text" placeholder="Ghi chú" id="mess">
+      <input type="text" placeholder="Ghi chú" id="note">
     </div>
     <button class="btn-book" id="book">ĐẶT TOUR</button>
   </div>
@@ -742,7 +591,6 @@ export function TNPDrender(mainPage,data) {
 </div>
   `;
 }
-
 export function footerRender(footer) {
   footer.innerHTML = `
   <footer class="footer">

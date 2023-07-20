@@ -5,7 +5,6 @@ import {
   bookTourRender,
   aboutUsRender,
   contactRender,
-  cartRender,
   signupRender,
   loginRender,
   TNPDrender,
@@ -17,11 +16,13 @@ import {
   navImgsignupRender,
   navImgaboutusRender,
   navImgcontactRender,
-  navImgcartRender,
-  navImgtnpdRender,
-
 } from "./Font";
-import { lichtrinhRender,chuanbiRender,gioithieuRender } from "./btnAddenvent";
+let userEmail;
+import {
+  lichtrinhRender,
+  chuanbiRender,
+  gioithieuRender,
+} from "./btnAddenvent";
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 let nav = document.querySelector("#nav");
 let mainPage = document.querySelector("#mainPage");
@@ -37,16 +38,9 @@ let btnaboutus = document.querySelector("#aboutus");
 let btncontact = document.querySelector("#contact");
 let btncart = document.querySelector("#cart");
 let alertP = document.querySelector(".alert");
-let name = document.querySelector("#name")
-let phone = document.querySelector("#phone")
-let emailBooktour = document.querySelector("#email")
-let ticket = document.querySelector("#ticket")
-let date = document.querySelector("#date")
-let mess = document.querySelector("#mess")
 btnbooktour.style.display = "none";
 btnaboutus.style.display = "none";
 btncontact.style.display = "none";
-btncart.style.display = "none";
 mainPageRender(mainPage);
 let footer = document.querySelector("#footer");
 footerRender(footer);
@@ -68,14 +62,66 @@ btnhome.addEventListener("click", () => {
   navImghomeRender(navImg);
 });
 btnbooktour.addEventListener("click", () => {
-  bookTourRender(mainPage,data);
+  bookTourRender(mainPage, data);
   navImgtourRender(navImg);
   footerRender(footer);
   let btnEvent = document.querySelectorAll(".btnTNPD");
-  let book = document.querySelector("#book")
-  console.log(btnEvent)
+  let book = document.querySelector("#book");
   for (let index = 0; index < btnEvent.length; index++) {
-        
+    btnEvent[index].addEventListener("click", (e) => {
+      console.log(btnEvent[index].id);
+      for (let i of data) {
+        if (btnEvent[index].id == i.id) {
+          console.log(true);
+          TNPDrender(mainPage, i);
+          document.querySelector("#email").value = userEmail;
+          let note = document.querySelector("#note");
+          note.value = "Thanks For The service"
+          let btnSubmit = document.querySelector("#book");
+          let informPage = document.querySelector("#informPage");
+          let btnlt = document.querySelector("#lt");
+          let btngt = document.querySelector("#gt");
+          let btncb = document.querySelector("#cb");
+          btnlt.addEventListener("click", () => {
+            lichtrinhRender(informPage, i);
+          });
+          btnSubmit.addEventListener("click", () => {
+            let name = document.querySelector("#name").value;
+            let phoneNumber = document.querySelector("#phone").value;
+            let amountPerson = document.querySelector("#ticket").value;
+            if (name == "") {
+              alert("name is undifined");
+            } else if (phoneNumber == "") {
+              alert("Phone number is undifined");
+            } else if (amountPerson == "" || amountPerson >= 5) {
+              alert("The ticket is undifined or your selection is much than 4");
+            } else {
+                let date = new Date();
+                setDoc(doc(db, "BookTour", `Book_${name}`), {
+                  name: `${name}`,
+                  Tour: `${document.querySelector("#TitleH2")}`,
+                  PhoneNumber: `${phoneNumber}`,
+                  TicketAmount: `${amountPerson}`,
+                  note : `${note.value}`,
+                  Time : `${date}`
+                });
+                alert("Booked Successfully");
+                bookTourRender(mainPage, data);
+                navImgtourRender(navImg);
+                footerRender(footer);
+            }
+          });
+          btngt.addEventListener("click", () => {
+            gioithieuRender(informPage, i);
+          });
+          btncb.addEventListener("click", () => {
+            chuanbiRender(informPage, i);
+          });
+          lichtrinhRender(informPage, i);
+          footerRender(footer);
+        }
+      }
+    });
   }
 });
 
@@ -87,11 +133,6 @@ btnaboutus.addEventListener("click", () => {
 btncontact.addEventListener("click", () => {
   contactRender(mainPage);
   navImgcontactRender(navImg);
-  footerRender(footer);
-});
-btncart.addEventListener("click", () => {
-  cartRender(mainPage);
-  navImgcartRender(navImg);
   footerRender(footer);
 });
 
@@ -117,10 +158,6 @@ window.addEventListener("scroll", () => {
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//BOOK TOUR
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -137,6 +174,7 @@ import {
   addDoc,
   getDocs,
   doc,
+  setDoc,
 } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -183,7 +221,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
               createUserWithEmailAndPassword(auth, email.value, password.value)
                 .then((userCredential) => {
                   const user = userCredential.user;
-
+                  userEmail = user.email;
                   btnlog.style.display = "none";
                   btnsign.style.display = "none";
                   mainPageRender(mainPage);
@@ -234,7 +272,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 // Signed in
                 console.log("Success");
                 const user = userCredential.user;
-
+                userEmail = user.email;
                 btnlog.style.display = "none";
                 btnsign.style.display = "none";
                 mainPageRender(mainPage);
@@ -242,7 +280,6 @@ window.addEventListener("DOMContentLoaded", () => {
                 btnbooktour.style.display = "block";
                 btnaboutus.style.display = "block";
                 btncontact.style.display = "block";
-                btncart.style.display = "block";
                 alertP.style.display = "none";
               })
               .catch((error) => {
@@ -264,8 +301,7 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-let data = returnData(db);
-data
+let data = returnData(db)
   .then((result) => {
     data = result;
   })

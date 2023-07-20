@@ -9,6 +9,7 @@
   font-family:sans-serif;
 }
 body{
+  overflow-x: hidden;
   width:100%;
   height:2000px;
   display: flex;
@@ -2196,14 +2197,20 @@ transform: scale(0.9);
   animation-delay: 1.8s!important;
 }
 .delay-22{
-  animation-delay: 2s!important;
+  animation-delay: 1s!important;
 }
 .delay-24{
-  animation-delay: 2.2s!important;
+  animation-delay: 1.2s!important;
 }
 .delay-26{
-  animation-delay: 2.6s!important;
+  animation-delay: 1.6s!important;
 }
 .delay-28{
-  animation-delay: 2.8s!important;
+  animation-delay: 1.8s!important;
+}
+.alert {
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: -100px;
+  color: red; 
 }
