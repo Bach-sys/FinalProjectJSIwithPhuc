@@ -99,16 +99,15 @@ btnbooktour.addEventListener("click", () => {
                 let date = new Date();
                 setDoc(doc(db, "BookTour", `Book_${name}`), {
                   name: `${name}`,
-                  Tour: `${document.querySelector("#TitleH2")}`,
+                  Tour: `${document.querySelector("#TitleH2").value}`,
                   PhoneNumber: `${phoneNumber}`,
                   TicketAmount: `${amountPerson}`,
                   note : `${note.value}`,
                   Time : `${date}`
                 });
                 alert("Booked Successfully");
-                bookTourRender(mainPage, data);
-                navImgtourRender(navImg);
-                footerRender(footer);
+                mainPageRender(mainPage);
+                navImghomeRender(navImg);
             }
           });
           btngt.addEventListener("click", () => {
