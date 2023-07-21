@@ -66,11 +66,11 @@ marquee{
 }
 @-webkit-keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #FCCB14, 0 0 40px #FCCB14, 0 0 50px #FCCB14, 0 0 60px #FCCB14, 0 0 70px #FCCB14;
   }
   
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    text-shadow: 0 0 20px #fff, 0 0 30px #FF7211, 0 0 40px #FF7211, 0 0 50px #FF7211, 0 0 60px #FF7211, 0 0 70px #FF7211, 0 0 80px #FF7211;
   }
 }
 #nav-main-img p{
@@ -83,7 +83,7 @@ marquee{
   transform: translate(-50%,-50%);
   font-size: 300px;
   opacity: 0;
-  animation:showtitle 3s ease-in-out 0.7s 1 forwards 
+  animation:showtitle 1s ease-in-out 0.7s 1 forwards 
 }
 @keyframes showtitle{
   from{
@@ -116,7 +116,7 @@ marquee{
   transform: translate(-50%,-50%);
   font-size: 300px;
   opacity: 0;
-  animation:showtitle 3s ease-in-out 0.7s 1 forwards 
+  animation:showtitle 1s ease-in-out 0.7s 1 forwards 
 }
 #nav-main-img2{
   width:100%;
@@ -139,7 +139,7 @@ marquee{
   transform: translate(-50%,-50%);
   font-size: 300px;
   opacity: 0;
-  animation:showtitle 3s ease-in-out 0.7s 1 forwards 
+  animation:showtitle 1s ease-in-out 0.7s 1 forwards 
 }
 #nav-main-img3{
   width:100%;
@@ -167,7 +167,7 @@ marquee{
   transform: translate(-50%,-50%);
   font-size: 300px;
   opacity: 0;
-  animation:showtitle 3s ease-in-out 0.7s 1 forwards 
+  animation:showtitle 1s ease-in-out 0.7s 1 forwards 
 }
 #nav-main-img4{
   width:100%;
@@ -195,7 +195,7 @@ marquee{
   transform: translate(-50%,-50%);
   font-size: 300px;
   opacity: 0;
-  animation:showtitle 3s ease-in-out 0.7s 1 forwards 
+  animation:showtitle 1s ease-in-out 0.7s 1 forwards 
 }
 #nav-main-img5{
   width:100%;
@@ -223,7 +223,7 @@ marquee{
   transform: translate(-50%,-50%);
   font-size: 300px;
   opacity: 0;
-  animation:showtitle 3s ease-in-out 0.7s 1 forwards 
+  animation:showtitle 1s ease-in-out 0.7s 1 forwards 
 }
 #nav-main-img6{
   width:100%;
@@ -250,7 +250,7 @@ marquee{
   transform: translate(-50%,-50%);
   font-size: 300px;
   opacity: 0;
-  animation:showtitle 3s ease-in-out 0.7s 1 forwards 
+  animation:showtitle 1s ease-in-out 0.7s 1 forwards 
 }
 #nav-main-img7{
   width:100%;
@@ -277,7 +277,7 @@ marquee{
   transform: translate(-50%,-50%);
   font-size: 300px;
   opacity: 0;
-  animation:showtitle 3s ease-in-out 0.7s 1 forwards 
+  animation:showtitle 1s ease-in-out 0.7s 1 forwards 
 }
 header{
   width: 100%;
@@ -832,6 +832,10 @@ header button {
   flex-direction: column;
   align-items: center;
 }
+.modal-body h2{
+  font-size: 30px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
 .inform{
   width: 100%;
   height:auto;
@@ -845,18 +849,31 @@ header button {
   margin-right: 40px;
   margin-left: 15px;
   font-family: 'Bebas Neue', sans-serif;
+}.inform-modal{
+  width: 100%;
+  height:auto;
+  display: flex;
+  flex-direction: row;
+  font-size: 40px;
 }
-.detail{
+.inform-modal p{
+  margin-right: 40px;
+  margin-left: 15px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+.inform h2{
+  font-size: 30px;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 700;
-  width: 40%;
+  width: 43%;
   height:50px;
-  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50px;
   transition: ease-out 0.5s;
   border: 3px solid #000;
   background-color: transparent;
-  cursor: pointer;
 }
 
 .detail:hover {
@@ -892,31 +909,22 @@ header button {
   filter:brightness(0.85)
 }
 .ft-tour{
-  width:30%;
+  width:50%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-items: center;
+  padding-bottom: 40px;
 }
-.ft-tour-btn{
-  width: auto;
-  height:auto;
-  background-color: transparent;
-  border:none;
-  cursor: pointer;
+.ft-tour img{
+  width:30%;
+  height:50%;
+}
+.ft-tour p{
+  font-size: 30px;
   font-family: 'Barlow Condensed', sans-serif;
-  transition: ease-out 0.3s;
-  font-size: 40px;
-  font-weight: 600;
-  color: #fff;
-}
-.ft-tour-btn:hover {
-  color: #FCCB14;
-}
-
-.ft-tour-btn:active {
-  transform: scale(0.9);
+  color: white;
 }
 .ft-contact{
   width: 30%;
@@ -925,6 +933,10 @@ header button {
   flex-direction: column;
   justify-content: space-evenly;
   color: #fff;
+}
+.ft-contact h2{
+  font-size: 60px;
+  font-family: 'Barlow Condensed', sans-serif;
 }
 .ft-contact-child{
   width: 100%;
