@@ -19,8 +19,8 @@ export function navRender(nav) {
 export function navImghomeRender(navImg) {
   navImg.innerHTML = `
     <div id="nav-main-img">
-    <marquee width="100%" behavior="scroll" scrollamount="15">  
-    Chào Mừng Bạn Đã Đến Với WebSite của Phúc Và Bách , Cảm ơn bạn đã ghé thăm
+    <marquee width="100%" behavior="scroll" scrollamount="20">  
+    Chào mừng bạn đã đến với Website của Phúc và Bách, cảm ơn bạn đã ghé thăm
     </marquee>
       <p>TREKKING</p>
     </div>
@@ -280,7 +280,7 @@ export function aboutUsRender(mainPage) {
             
             <div class="aboutUs-inform showtotop delay-06">
               <h2>AN TOÀN</h2>
-              <p>Giá trị an toàn được The Happy Trip đưa lên là kim chỉ nam của công ty. Mọi hoạt động với khách hàng đều phải đặt giá trị này làm trọng tâm. Chúng tôi quan niệm rằng, thiên nhiên kỳ vĩ luôn ẩn chứa những thách thức, vì vậy để được sống và làm bạn cùng thiên nhiên, ta phải trang bị những kiến thức sinh tồn và kĩ năng bảo vệ bản thân thật tốt. Để trải nghiệm của khách hàng được chỉnh chu nhất, để công việc của chúng tôi được trọn vẹn nhất, an toàn là yếu tố hàng đầu.
+              <p>Giá trị an toàn được The Happy Trip đưa lên là kim chỉ nam của công ty. Mọi hoạt động với khách hàng đều phải đặt giá trị này làm trọng tâm. Chúng tôi quan niệm rằng, thiên nhiên kỳ vĩ luôn ẩn chứa những thách thức, vì vậy để được sống và làm bạn cùng thiên nhiên, ta phải trang bị những kiến thức sinh tồn và kĩ năng bảo vệ bản thân thật tốt.
               </p>
             </div>
             <div class="aboutUs-inform showtotop delay-06">
