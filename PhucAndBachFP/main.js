@@ -23,13 +23,14 @@ import {
   chuanbiRender,
   gioithieuRender,
 } from "./btnAddenvent";
+let name;
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 let nav = document.querySelector("#nav");
 let mainPage = document.querySelector("#mainPage");
 let shoppingPage = document.querySelector("#shopping");
 navRender(nav);
 let navImg = document.querySelector("#nav-img");
-navImghomeRender(navImg);
+navImghomeRender(navImg,name);
 let btnlog = document.querySelector("#btn-nav-log");
 let btnsign = document.querySelector("#btn-nav-sign");
 let btnhome = document.querySelector("#home");
@@ -60,6 +61,7 @@ btnhome.addEventListener("click", () => {
   mainPageRender(mainPage);
   navImghomeRender(navImg);
 });
+
 btnbooktour.addEventListener("click", () => {
   bookTourRender(mainPage, data);
   navImgtourRender(navImg);
@@ -298,8 +300,8 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-let data = returnData(db)
-  .then((result) => {
+let data = Promise.resolve(returnData(db))
+.then((result) => {
     data = result;
   })
   .catch((err) => {

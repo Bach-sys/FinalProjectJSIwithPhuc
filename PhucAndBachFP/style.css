@@ -60,7 +60,7 @@ marquee{
   background-color: transparent;
   font-family: 'Bebas Neue', sans-serif;
   color: #fff;
-  top:5%;
+  top:10px;
   left: 0%;
   animation: glow 1s ease-in-out infinite alternate;
 }

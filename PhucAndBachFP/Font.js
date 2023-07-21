@@ -15,11 +15,12 @@ export function navRender(nav) {
   <div id="nav-img"></div>
     `;
 }
+
 export function navImghomeRender(navImg) {
   navImg.innerHTML = `
     <div id="nav-main-img">
     <marquee width="100%" behavior="scroll" scrollamount="15">  
-    Phuc đã đăng ký
+    Chào Mừng Bạn Đã Đến Với WebSite của Phúc Và Bách , Cảm ơn bạn đã ghé thăm
     </marquee>
       <p>TREKKING</p>
     </div>
