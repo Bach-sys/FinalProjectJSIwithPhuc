@@ -540,6 +540,7 @@ export function TNPDrender(mainPage,data) {
     <div class="BookTrekking-head">
       <h1>ĐẶT TOUR</h1>
       <h2>${data.Title}</h2>
+      <p id= "dataname" style = "display:none;">${data.Title}</p>
     </div>
     <div class="BookTrekking-input">
       <input type="text" placeholder="Tên" id="name">

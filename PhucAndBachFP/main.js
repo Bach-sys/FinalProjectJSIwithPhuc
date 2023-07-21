@@ -97,10 +97,11 @@ btnbooktour.addEventListener("click", () => {
             } else if (amountPerson == "" || amountPerson >= 5 || amountPerson <= 0) {
               alert("The ticket is undifined or your selection is much than 4");
             } else {
+              console.log(document.querySelector("#dataname").value)
                 let date = new Date();
                 setDoc(doc(db, "BookTour", `Book_${name}`), {
                   name: `${name}`,
-                  Tour: `${document.querySelector("#TitleH2").value}`,
+                  Tour: `${i.Title}`,
                   PhoneNumber: `${phoneNumber}`,
                   TicketAmount: `${amountPerson}`,
                   note : `${note.value}`,
